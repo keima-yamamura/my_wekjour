@@ -1,0 +1,559 @@
+	@charset "UTF-8";
+
+	/*-----------フォント設定------------------*/
+	.weekend_journy .weekend_journy_wrapper h1,
+	.bottom_wj .section_hd h1,
+	.product h1,
+	.brewmaster h1,
+	.sp
+	{
+		font-family: din-condensed, sans-serif;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 60px;
+	}
+	.section_wrapper ul li span{
+		font-family: bickham-script-pro-3 , sans-serif;
+		font-style: normal;
+		font-weight: 400;
+	}
+
+	/*----------------pc-----------------------*/
+
+	@media(min-width: 640px){
+	.contents_wrapper{
+		width: 1170px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.hum_menu{
+		position: absolute;
+		left: 50px;
+		top: 50px;
+	}
+	.hum_menu a{
+		background-color: transparent;
+		display: block;
+		width: 30px;
+		height: 30px;
+		padding-top: 5px;
+		box-sizing: border-box;
+	}
+
+	.hum_menu a span{
+		display: block;
+		width: 20px;
+		height: 2px;
+		background: #fff;
+		border-radius: 10px;
+		margin: 5px auto; 
+	}
+	.hum_menu a span:first-child{
+		margin-top: 0px;
+	}
+
+	.weekend_journy{
+		background-image: url(../image/bg_main_02@3x.png.png);
+		-webkit-background-size:cover;
+		background-size: cover;
+		padding-bottom: 40px;
+
+	}
+	.weekend_journy .sp{
+		display: none;
+	}
+	.weekend_journy > h1{
+		margin: 0;
+		text-align: center;
+		padding: 44px 0 150px 0;
+	}
+
+	.weekend_journy h1 img{
+		width: 464px;
+		height: 265px;
+	}
+	.weekend_journy_wrapper{
+		background: rgba(0,0,0,0.3);
+		background-image: url(../image/obj_beerbottle@2x.png.png);
+		background-repeat: no-repeat;
+		-webkit-background-size: 209px 421px;
+		background-size: 200px;
+		background-position: 40px 50px;
+		width: 1120px;
+		margin: 0 auto;
+		color: #fff;
+	}
+
+	.weekend_journy_contents{
+		width: 815px;
+		margin: 0 0 0 23%;
+	}
+
+	.weekend_journy_contents h1{
+		padding: 40px 0;
+	}
+
+	.weekend_journy_contents h1 span{
+		font-size: 24px;
+	}
+	.weekend_journy_contents .hd{
+		font-weight: bold;
+		font-size: 30px;
+		margin-bottom: 24px;
+	}
+	.weekend_journy_contents p:nth-child(odd){
+		margin-bottom: 20px;
+		font-size: 20px;
+		font-weight: 200px;
+		font-family: "Hiragino Kaku Gothic Pro"
+	}
+	.weekend_journy_contents p:nth-child(5){
+		margin-bottom: 40px;
+	}
+
+	.weekend_journy_contents ul{
+		padding: 0px;
+		overflow: hidden;
+		width: 100%;
+	}
+	.weekend_journy_contents ul li{
+		float: left;
+		width: 380px;
+	}
+	.weekend_journy_contents ul li:first-child{
+		margin-right: 40px;
+	}
+	.weekend_journy_contents ul li a{
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		border: 2px solid #fff;
+		line-height: 52px;
+	}
+	.weekend_journy_wrapper dl{
+	    overflow: hidden;
+	    font-size: 16px;
+	    margin: 50px 10px 0px 50px;
+	    padding-bottom: 20px;
+	    line-height: 24px;
+	}
+
+	.weekend_journy_wrapper dt{
+		float: left;
+		width: 140px;
+		margin-bottom: 5px;
+
+	}
+	.weekend_journy_wrapper dd{
+		float: left;
+		width: 820px;
+		margin-bottom: 5px;
+
+	}
+
+	.section_wrapper{
+		width: 820px;
+		margin: 0 auto;
+	}
+
+	.product .section_hd{
+		background-image: url(../image/bg_product@2x.png.png);
+		-webkit-background-size: cover;
+		background-size: cover;
+		text-align: center;
+		color: #fff;
+		height: 200px;
+	}
+	.product h1{
+		margin: 0;
+		padding-top: 70px;
+	}
+	.product h1 span{
+		font-size: 12px;
+		text-align: center;
+	}
+	.product .section_wrapper ul{
+		font-size: 24px;
+		margin-bottom: 40px;
+	}
+	.product .section_wrapper ul li span{
+		font-size: 40px;
+	}
+	.product .section_wrapper h2{
+		font-size: 40px;
+		padding: 40px 0;
+	}
+	.product .section_wrapper p{
+		font-size: 20px;
+		margin-bottom: 40px;
+		line-height: 25px;
+	}
+	.product .section_wrapper h3{
+		font-size: 40px;
+		margin-bottom: 40px;
+	}
+	.product .osusume{
+		overflow: hidden;
+		margin-bottom: 50px;
+	}
+	.product .osusume img{
+		width: 330px;
+	}
+
+	.product .osusume p{
+		float: left;
+	    width: 420px;
+	    margin: 0 70px 0 0;
+	}
+	.product .osusume p:first-child{
+		width: 330px;
+		float: right;
+		margin: 0;
+	}
+
+	.brewmaster .section_hd{
+		background-image: url(../image/bg_brewmaster@2x.png.png);
+		-webkit-background-size: cover;
+		background-size: cover;
+		text-align: center;
+		color: #fff;
+		height: 200px;
+	}
+	.brewmaster h1{
+		margin: 0;
+		padding-top: 70px;
+	}
+	.brewmaster .section_wrapper h2{
+		font-size: 36px;
+		padding: 40px 0;
+	}
+	.brewmaster .suzuki_info{
+		overflow: hidden;
+		margin-bottom: 30px;
+	}
+	.brewmaster .suzuki_info p{
+		width: 580px;
+		margin-right: 20px;
+		line-height: 25px;
+	}
+	.brewmaster .suzuki_info p:first-child{
+		float: right;
+		width: 220px;
+		margin: 0;
+	}
+	.brewmaster .suzuki_info p img{
+		width: 220px;
+	}
+	.brewmaster .suzuki_info p.sp{
+		display: none;
+	}
+	.brewmaster ul{
+		width: 872px;
+		margin: 0 auto 40px;
+	}
+	.brewmaster ul li{
+		margin-bottom: 10px;
+	}
+	.bottom_wj .section_hd{
+		background-image: url(../image/bg_about@2x.png.png);
+		-webkit-background-size: cover;
+		background-size: cover;
+		text-align: center;
+		color: #fff;
+		height: 200px;
+		margin-bottom: 40px;
+	}
+	.bottom_wj .section_hd h1{
+		margin: 0;
+		padding-top: 30px;
+	}
+	.bottom_wj .section_hd h1 img{
+		width: 250px;
+	}
+	.bottom_wj p{
+		font-size: 20px;
+		line-height: 25px;
+		margin-bottom: 40px;
+	}
+	footer{
+		width: 100%;
+		text-align: center;
+		background: #31312d;
+		height: 60px;
+		line-height: 60px;
+	}
+	footer ul{
+		width: 600px;
+		margin: 0 auto;
+	}
+	footer ul li{
+		display: inline;
+		width: 200px;
+		color: #fff;
+	}
+	footer ul li a{
+		text-decoration: none;
+		color: #fff;
+	}
+	footer ul li a:after{
+		content: "|";
+		padding: 15px;
+		color: #696660;
+	}
+	footer ul li:last-child a:after{
+		content: none;
+	}
+	.copyright{
+		margin: 0 auto;
+		height: 126px;
+		line-height: 126px;
+		background: #282824;
+		text-align: center;
+		color: #696660;
+	}
+	}
+	/*----------------sp-----------------------*/
+	@media(max-width: 639px){
+		.hum_menu{
+			position: absolute;
+			left: 20px;
+			top: 20px;
+		}
+		.hum_menu a{
+			background-color: transparent;
+			display: block;
+			width: 30px;
+			height: 30px;
+			padding-top: 5px;
+			box-sizing: border-box;
+		}
+
+		.hum_menu a span{
+			display: block;
+			width: 20px;
+			height: 2px;
+			background: #fff;
+			border-radius: 10px;
+			margin: 5px auto; 
+			box-shadow: 0px -2px 10px #000;
+		}
+		.hum_menu a span:first-child{
+			margin-top: 0px;
+		}
+		.weekend_journy{
+			background-image: url(../image/bg_main_03.png);
+			padding-bottom: 20px;
+		}
+		.weekend_journy h1{
+			text-align: center;
+		}
+		.weekend_journy h1 img{
+			width: 500px;
+		}
+		.weekend_journy .sp{
+			background: rgba(0,0,0,0.3);
+			text-align: center;
+			color: #fff;
+			font-size: 32px;
+			padding: 10px;
+			box-sizing: border-box;
+			height: 52px;
+			margin-bottom: 40px;
+		}
+		.weekend_journy .weekend_journy_wrapper{
+			background: rgba(0,0,0,0.3);
+			background-image: url(../image/obj_beerbottle.png);
+			background-repeat: no-repeat;
+			background-position: 50% 38px; 
+			-webkit-background-size: 150px;
+			background-size: 150px;
+		    color: #fff;
+		    width: 600px;
+		    margin: 0 auto;
+		    padding-bottom: 20px;
+		}
+		.weekend_journy .weekend_journy_wrapper h1{	
+		    padding-top: 354px;
+		}
+		.weekend_journy .weekend_journy_wrapper h1 span{
+			display: block;
+			font-size: 24px;	
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		.weekend_journy .weekend_journy_wrapper p{
+			width: 558px;
+			margin: 0 auto 40px;
+			font-size: 24px;
+			font-weight: 100;
+			line-height: 30px;
+		}
+		.weekend_journy .weekend_journy_wrapper p.hd{
+			font-size: 28px;
+			margin-bottom: 24px;
+			font-weight: bold;
+			line-height: 38px;
+		}
+		.weekend_journy .weekend_journy_wrapper ul{
+			width: 552px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+		.weekend_journy .weekend_journy_wrapper ul li{
+			width: 266px;
+			float: left;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			text-align: center;
+			border: 1px solid #fff;
+			height: 68px;
+			line-height: 68px;
+		}
+		.weekend_journy .weekend_journy_wrapper ul li:first-child{
+			margin-right: 20px;
+		}
+		.weekend_journy .weekend_journy_wrapper ul li a{
+			text-decoration: none;
+			color: #fff;
+			font-size: 24px;
+		}
+		.weekend_journy .weekend_journy_wrapper dl{
+			display: none;
+		}
+		.section_wrapper{
+			width: 480px;
+			margin: 0 auto;	
+		}
+		.product .section_hd{
+		background-image: url(../image/bg_product@2x.png.png);
+		-webkit-background-size: 640px 240px;
+		background-size: 640px 240px;
+		text-align: center;
+		color: #fff;
+		height: 240px;
+		}
+		.product .section_hd h1{
+			padding-top: 90px;
+		}
+		.product .section_wrapper h2{
+			font-size: 32px;
+			padding: 24px 0px;
+		}
+		.product .section_wrapper p{
+			font-size: 24px;
+			font-weight: 200;
+			margin-bottom: 30px;
+		}
+		.product .section_wrapper ul{
+
+		}
+		.product .section_wrapper ul li{
+			font-size: 24px;
+		}
+		.product .section_wrapper ul li span{
+			font-size: 60px;
+		}
+		.product .section_wrapper h3{
+			font-size: 32px;
+			padding: 20px 0;
+		}
+		.product .section_wrapper .osusume p{
+			width: 100%;
+			float: none;
+			text-align: center;
+		}
+		.product .section_wrapper .osusume p:last-child{
+			text-align: left;
+			letter-spacing: 1px;
+		}
+		.product .section_wrapper .osusume p img{
+			width: 330px;
+		}
+
+		.brewmaster .section_hd{
+			background-image: url(../image/bg_brewmaster.png);
+			-webkit-background-size: 640px 240px;
+			background-size: 640px 240px;
+			text-align: center;
+			color: #fff;
+			margin-bottom: 40px;
+			height: 240px;
+		}
+		.brewmaster .section_hd h1{
+			padding-top: 80px;
+		}
+		.brewmaster .section_wrapper h2{
+			display: none;
+		}
+		.brewmaster .section_wrapper p.name{
+			display: block;
+			font-size: 32px;
+		}
+		.brewmaster .section_wrapper p{
+			font-size: 24px;
+			margin-bottom: 30px;
+		}
+		.brewmaster .section_wrapper p:first-child{
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.brewmaster .section_wrapper p img{
+			width: 220px;
+		}
+		.brewmaster .section_wrapper ul{
+			font-size: 24px;
+			margin-bottom: 40px;
+		}
+		.bottom_wj .section_hd{
+			height: 240px;
+			background-image: url(../image/bg_about.png);
+			-webkit-background-size: 640px 240px;
+			background-size: 640px 240px;
+			margin-bottom: 40px;	
+		}
+		.bottom_wj .section_hd h1{
+			text-align: center;
+			padding-top: 40px;
+		}
+		.bottom_wj .section_hd h1 img{
+			width: 266px;
+		}
+		.bottom_wj p{
+			font-size: 24px;
+			margin-bottom: 40px;
+		}
+		footer{
+			background: #31312d;
+		}
+		footer ul{
+			width: 480px;
+			margin: 0 auto;
+		}
+		footer ul li{
+			font-size: 24px;
+
+		}
+		footer ul li a{
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			padding: 40px 0;
+		}
+		.copyright{
+			background: #282824;
+			text-align: center;
+			color: #696660;
+			height: 64px;
+			line-height: 64px;
+		}
+	}
+
+
+
+
+
+
+
+
