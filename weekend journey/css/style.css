@@ -279,9 +279,15 @@
 	}
 	.brewmaster ul li{
 		margin-bottom: 10px;
+		overflow: hidden;
+	}
+	.brewmaster ul li span{
+		display: block;
+		float: left;
 	}
 	.brewmaster ul li p{
-		display: inline-block;
+		float: left;
+		width: 95%;
 	}
 	.about_wj .section_hd{
 		background-image: url(../image/bg_about@2x.png);
