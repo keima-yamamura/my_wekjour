@@ -3,6 +3,18 @@
 <head>
   <script src="https://use.typekit.net/abm2tzv.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+  <script src="script/jquery.parallax-1.1.3.js"></script>
+  <script>
+  	$(function(){
+  		$(".para1").parallax("100%",0.02);
+  		$(".para2").parallax("100%",0.02);
+  		$(".para3").parallax("100%",0.02);
+  	});
+  </script>
   <meta charset="UTF-8">
   <title>WEEKEND_JOURNEY</title>
   <meta content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no" name="viewport">
@@ -29,15 +41,15 @@
 <div class="weekend_journy_wrapper">
   <div class="weekend_journy_contents">
     <h1>WEEKEND&nbsp;JOURNEY<span>(ウィークエンド・ジャーニー)</span></h1>
-    <p class="hd">横浜＆鎌倉発、本気で遊ぶ大人のための<br class="sp">ホワイトビール誕生</p>
+    <p class="hd">横浜＆鎌倉発、本気で遊ぶ大人のためのホワイトビール誕生</p>
     <p>徹底した温度管理の下、手作りで醸造された横浜＆鎌倉発のホワイトエール。無濾過醸造、小麦使用による白く霞んだ色合いと、泡持ちの良さが特徴で、コリアンダーとオレンジビールのスパイスを加えることで、爽やかな柑橘系の香りとほのかな酸味をお楽しみいただけます。</p>
-    <p class="hd">永遠の週末探しの「旅」気分を、<br class="sp">いつでもどこでも家庭でも</p>
-    <p>陽の光が注ぐビーチで、星空の下キャンプファイヤーを囲んで、旅先のホテルのベランダで、友人と、家族と、いい音楽を聴きながら美味しいビールを楽しむ。<br>そんなシチュエーションにぴったりの、本気で遊びたい大人のための、最高のクラフトビールです。</p>
+    <p class="hd">永遠の週末探しの「旅」気分を、いつでもどこでも家庭でも</p>
+    <p>陽の光が注ぐビーチで、星空の下キャンプファイヤーを囲んで、旅先のホテルのベランダで、友人と、家族と、いい音楽を聴きながら美味しいビールを楽しむ。そんなシチュエーションにぴったりの、本気で遊びたい大人のための、最高のクラフトビールです。</p>
     <ul>
       <li><a href="#">購入ページへ</a></li>
       <li>
         <a href="#">レストラン<br class="pc">
-          <span>・</span>販売店などのお客様</a>
+          <span>・</span><span>販売店などのお客様</span></a>
       </li>
     </ul>
   </div><!--weekend_journy_contents-->
@@ -51,10 +63,14 @@
 </div><!--weekend_journy-->
 
 <section class="product">
-<div class="section_hd">
+<div class="section_hd para1 pc">
   <h1>PRODUCT</h1>
   <p>(製品概要)</p>
-</div><!--section_hd-->
+</div><!--section_hd_pc用-->
+<div class="section_hd no_para">
+  <h1>PRODUCT</h1>
+  <p>(製品概要)</p>
+</div><!--section_hd_sp用-->
 <div class="section_wrapper">
   <h2>無ろ過・非熱処理の本物の味わい</h2>
   <p>ホワイトエールの名産地とされるのがベルギーです。ヒューガルデン・ホワイトに代表されるベルギーのホワイトビールは“ベルジャンホワイト”と呼ばれ、近年世界中で流行するまでに急成長し、日本でもたびたび飲まれるようになってきました。</p>
@@ -80,7 +96,11 @@
 </section><!--product-->
 
 <section class="brewmaster">
-<div class="section_hd">
+<div class="section_hd para2 pc">
+	<h1>BREWMASTER</h1>
+	<p>（醸造家）</p>
+</div><!-- /.section_hd -->
+<div class="section_hd no_para">
 	<h1>BREWMASTER</h1>
 	<p>（醸造家）</p>
 </div><!-- /.section_hd -->
@@ -90,7 +110,7 @@
 		<p>
 			<picture>
 				<source media="(min-width :641px)" srcset="image/img_shinyasuzuki@2x.png">
-				<img src="image/sp/sp_img_shinyasuzuki.png">
+				<img src="image/sp_img_shinyasuzuki.png">
 			</picture>
 		</p>
 		<p class="sp name">鈴木真也</p>
@@ -105,14 +125,23 @@
 
 </section><!--brewmaster-->
 	 	 <section class="about_wj">
-	 	 	<div class="section_hd">
+	 	 	<div class="section_hd para3 pc">
 	 	 		<h1>
 	 	 			<picture>
-	 	 				<source media="(min-width :641px)" srcset="image/sp/sp_logo_about@2x.png">
-	 	 				<img src="image/sp/sp_logo_about.png" alt="">
+	 	 				<source media="(min-width :641px)" srcset="image/sp_logo_about@2x.png">
+	 	 				<img src="image/sp_logo_about.png" alt="">
 	 	 			</picture>
 	 	 		</h1>
 	 	 	</div><!-- /.section_hd -->
+	 	 	<section class="about_wj">
+	 	 		<div class="section_hd no_para">
+	 	 			<h1>
+	 	 				<picture>
+	 	 					<source media="(min-width :641px)" srcset="image/sp_logo_about@2x.png">
+	 	 					<img src="image/sp_logo_about.png" alt="">
+	 	 				</picture>
+	 	 			</h1>
+	 	 		</div><!-- /.section_hd -->
 	 	 	<div class="section_wrapper">
 	 	 		<p>WEEKEND JOURNEYは、その名の通り、“永遠の週末探しの「旅」気分を、いつでもどこでも家庭でも”味わえるビールを造りたいという思いで名づけられました。</p>
 	 	 		<p>最高においしいビールを味わえる場所、それは、太陽の日差しを浴びながらのビーチや、星空の下のキャンプファイヤーなど、開放感のあふれる『屋外』ではないでしょうか。WEEKEND JOURNEYは、心だけでもおもいっきり、週末、旅に出て、日常とはほんの少し違ったシチュエーションを楽しめる。恋人と、家族と、または一人で。そんな「おやすみ気分満載の気持ち」のそばにいつもあるブランドでありたいと願っています。ブランドロゴには、ホップのモチーフでビールをイメージしながらも、屋外での遊びを象徴する“山々”、“波”、“太陽”を印象的に配し、開放的なワクワク感を表現しています。</p>
