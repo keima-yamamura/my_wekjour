@@ -103,6 +103,7 @@
 		margin-bottom: 20px;
 		font-size: 20px;
 		font-weight: 200px;
+		line-height: 28px;
 	}
 	.weekend_journy_contents p:nth-child(5){
 		margin-bottom: 40px;
@@ -207,7 +208,7 @@
 	.product .section_wrapper p{
 		font-size: 20px;
 		margin-bottom: 40px;
-		line-height: 25px;
+		line-height: 28px;
 	}
 	.product .section_wrapper h3{
 		font-size: 3.03vw;
@@ -216,6 +217,9 @@
 	.product .osusume{
 		overflow: hidden;
 		margin-bottom: 50px;
+	}
+	.product .osusume p{
+		line-height: 28px;
 	}
 	.product .osusume p:first-child{
 		width: 38%;
@@ -227,8 +231,8 @@
 	}
 	.product .osusume p:nth-child(2){
 		float: left;
-	    width: 60%;
-	    margin-right: 2%;
+	  width: 60%;
+	  margin-right: 2%;
 	}
 
 
