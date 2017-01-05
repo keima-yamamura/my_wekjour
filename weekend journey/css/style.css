@@ -296,8 +296,8 @@
 	}
 	.about_wj .section_hd{
 		background-image: url(../image/bg_about@2x.png);
-		-webkit-background-size: cover;
-		background-size: cover;
+		-webkit-background-size: 100%;
+		background-size: 100%;
 		text-align: center;
 		color: #fff;
 		height: 200px;
