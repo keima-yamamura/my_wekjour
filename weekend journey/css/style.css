@@ -103,7 +103,7 @@
 		margin-bottom: 20px;
 		font-size: 20px;
 		font-weight: 200px;
-		line-height: 28px;
+		line-height: 32px;
 	}
 	.weekend_journy_contents p:nth-child(5){
 		margin-bottom: 40px;
@@ -208,7 +208,7 @@
 	.product .section_wrapper p{
 		font-size: 20px;
 		margin-bottom: 40px;
-		line-height: 28px;
+		line-height: 32px;
 	}
 	.product .section_wrapper h3{
 		font-size: 3.03vw;
@@ -219,7 +219,7 @@
 		margin-bottom: 50px;
 	}
 	.product .osusume p{
-		line-height: 28px;
+		line-height: 32px;
 	}
 	.product .osusume p:first-child{
 		width: 38%;
@@ -260,12 +260,12 @@
 	}
 	.brewmaster .suzuki_info{
 		overflow: hidden;
-		margin-bottom: 30px;
+		margin-bottom: 60px;
 	}
 	.brewmaster .suzuki_info p{
 		width: 67%;
 		margin-right: 6%;
-		line-height: 25px;
+		line-height: 32px;
 	}
 	.brewmaster .suzuki_info p:first-child{
 		float: right;
@@ -288,6 +288,7 @@
 	.brewmaster ul li span{
 		display: block;
 		float: left;
+		line-height: 38px;
 	}
 	.brewmaster ul li p{
 		float: left;
@@ -314,7 +315,7 @@
 	}
 	.about_wj p{
 		font-size: 20px;
-		line-height: 25px;
+		line-height: 32px;
 		margin-bottom: 40px;
 	}
 
@@ -441,7 +442,7 @@
 		margin-bottom: 7.61%;
 		font-size: calc(50% + 2.5vw);
 		font-weight: 100;
-		line-height: 30px;
+		line-height: 32px;
 	}
 	.weekend_journy .weekend_journy_wrapper p.hd{
 		font-size: calc(50% + 3.1vw);
