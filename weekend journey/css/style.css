@@ -24,7 +24,7 @@
 @media (-webkit-min-device-pixel-ratio: 2),
        (min-resolution: 2dppx) {
     .weekend_journy{
-    	background-image: url(../image/bg_main_02@2x.png)
+    background-image: url(../image/bg_main_02@2x.png)
 		}
 		.product .section_hd{
 		background-image: url(../image/bg_product@2x.png)
@@ -56,11 +56,11 @@
 	}
 	.hum_menu a span{
 		display: block;
-		width: 48px;
-		height: 2px;
+		width: 30px;
+		height: 3px;
 		background: #fff;
 		border-radius: 10px;
-		margin: 12px auto; 
+		margin: 6px auto;
 	}
 	.hum_menu a span:first-child{
 		margin-top: 0px;
@@ -75,12 +75,18 @@
 		padding-bottom: 40px;
 	}
 	.weekend_journy .sp{
-		display: none;
+		background: rgba(0,0,0,0.6);
+		font-size: 36px;
+		text-align: center;
+		text-shadow: none;
+		color: #fff;
+		padding: 20px 0px;
+		margin-bottom: 54px;
 	}
 	.weekend_journy > h1{
 		margin: 0;
 		text-align: center;
-		padding: 44px 0 150px 0;
+		padding: 44px 0 34px 0;
 	}
 	.weekend_journy h1 img{
 		width: 464px;
@@ -217,7 +223,7 @@
 		width: 80%;
 	}
 	.product .section_wrapper h2{
-		font-size: 3.03vw;
+		font-size: 40px;
 		padding: 40px 0;
 		margin-left: 8px;
 		font-weight: bold;
@@ -228,8 +234,9 @@
 		line-height: 32px;
 	}
 	.product .section_wrapper h3{
-		font-size: 3.03vw;
+		font-size: 40px;
 		margin-bottom: 20px;
+		font-weight: bold;
 	}
 	.product .osusume{
 		overflow: hidden;
@@ -479,8 +486,8 @@
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		text-align: center;
-		height: 68px;
-		line-height: 68px;
+    height: 48px;
+    line-height: 48px;
 		border: 1px solid #fff;
 	}
 	.weekend_journy .weekend_journy_wrapper ul li:nth-child(2){
@@ -489,7 +496,8 @@
 	}
 	.weekend_journy .weekend_journy_wrapper ul li:nth-child(2) a{
 		font-size: calc(70% + 0.5vw);
-		line-height: 22px;
+		line-height: 16px;
+		margin-top: -4px;
 	}
 	.weekend_journy .weekend_journy_wrapper ul li a{
 		text-decoration: none;
