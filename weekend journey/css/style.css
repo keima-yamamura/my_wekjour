@@ -20,10 +20,11 @@
 		font-weight: 400;
 	}
 /*---------------retina設定-----------------*/
-@media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 2dppx) {
     .weekend_journy{
     	background-image: url(../image/bg_main_02@2x.png)
-	}
+		}
 }
 	
 
@@ -54,8 +55,11 @@
 	.hum_menu a span:first-child{
 		margin-top: 0px;
 	}
+	body{
+		min-width: 700px;
+	}
 	.weekend_journy{
-		background-image: url(../image/bg_main_02@2x.png);
+		background-image: url(../image/bg_main_02.png);
 		-webkit-background-size:cover;
 		background-size: cover;
 		padding-bottom: 40px;
@@ -72,7 +76,7 @@
 		width: 464px;
 	}
 	.weekend_journy_wrapper{
-		background: rgba(0,0,0,0.3);
+		background: rgba(0,0,0,0.6);
 		background-image: url(../image/obj_beerbottle@2x.png);
 		background-repeat: no-repeat;
 		-webkit-background-size: 18.571429%;
@@ -162,7 +166,7 @@
 
 
 	.product .section_hd{
-		background-image: url(../image/bg_product@2x.png);
+		background-image: url(../image/bg_product.png);
 		-webkit-background-size: 100%;
 		background-size: 100%;
 		text-align: center;
@@ -202,8 +206,8 @@
 		width: 80%;
 	}
 	.product .section_wrapper h2{
-		font-size: 3.03vw;
-		padding: 40px 0;
+		font-size: calc(80% + 2vw);
+		padding: 4% 0;
 	}
 	.product .section_wrapper p{
 		font-size: 20px;
@@ -237,7 +241,7 @@
 
 
 	.brewmaster .section_hd{
-		background-image: url(../image/bg_brewmaster@2x.png);
+		background-image: url(../image/bg_brewmaster.png);
 		-webkit-background-size: 100%;
 		background-size: 100%;
 		text-align: center;
@@ -295,7 +299,7 @@
 		width: 95%;
 	}
 	.about_wj .section_hd{
-		background-image: url(../image/bg_about@2x.png);
+		background-image: url(../image/bg_about.png);
 		-webkit-background-size: 100%;
 		background-size: 100%;
 		text-align: center;
@@ -410,7 +414,7 @@
 		width: 80%;
 	}
 	.weekend_journy .sp{
-		background: rgba(0,0,0,0.3);
+		background: rgba(0,0,0,0.5);
 		text-align: center;
 		color: #fff;
 		font-size: calc(40% + 5.03vw);
@@ -419,7 +423,7 @@
 		margin-bottom: 40px;
 	}
 	.weekend_journy .weekend_journy_wrapper{
-		background: rgba(0,0,0,0.3) url(../image/sp_obj_beerbottle@2x.png) no-repeat  50% 4% / 25.5%;
+		background: rgba(0,0,0,0.5) url(../image/sp_obj_beerbottle@2x.png) no-repeat  50% 4% / 25.5%;
 	    color: #fff;
 	    width: 93.75%;
 	    margin: 0 auto;
@@ -524,7 +528,7 @@
 		margin-right: 5%;
 	}
 	.product .section_wrapper ul li p:nth-child(2){
-		line-height: 35px;
+		line-height: 200%;
 		width: 90%;
 	}
 	.product .section_wrapper ul li p img{
