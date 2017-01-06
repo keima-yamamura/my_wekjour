@@ -91,7 +91,7 @@
 		background-repeat: no-repeat;
 		-webkit-background-size: 18.571429%;
 		background-size: 18.571429%;
-		background-position: 5.1% 15.5%;
+		background-position: 5.1% 10.5%;
 		width: 87.5%;
 		max-width: 1120px;
 		margin: 0 auto;
@@ -103,13 +103,14 @@
 		margin: 0 0 0 23%;
 	}
 	.weekend_journy_contents h1{
-		padding: 40px 0;
+		padding: 40px 0 20px 0;
 	}
 	.weekend_journy_contents h1 span{
 		font-size: 24px;
 	}
 	.weekend_journy_contents .hd{
 		font-weight: bold;
+		line-height: 44px;
 		font-size: 30px;
 		margin-bottom: 24px;
 	}
@@ -156,7 +157,7 @@
 	    overflow: hidden;
 	    font-size: 16px;
 	    margin: 50px 10px 0px 50px;
-	    padding-bottom: 20px;
+	    padding-bottom: 50px;
 	    line-height: 24px;
 	}
 	.weekend_journy_wrapper dt{
@@ -218,6 +219,8 @@
 	.product .section_wrapper h2{
 		font-size: 3.03vw;
 		padding: 40px 0;
+		margin-left: 8px;
+		font-weight: bold;
 	}
 	.product .section_wrapper p{
 		font-size: 20px;
@@ -226,7 +229,7 @@
 	}
 	.product .section_wrapper h3{
 		font-size: 3.03vw;
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 	.product .osusume{
 		overflow: hidden;
@@ -271,6 +274,7 @@
 	.brewmaster .section_wrapper h2{
 		font-size: 36px;
 		padding: 40px 0;
+		font-weight: bold;
 	}
 	.brewmaster .suzuki_info{
 		overflow: hidden;
@@ -399,12 +403,11 @@
 	}
 	.hum_menu a span{
 		display: block;
-		width: 48px;
-		height: 2px;
+		width: 30px;
+		height: 3px;
 		background: #fff;
 		border-radius: 10px;
-		margin: 12px auto; 
-		box-shadow: 0px -2px 10px #000;
+		margin: 6px auto;
 	}
 	.hum_menu a span:first-child{
 		margin-top: 0px;
@@ -457,13 +460,13 @@
 		margin-bottom: 7.61%;
 		font-size: calc(50% + 2.5vw);
 		font-weight: 100;
-		line-height: 32px;
+		line-height: 28px;
 	}
 	.weekend_journy .weekend_journy_wrapper p.hd{
 		font-size: calc(50% + 3.1vw);
 		margin-bottom: 4.6%;
 		font-weight: bold;
-		line-height: 38px;
+		line-height: 36px;
 	}
 	.weekend_journy .weekend_journy_wrapper ul{
 		margin: 0 auto;
@@ -482,10 +485,11 @@
 	}
 	.weekend_journy .weekend_journy_wrapper ul li:nth-child(2){
 		margin-left: 5.5%;
+		padding-top: 10px;
 	}
 	.weekend_journy .weekend_journy_wrapper ul li:nth-child(2) a{
 		font-size: calc(70% + 0.5vw);
-		line-height: 32px;
+		line-height: 22px;
 	}
 	.weekend_journy .weekend_journy_wrapper ul li a{
 		text-decoration: none;
@@ -518,9 +522,10 @@
 		display: none;
 	}
 	.product .section_wrapper h2{
-		font-size: calc(50% + 3.8vw);
-		font-weight: 600;
-		padding: 24px 0px;
+    font-size: calc(50% + 3.8vw);
+    font-weight: bold;
+    padding: 24px 0px 16px;
+    line-height: 32px;
 	}
 	.product .section_wrapper p{
 		font-size: calc(50% + 2.5vw);
@@ -553,6 +558,7 @@
 	.product .section_wrapper .osusume p{
 		float: none;
 		text-align: center;
+		margin-bottom: 20px;
 	}
 	.product .section_wrapper .osusume p:last-child{
 		text-align: left;
@@ -575,8 +581,6 @@
 	.brewmaster .section_hd.pc{
 		display: none;
 	}
-	.brewmaster .section_hd h1{
-	}
 	.brewmaster .section_wrapper h2{
 		display: none;
 	}
@@ -584,6 +588,7 @@
 		display: block;
 		font-size: calc(50% + 3.8vw);
 		text-shadow: none;
+		margin-bottom: 16px;
 	}
 	.brewmaster .section_wrapper p{
 		font-size: calc(50% + 2.5vw);
