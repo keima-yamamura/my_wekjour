@@ -149,10 +149,15 @@
 	 </footer>
 	 <p class="copyright">© copyright 2016 Weekend-J Inc. All Rights Reserved.</p>
 </div><!--wrapper-->
-
-<script>
-　skrollr.init({
-　　forceHeight: false
+<script type="text/javascript">
+　var s = skrollr.init({
+　　edgeStrategy: 'set',
+　　easing: {
+　　　WTF: Math.random,
+　　　inverted: function(p) {
+　　　　return 1-p;
+　　　}
+　　}
 　});
 </script>
 </body>
