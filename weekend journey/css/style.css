@@ -37,10 +37,8 @@
 		}
 }
 	
-
-
-/*----------------pc-----------------------*/
-@media(min-width: 641px){
+/*----------------pc1280px_over-----------------------*/
+@media(min-width: 1280px){
 	.hum_menu{
 		position: absolute;
 		left: 50px;
@@ -145,10 +143,11 @@
 		color: #fff;
 		border: 2px solid #fff;
 		line-height: 52px;
-		font-size: calc(30% + 1.1vw);
+		font-size: 1.2em;
+		background: rgba(0,0,0,0.2);
 	}
 	.weekend_journy_contents ul li a:hover{
-		background: #fff;
+		background: rgba(255,255,255,0.8);
 		color: #000;
 		border: 2px solid #000;
 		transition: 0.3s;
@@ -377,6 +376,351 @@
 		color: #696660;
 	}
 }
+
+/*-------------pc_1280_under--------------------*/
+@media(min-width: 641px) and (max-width: 1279px){
+	body{
+		min-width: 700px;
+	}
+	.hum_menu{
+		position: absolute;
+		left: 50px;
+		top: 50px;
+	}
+	.hum_menu a{
+		background-color: transparent;
+		display: block;
+		width: 48px;
+		height: 30px;
+		padding-top: 5px;
+		box-sizing: border-box;
+	}
+	.hum_menu a span{
+		display: block;
+		width: 30px;
+		height: 3px;
+		background: #fff;
+		border-radius: 10px;
+		margin: 6px auto;
+	}
+	.hum_menu a span:first-child{
+		margin-top: 0px;
+	}
+	.weekend_journy{
+		background-image: url(../image/bg_main_02.png);
+		-webkit-background-size:cover;
+		background-size: cover;
+		padding-bottom: 40px;
+	}
+	.weekend_journy .sp{
+		background: rgba(0,0,0,0.6);
+		font-size: 36px;
+		text-align: center;
+		text-shadow: none;
+		color: #fff;
+		padding: 20px 0px;
+		margin-bottom: 54px;
+	}
+	.weekend_journy > h1{
+		margin: 0;
+		text-align: center;
+		padding: 44px 0 34px 0;
+	}
+	.weekend_journy h1 img{
+		width: 464px;
+	}
+	.weekend_journy_wrapper{
+		background: rgba(0,0,0,0.6);
+		background-image: url(../image/obj_beerbottle@2x.png);
+		background-repeat: no-repeat;
+		-webkit-background-size: 18.571429%;
+		background-size: 18.571429%;
+		background-position: 5.1% 10.5%;
+		width: 87.5%;
+		max-width: 1120px;
+		margin: 0 auto;
+		color: #fff;
+	}
+	.weekend_journy_contents{
+		width: 74.107143%;
+		max-width: 820px;
+		margin: 0 0 0 23%;
+	}
+	.weekend_journy_contents h1{
+		padding: 40px 0 20px 0;
+	}
+	.weekend_journy_contents h1 span{
+		font-size: 24px;
+	}
+	.weekend_journy_contents .hd{
+		font-weight: bold;
+		line-height: 44px;
+		font-size: 30px;
+		margin-bottom: 24px;
+	}
+	.weekend_journy_contents p:nth-child(odd){
+		margin-bottom: 20px;
+		font-size: 20px;
+		font-weight: 200px;
+		line-height: 32px;
+	}
+	.weekend_journy_contents p:nth-child(5){
+		margin-bottom: 40px;
+	}
+	.weekend_journy_contents ul{
+		padding: 0px;
+		overflow: hidden;
+		width: 100%;
+	}
+	.weekend_journy_contents ul li{
+		float: left;
+		width: 46.341463%;
+	}
+	.weekend_journy_contents ul li:first-child{
+		margin-right: 7.3%;
+	}
+	.weekend_journy_contents ul li a{
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		border: 2px solid #fff;
+		background: rgba(0,0,0,0.2);
+		line-height: 52px;
+		font-size: calc(30% + 1.2vw);
+	}
+	.weekend_journy_contents ul li a:hover{
+		background: rgba(255,255,255,0.8);
+		color: #000;
+		border: 2px solid #000;
+		transition: 0.3s;
+	}
+	.weekend_journy_contents ul li a br{
+		display: none;
+	}
+	.weekend_journy_wrapper dl{
+	    overflow: hidden;
+	    font-size: 16px;
+	    margin: 50px 10px 0px 50px;
+	    padding-bottom: 50px;
+	    line-height: 24px;
+	}
+	.weekend_journy_wrapper dt{
+		float: left;
+		width: 13.4%;
+		margin-bottom: 5px;
+	}
+	.weekend_journy_wrapper dd{
+		float: left;
+		width: 86.6%;
+		margin-bottom: 5px;
+	}
+	.section_wrapper{
+		width: 64.0625%;
+		margin: 0 auto;
+	}
+
+
+	.product .section_hd{
+		background-image: url(../image/bg_product.png);
+		-webkit-background-size: 100%;
+		background-size: 100%;
+		text-align: center;
+		color: #fff;
+		height: 200px;
+	}
+	.product .section_hd.no_para{
+		display: none;
+	}
+	.product h1{
+		margin: 0;
+		padding-top: 70px;
+	}
+	.product h1 span{
+		font-size: 12px;
+		text-align: center;
+	}
+	.product .section_wrapper ul{
+		font-size: 24px;
+		margin-bottom: 40px;
+	}
+	.product .section_wrapper ul li{
+		overflow: hidden;
+	}
+	.product .section_wrapper ul li p{
+		line-height: 40px;
+		float: left;
+	}
+	.product .section_wrapper ul li p:first-child{
+		width: 4%;
+	}
+	.product .section_wrapper ul li p img{
+		width: 40px;
+	}
+	.product .section_wrapper ul li p:nth-child(2){
+		padding-left: 20px;
+		width: 80%;
+	}
+	.product .section_wrapper h2{
+		font-size: 40px;
+		padding: 40px 0;
+		margin-left: 8px;
+		font-weight: bold;
+	}
+	.product .section_wrapper p{
+		font-size: 20px;
+		margin-bottom: 40px;
+		line-height: 32px;
+	}
+	.product .section_wrapper h3{
+		font-size: 40px;
+		margin-bottom: 20px;
+		font-weight: bold;
+	}
+	.product .osusume{
+		overflow: hidden;
+		margin-bottom: 50px;
+	}
+	.product .osusume p{
+		line-height: 32px;
+	}
+	.product .osusume p:first-child{
+		width: 38%;
+		float: right;
+		margin: 0;
+	}
+	.product .osusume p:first-child img{
+		width: 100%;
+	}
+	.product .osusume p:nth-child(2){
+		float: left;
+	  width: 60%;
+	  margin-right: 2%;
+	}
+
+
+	.brewmaster .section_hd{
+		background-image: url(../image/bg_brewmaster.png);
+		-webkit-background-size: 100%;
+		background-size: 100%;
+		text-align: center;
+		color: #fff;
+		height: 200px;
+	}
+	.brewmaster .section_hd.no_para{
+		display: none;
+	}
+	.brewmaster h1{
+		margin: 0;
+		padding-top: 70px;
+	}
+	.brewmaster .section_wrapper{
+		font-size: 20px;
+	}
+	.brewmaster .section_wrapper h2{
+		font-size: 36px;
+		padding: 40px 0;
+		font-weight: bold;
+	}
+	.brewmaster .suzuki_info{
+		overflow: hidden;
+		margin-bottom: 60px;
+	}
+	.brewmaster .suzuki_info p{
+		width: 67%;
+		margin-right: 6%;
+		line-height: 32px;
+	}
+	.brewmaster .suzuki_info p:first-child{
+		float: right;
+		width: 27%;
+		margin: 0;
+	}
+	.brewmaster .suzuki_info p img{
+		width: 100%;
+	}
+	.brewmaster .suzuki_info p.sp{
+		display: none;
+	}
+	.brewmaster ul{
+		margin: 0 auto 40px;
+	}
+	.brewmaster ul li{
+		margin-bottom: 10px;
+		overflow: hidden;
+	}
+	.brewmaster ul li span{
+		display: block;
+		float: left;
+		line-height: 38px;
+	}
+	.brewmaster ul li p{
+		float: left;
+		width: 95%;
+	}
+	.about_wj .section_hd{
+		background-image: url(../image/bg_about.png);
+		-webkit-background-size: 100%;
+		background-size: 100%;
+		text-align: center;
+		color: #fff;
+		height: 200px;
+		margin-bottom: 40px;
+	}
+	.about_wj .section_hd.no_para{
+		display: none;
+	}
+	.about_wj .section_hd h1{
+		margin: 0;
+		padding-top: 30px;
+	}
+	.about_wj .section_hd h1 img{
+		width: 250px;
+	}
+	.about_wj p{
+		font-size: 20px;
+		line-height: 32px;
+		margin-bottom: 40px;
+	}
+
+	footer{
+		width: 100%;
+		text-align: center;
+		background: #31312d;
+		height: 60px;
+		line-height: 60px;
+	}
+	footer ul{
+		margin: 0 auto;
+	}
+	footer ul li{
+		display: inline;
+		width: 200px;
+		color: #fff;
+	}
+	footer ul li a{
+		text-decoration: none;
+		color: #fff;
+	}
+	footer ul li a:after{
+		content: "|";
+		padding: 15px;
+		color: #696660;
+	}
+	footer ul li:last-child a:after{
+		content: none;
+	}
+	p.copyright{
+		margin: 0 auto;
+		height: 126px;
+		line-height: 126px;
+		background: #282824;
+		text-align: center;
+		color: #696660;
+	}
+}
+
+
 /*----------------sp-----------------------*/
 
 @media(max-width: 640px){
