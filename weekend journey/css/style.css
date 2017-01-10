@@ -24,15 +24,18 @@
 @media (-webkit-min-device-pixel-ratio: 2),
        (min-resolution: 2dppx) {
     .weekend_journy{
-    background-image: url(../image/bg_main_02@2x.png)
+    background-image: url(../image/bg_main_02@2x.png);
 		}
-		.product .section_hd{
-		background-image: url(../image/bg_product@2x.png)
+		.product .section_hd,
+		.product .section_hd.no_para_product{
+		background-image: url(../image/bg_product@2x.png);
 		}
-		.brewmaster .section_hd{
+		.brewmaster .section_hd,
+		.brewmaster .section_hd.no_para_brewmaster{
 		background-image: url(../image/bg_brewmaster@2x.png)
 		}
-		.about_wj .section_hd{
+		.about_wj .section_hd,
+		.about_wj .section_hd.no_para_about_wj{
 		background-image: url(../image/bg_about@2x.png)
 		}
 }
@@ -186,7 +189,9 @@
 		color: #fff;
 		height: 200px;
 	}
-	.product .section_hd.no_para{
+	.product .section_hd.no_para_product,
+	.brewmaster .section_hd.no_para_brewmaster,
+	.about_wj .section_hd.no_para_about_wj{
 		display: none;
 	}
 	.product h1{
@@ -529,7 +534,9 @@
 		color: #fff;
 		height: 200px;
 	}
-	.product .section_hd.no_para{
+	.product .section_hd.no_para_product,
+	.brewmaster .section_hd.no_para_brewmaster,
+	.about_wj .section_hd.no_para_about_wj{
 		display: none;
 	}
 	.product h1{
@@ -761,7 +768,7 @@
 		margin-top: 0px;
 	}
 	.weekend_journy{
-		background-image: url(../image/sp_bg_main_03.png);
+		background-image: url(../image/sp_bg_main_03@2x.png);
 		-webkit-background-size: cover;
 		background-size: cover;
 		padding-bottom: 20px;
@@ -880,7 +887,7 @@
 		font-size: calc(50% + 2.5vw);
 		font-weight: 200;
 		margin-bottom: 40px;
-		line-height: 32px;
+		line-height: 1.25em;
 	}
 	.product .section_wrapper ul li{
 		overflow: hidden;
@@ -942,7 +949,7 @@
 	.brewmaster .section_wrapper p{
 		font-size: calc(50% + 2.5vw);
 		margin-bottom: 30px;
-		line-height: 32px;
+		line-height: 1.25em;
 	}
 	.brewmaster .section_wrapper p:first-child{
 		text-align: center;
@@ -992,7 +999,7 @@
 	.about_wj p{
 		font-size: calc(50% + 2.5vw);
 		margin-bottom: 40px;
-		line-height: 32px;
+		line-height: 1.25em;
 	}
 	footer{
 		background: #31312d;
@@ -1016,6 +1023,7 @@
 		color: #696660;
 		line-height: 64px;
 		margin-bottom: 0;
+		font-size: 8px;
 	}
 }
 
