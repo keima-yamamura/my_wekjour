@@ -39,9 +39,9 @@
     <p class="hd">永遠の週末探しの「旅」気分を、いつでもどこでも家庭でも</p>
     <p>陽の光が注ぐビーチで、星空の下キャンプファイヤーを囲んで、旅先のホテルのベランダで、友人と、家族と、いい音楽を聴きながら美味しいビールを楽しむ。そんなシチュエーションにぴったりの、本気で遊びたい大人のための、最高のクラフトビールです。</p>
     <ul>
-      <li><a href="#">購入ページへ</a></li>
+      <li><a href="">購入ページへ</a></li>
       <li>
-        <a href="#">レストラン<br class="pc">
+        <a href="">レストラン<br class="pc">
           <span>・</span><span>販売店などのお客様</span></a>
       </li>
     </ul>
@@ -55,11 +55,11 @@
 </div><!--weekend_journy_wrapper-->
 </div><!--weekend_journy-->
 <section class="product">
-<div class="section_hd para1 pc" data-bottom-top="background-position:0px 0%;" data-top-bottom="background-position: 0px 100%;">
+<div class="section_hd para1 pc" data-bottom-top="background-position:0px 0%;" data-top-bottom="background-position: 0px 10%;">
   <h1>PRODUCT</h1>
   <p>(製品概要)</p>
 </div><!--section_hd_pc用-->
-<div class="section_hd no_para">
+<div class="section_hd no_para_product">
   <h1>PRODUCT</h1>
   <p>(製品概要)</p>
 </div><!--section_hd_sp用-->
@@ -88,11 +88,11 @@
 </section><!--product-->
 
 <section class="brewmaster">
-<div class="section_hd para2 pc" data-bottom-top="background-position:0px 0%;" data-top-bottom="background-position: 0px 100%;">
+<div class="section_hd para2 pc" data-bottom-top="background-position:0px 0%;" data-top-bottom="background-position: 0px 10%;">
 	<h1>BREWMASTER</h1>
 	<p>（醸造家）</p>
 </div><!-- /.section_hd -->
-<div class="section_hd no_para">
+<div class="section_hd no_para_brewmaster">
 	<h1>BREWMASTER</h1>
 	<p>（醸造家）</p>
 </div><!-- /.section_hd -->
@@ -117,7 +117,7 @@
 
 </section><!--brewmaster-->
 	 	 <section class="about_wj">
-	 	 	<div class="section_hd para3 pc" data-bottom-top="background-position:0px 0%;" data-top-bottom="background-position: 0px 100%;">
+	 	 	<div class="section_hd para3 pc" data-bottom-top="background-position:0px 0%;" data-top-bottom="background-position: 0px 10%;">
 	 	 		<h1>
 	 	 			<picture>
 	 	 				<source media="(min-width :641px)" srcset="image/sp_logo_about@2x.png">
@@ -126,7 +126,7 @@
 	 	 		</h1>
 	 	 	</div><!-- /.section_hd -->
 	 	 	<section class="about_wj">
-	 	 		<div class="section_hd no_para">
+	 	 		<div class="section_hd no_para_about_wj">
 	 	 			<h1>
 	 	 				<picture>
 	 	 					<source media="(min-width :641px)" srcset="image/sp_logo_about@2x.png">
@@ -149,13 +149,30 @@
 	 </footer>
 	 <p class="copyright">© copyright 2016 Weekend-J Inc. All Rights Reserved.</p>
 </div><!--wrapper-->
-
 <script>
-$(window).load(function() {
-	var s= skrollr.init({
-		　　forceHeight: false
-	});
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+//ここに書いた処理はスマホ閲覧時は無効となる
+var s= skrollr.init({
+	　　forceHeight: false,
+	smoothScrolling: false,
+	smoothScrollingDuration: 0
 });
+}
+
+
+$(window).on('load resize',function(){
+	var w = $(window).width();
+	var x = 641;
+	if (w <= x) {s
+		$('.wrapper').unbind();
+	}else{
+		var s= skrollr.init({
+			　　forceHeight: false,
+			smoothScrolling: false,
+			smoothScrollingDuration: 0
+		});
+	}
+})
 </script>
 </body>
 </html>
