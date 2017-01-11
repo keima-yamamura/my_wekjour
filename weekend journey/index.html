@@ -150,6 +150,16 @@
 	 <p class="copyright">© copyright 2016 Weekend-J Inc. All Rights Reserved.</p>
 </div><!--wrapper-->
 <script>
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+//ここに書いた処理はスマホ閲覧時は無効となる
+var s= skrollr.init({
+	　　forceHeight: false,
+	smoothScrolling: false,
+	smoothScrollingDuration: 0
+});
+}
+
+
 $(window).on('load resize',function(){
 	var w = $(window).width();
 	var x = 641;
