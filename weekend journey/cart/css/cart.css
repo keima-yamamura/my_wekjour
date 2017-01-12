@@ -19,8 +19,14 @@
               SP 640pxまで
 ----------------------------------------*/
 .pc { display: none; }
+.js_bgmaximage { 
+	position: fixed;
+	z-index: 1;
+	overflow: hidden;
+} 
 .wrapper { background: #201c15; }
 .page_header {
+	z-index: 10;
 	position: absolute;
 	width: 100%;
 	top: 0;
@@ -61,8 +67,11 @@
 
 /*-----------------メインStart-----------------*/
 .webcart_wrapper {
-	padding: 0 3.125% 80px;
-	background-image: url(../../image/sp_bg_main_03.png);
+	position: relative;
+	z-index: 5;
+	padding: 0 3.125% 13%;
+	background-image: url(../../image/sp_bg_main_03@2x.png);
+	background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -77,14 +86,13 @@
 	}
 /*-----------------CART-----------------*/
 .webcart_main {
-	margin: 0 auto 80px;
+	margin: 0 auto 21%;
 	padding: 0 5%;
 	background: rgba(0,0,0,0.6);
 	color: #fff;
 }
 	.webcart_main h1 {
-		padding-top: 24px;
-		font-size: 60px;
+		padding-top: 4.3%;
 		font-size: calc(50% + 9vw);
 	}
 		.webcart_main h1 span {
@@ -94,12 +102,13 @@
 
 .item_list {}
 	.item_list li {
-		padding: 32px 0;
+		padding: 6.1% 0;
 		border-bottom: solid 1px rgba(255,255,255,0.4);
 		overflow: hidden;
 	}
 		.item_list li img {
 			width: 15%;
+			max-width: 88px;
 			margin-right: 6.875%;
 			float: left;
 		}
@@ -127,7 +136,7 @@
 				}
 /*-----------------CARTのボタン-----------------*/
 .item_checkout {
-	padding: 40px 0 44px;
+	padding: 7% 0;
 }
 .btn_del {
 	display: block;
@@ -135,6 +144,7 @@
 	margin-top: 2.5vw;
 	padding: 6px 0 4px;
 	border: solid 2px #d3d3d3;
+	background-color: rgba(0,0,0,0.4);
 	color: #fff;
 	text-align: center;
 	font-size: calc(50% + 2.4vw);
@@ -146,6 +156,7 @@
 	margin: 0 auto;
 	padding: 16px 0 12px;
 	border: solid 2px #d3d3d3;
+	background-color: rgba(0,0,0,0.2);
 	color: #fff;
 	text-align: center;
 	font-size: calc(80% + 3vw);
@@ -158,19 +169,18 @@
 	color: #fff;
 }
 	.about_wholesale h1 {
-		margin-bottom: 40px;
-		padding-top: 24px;
+		padding: 8.2vw 0;
 		font-size: calc(50% + 5vw);
 	}
 	.about_wholesale .get_text {
-		margin-bottom: 44px;
+		margin-bottom: 10vw;
 		line-height: 1.5;
 		font-size: calc(55% + 2.2vw);
 	}
 	.about_wholesale img {
 		display: block;
 		width: 40%;
-		margin: 0 auto 40px;
+		margin: 0 auto 10.5vw;
 	}
 .btn_link {
 	display: block;
@@ -183,7 +193,17 @@
 	font-size: calc(80% + 1.8vw);
 	text-decoration: none;
 }
-/*-----------------リンク-----------------*/
+/*ボタン押し*/
+.webcart_main a.active,	
+.webcart_main a:hover,
+.webcart_main a:active,
+.btn_link:hover {
+	border: solid 2px #fff;
+	background-color: rgba(255,255,255,0.8);
+	color: #000;
+	text-shadow: none;
+}
+/*-----------------ページ下部リンク-----------------*/
 .links_contents { 
 	padding: 0 3.125% 40px;
 }
@@ -192,7 +212,7 @@
 		background-size: cover;
 		text-align: center;
 		color: #fff;
-		margin-bottom: 40px;
+		margin-bottom: 6%;
 	}
 		.links_contents li.product {
 			background-image: url(../../image/sp_bg_product.png);
@@ -227,39 +247,159 @@
 			.links_contents li.about_wj a {
 				padding: 1% 0;
 			}
-
-
-
 /*---------------footer-----------------*/
-footer{
-		background: #31312d;
-	}
-	footer ul{
-		padding: 0 5%;
-	}
-		footer ul li{
-			font-size: calc(50% + 2.5vw);
+@media(max-width: 640px){
+	footer{
+			background: #31312d;
 		}
-			footer ul li a{
-				text-decoration: none;
-				color: #fff;
-				display: block;
-				padding: 7.3% 0;
+		footer ul{
+			padding: 0 5%;
+		}
+			footer ul li{
+				font-size: calc(50% + 2.5vw);
 			}
-p.copyright{
-	background: #282824;
-	text-align: center;
-	color: #696660;
-	line-height: 64px;
-	margin-bottom: 0;
-	font-size: 8px;
+				footer ul li a{
+					text-decoration: none;
+					color: #fff;
+					display: block;
+					padding: 7.3% 0;
+				}
+	p.copyright{
+		background: #282824;
+		text-align: center;
+		color: #696660;
+		line-height: 64px;
+		margin-bottom: 0;
+		font-size: 8px;
+	}
 }
+/*----------------------------------------
+              PC 641px-
+----------------------------------------*/
+@media(min-width: 641px) {
+	.sp {
+		display: none;
+	}
+	.text_space {
+		display: inline;
+	}
+	/*---cart---*/
+	.webcart_main h1 {
+		padding-top: 36px;
+		font-size: 60px;
+	}
+		.webcart_main h1 span {
+			font-size: 24px;
+			padding-left: 0.5em;
+		}
+	.item_list li .check dl {
+		float: left;
+		font-size: 16px;
+	}
+	.btn_del {
+		float: right;
+		margin-top: 0;
+		font-size: 16px;
+	}
+	.btn_link {
+		width: 376px;
+		font-size: 20px;
+	}
+	/*---卸売---*/
+	.about_wholesale h1 {
+		padding: 50px 0 40px;
+		font-size: 40px;
+	}
+	.about_wholesale .get_text {
+		margin-bottom: 44px;
+		font-size: 24px;
+	}
+	.about_wholesale img {
+		width: 220px;
+		margin: 0 auto 64px;
+	}
+
+	/*---ページ下部リンク---*/
+	.links_contents {
+		padding: 0 1.875% 64px;
+		overflow: hidden;
+	}
+		.links_contents li {
+			width: 49.2%;
+			margin-bottom: 24px;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+		}
+		.links_contents li:nth-child(odd) {
+			float: left;
+		}
+		.links_contents li:nth-child(even) {
+			float: right;
+		}
+		.links_contents li.product {
+			background-image: url(../../image/sp_bg_product.png);
+		}
+		.links_contents li.brewmaster {
+			background-image: url(../../image/sp_bg_brewmaster.png);
+		}
+		.links_contents li.about_wj {
+			background-image: url(../../image/sp_bg_about.png);
+			background-position: 0 80%;
+		}
+			.links_contents li .en {
+				font-size: 60px;
+			}
+			.links_contents li .ja {
+				font-size: 24px;
+			}
+			.links_contents li.about_wj img {
+				width: 202px;
+			}
+
+	/*---footer---*/
+	footer {
+		width: 100%;
+		text-align: center;
+		background: #31312d;
+		height: 60px;
+		line-height: 60px;
+	}
+		footer ul li {
+			display: inline;
+			width: 200px;
+			color: #fff;
+		}
+			footer ul li a {
+				color: #fff;
+				text-decoration: none;
+			}
+				footer ul li a:after {
+					content: "|";
+					padding: 15px;
+					color: #696660;
+				}
+				footer ul li:last-child a:after{
+					content: none;
+				}
+	p.copyright {
+		margin: 0 auto;
+		height: 126px;
+		line-height: 126px;
+		background: #282824;
+		text-align: center;
+		color: #696660;
+	}
+}
+/*----------------------------------------
+              PC 640px-1279px
+----------------------------------------*/
+@media(min-width: 641px) and (max-width: 1279px){
+
+	
 
 
 
-
-
-
+}
 /*---------------retina設定-----------------*/
 @media (-webkit-min-device-pixel-ratio: 2),
        (min-resolution: 2dppx) {
