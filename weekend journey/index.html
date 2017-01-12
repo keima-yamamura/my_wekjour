@@ -23,6 +23,8 @@
     <span></span>
   </a>
 </div><!--hum_menu-->	 
+<div class="wj_bg"></div>
+<div class="wj_bg"></div>
 <div class="weekend_journy">
   <h1>
     <picture>
@@ -55,7 +57,7 @@
 </div><!--weekend_journy_wrapper-->
 </div><!--weekend_journy-->
 <section class="product">
-<div class="section_hd para1 pc" data-bottom-top="background-position:0px 0%;" data-top-bottom="background-position: 0px 10%;">
+<div class="section_hd para1 pc" data-bottom-top="background-position:0px 0%;" data-top-bottom="background-position: 0px 50%;">
   <h1>PRODUCT</h1>
   <p>(製品概要)</p>
 </div><!--section_hd_pc用-->
@@ -79,7 +81,7 @@
     <p>
       <picture>
         <source media="(min-width :641px)" srcset="image/img_howtodrink.png">
-        <img src="image/sp_img_howtodrink.png" alt="ビール">
+        <img src="image/sp_img_howtodrink@2x.png" alt="ビール">
       </picture>
     </p>
 		<p>オレンジビールやコリアンダーのスパイスが加わっているため、爽やかな香りを楽しめるのがWeekendJourneyの特徴です。その特徴をより楽しんでいただくためにワイングラスでお飲みいただくスタイルを推奨しています。</p>
@@ -88,7 +90,7 @@
 </section><!--product-->
 
 <section class="brewmaster">
-<div class="section_hd para2 pc" data-bottom-top="background-position:0px 0%;" data-top-bottom="background-position: 0px 10%;">
+<div class="section_hd para2 pc" data-bottom-top="background-position:0px 0%;" data-top-bottom="background-position: 0px 50%;">
 	<h1>BREWMASTER</h1>
 	<p>（醸造家）</p>
 </div><!-- /.section_hd -->
@@ -102,7 +104,7 @@
 		<p>
 			<picture>
 				<source media="(min-width :641px)" srcset="image/img_shinyasuzuki.png">
-				<img src="image/sp_img_shinyasuzuki.png" alt="鈴木真也">
+				<img src="image/sp_img_shinyasuzuki@2x.png" alt="鈴木真也">
 			</picture>
 		</p>
 		<p class="sp name">鈴木真也</p>
@@ -117,7 +119,7 @@
 
 </section><!--brewmaster-->
 	 	 <section class="about_wj">
-	 	 	<div class="section_hd para3 pc" data-bottom-top="background-position:0px 0%;" data-top-bottom="background-position: 0px 10%;">
+	 	 	<div class="section_hd para3 pc" data-bottom-top="background-position:0px 0%;" data-top-bottom="background-position: 0px 50%;">
 	 	 		<h1>
 	 	 			<picture>
 	 	 				<source media="(min-width :641px)" srcset="image/sp_logo_about@2x.png">
@@ -130,7 +132,7 @@
 	 	 			<h1>
 	 	 				<picture>
 	 	 					<source media="(min-width :641px)" srcset="image/sp_logo_about@2x.png">
-	 	 					<img src="image/sp_logo_about.png" alt="weekend_journy">
+	 	 					<img src="image/sp_logo_about@2x.png" alt="weekend_journy">
 	 	 				</picture>
 	 	 			</h1>
 	 	 		</div><!-- /.section_hd -->
@@ -150,7 +152,93 @@
 	 <p class="copyright">© copyright 2016 Weekend-J Inc. All Rights Reserved.</p>
 </div><!--wrapper-->
 <script>
+
+//wj_bg
+      var width_src = $('.weekend_journy').css('width');
+      var height_src =$('.weekend_journy').css('height');
+
+      $('.wj_bg').css('background','red');
+      $('.wj_bg').css('z-index','1');
+      $('.wj_bg').css('top','0');
+$(window).resize(function(){
+    var w = $('.weekend_journy').css('width');
+    var h = $('.weekend_journy').css('height');
+    var pb = $('.weekend_journy').css('padding-bottom');
+
+      var rs_width_src = $('.wj_bg').css('width',function(){
+        return w;
+      });
+      var rs_height_src = $('.wj_bg').css('height',function(){
+        return h + pb;
+      })
+      // $('.wj_bg').css('z-index','-1');
+  });
+
+
+
+</script>
+<!-- <script>
+  var bg=["image/bg_main_01@2x.png",
+          "image/bg_main_03@2x.png",
+          "image/bg_main_02@2x.png"];
+  var Transition = 1000;
+
+  $('.wj_bg').css('background-image','url('+bg[bg.length - 1]+')');
+  window.setInterval(
+    function() {
+      img=bg.shift();
+      bg.push(img);
+      
+      var $Backgrounds = $('.wj_bg');
+      $Backgrounds.eq(1).hide(0).css({
+        'background-image': 'url('+img+')'
+      }).fadeIn(Transition * .9);
+      
+      $Backgrounds.eq(0).show(0).fadeOut(Transition, function(){
+        $(this).show(0).css({
+          'background-image': 'url('+img+')'
+        });
+        $Backgrounds.eq(1).hide(0);
+      });
+    }, 2000
+  );
+</script> -->
+  
+
+<script>
+$(window).ready(function(){
+var images = ['image/bg_main_01@2x.png','image/bg_main_03@2x.png','bg_main_02@2x.png'];
+var i = 0;
+setInterval(function(){
+
+    $('.weekend_journy').css('background-image', function() {
+        if (i >= images.length-1) {
+            i=0;
+        }
+        return 'url(' + images[i++] + ')';      
+    });
+}, 3000);
+});
+</script>
+
+<!-- <script>
+
+$(function() {
+var i = 1;
+setInterval(function() {
+if(i > 3) i = 1;
+$('.weekend_journy').css('background-image','url(../image/../image/bg_main_0 + i +.png)');
+i++;
+}, 1000
+);
+});
+
+</script> -->
+<script>
 if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+
+    console.log(height_src);
+    console.log(width_src);
 //ここに書いた処理はスマホ閲覧時は無効となる
 var s= skrollr.init({
 	　　forceHeight: false,
