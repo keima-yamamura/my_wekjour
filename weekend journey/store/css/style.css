@@ -76,43 +76,95 @@
 		background: #000;
 		overflow: hidden;
 		position: relative;
-		margin-bottom: 20px;
+	}
+	.wrapper header .header_inner{
+		width: 87.5%;
+		max-width: 1120px;
+		margin: 0 auto;
+		position: relative;
 	}
 	.wrapper header .cart_box{
 		position: absolute;
-		right: 12%;
 		top: 10px;
+		right: 0;
 		z-index: 20;
 		background: #fff;
 	}
-	.wrapper header  h1{
-		margin: 0 auto;
+	.wrapper header h1{
 		color: #fff;
 		text-align: center;
 	}
 	.weekend_journy{
-		background-image: url(../image/bg_main_02.png);
-		-webkit-background-size:cover;
-		background-size: cover;
 		padding-bottom: 40px;
-		margin-bottom: 60px;
 	}
 	.weekend_journy_wrapper{
 		background: rgba(0,0,0,0.6);
-		background-image: url(../image/obj_beerbottle@2x.png);
-		background-repeat: no-repeat;
-		-webkit-background-size: 18.571429%;
-		background-size: 18.571429%;
-		background-position: 5.1% 10.5%;
 		width: 87.5%;
 		max-width: 1120px;
 		margin: 0 auto;
 		color: #fff;
 	}
-
+	.weekend_journy_contents{
+		margin-top: 20px;
+		padding:  40px 0px;
+	}
+	.weekend_journy_contents h1{
+		padding-left: 5.5%;
+	}
 	.weekend_journy_contents h1 span{
 		font-size: 24px;
 	}
+	.weekend_journy_wrapper dl{
+	    overflow: hidden;
+	    font-size: 16px;
+	    margin: 24px 10px 0px 0px;
+	    padding-bottom: 50px;
+	    padding-left: 5.5%;
+	    line-height: 24px;
+	}
+	.weekend_journy_wrapper dt{
+		float: left;
+		width: 13.4%;
+		margin-bottom: 5px;
+	}
+	.weekend_journy_wrapper dd{
+		float: left;
+		width: 86.6%;
+		margin-bottom: 5px;
+	}
+	.weekend_journy_wrapper .product_box{
+		overflow: hidden;
+		padding: 0 13.392857%;
+	}
+	.weekend_journy_wrapper .product_box div{
+		height: 500px;
+		background: #333
+		width: 33.928571%;
+		text-align: center;
+	}
+	.weekend_journy_wrapper .product_box div .text{
+		margin-bottom: 32px;
+	}
+	.weekend_journy_wrapper .product_box div .add_cart{
+		border: 2px solid #fff;
+		box-sizing: border-box;
+	}
+	.weekend_journy_wrapper .product_box div .add_cart a{
+		display: block;
+		padding: 7.5% 0;
+		text-decoration: none;
+		color: #fff;
+	}
+
+
+
+
+
+
+
+
+
+
 
 	.order{
 
@@ -126,192 +178,16 @@
 	}
 
 
-	.weekend_journy_wrapper dl{
-	    overflow: hidden;
-	    font-size: 16px;
-	    margin: 50px 10px 0px 50px;
-	    padding-bottom: 50px;
-	    line-height: 24px;
-	}
-	.weekend_journy_wrapper dt{
-		float: left;
-		width: 13.4%;
-		margin-bottom: 5px;
-	}
-	.weekend_journy_wrapper dd{
-		float: left;
-		width: 86.6%;
-		margin-bottom: 5px;
-	}
-	.section_wrapper{
-		width: 64.0625%;
-		margin: 0 auto;
-	}
 
 
-	.product .section_hd{
-		background-image: url(../image/bg_product.png);
-		-webkit-background-size: 100%;
-		background-size: 100%;
-		text-align: center;
-		color: #fff;
-		height: 200px;
-	}
-	.product .section_hd.no_para_product,
-	.brewmaster .section_hd.no_para_brewmaster,
-	.about_wj .section_hd.no_para_about_wj{
-		display: none;
-	}
-	.product h1{
-		margin: 0;
-		padding-top: 70px;
-	}
-	.product h1 span{
-		font-size: 12px;
-		text-align: center;
-	}
-	.product .section_wrapper ul{
-		font-size: 24px;
-		margin-bottom: 40px;
-	}
-	.product .section_wrapper ul li{
-		overflow: hidden;
-	}
-	.product .section_wrapper ul li p{
-		line-height: 40px;
-		float: left;
-	}
-	.product .section_wrapper ul li p:first-child{
-		width: 4%;
-	}
-	.product .section_wrapper ul li p img{
-		width: 40px;
-	}
-	.product .section_wrapper ul li p:nth-child(2){
-		padding-left: 20px;
-		width: 80%;
-	}
-	.product .section_wrapper h2{
-		font-size: 40px;
-		padding: 40px 0;
-		margin-left: 8px;
-		font-weight: bold;
-	}
-	.product .section_wrapper p{
-		font-size: 20px;
-		margin-bottom: 40px;
-		line-height: 32px;
-	}
-	.product .section_wrapper h3{
-		font-size: 40px;
-		margin-bottom: 20px;
-		font-weight: bold;
-	}
-	.product .osusume{
-		overflow: hidden;
-		margin-bottom: 50px;
-	}
-	.product .osusume p{
-		line-height: 32px;
-	}
-	.product .osusume p:first-child{
-		width: 38%;
-		float: right;
-		margin: 0;
-	}
-	.product .osusume p:first-child img{
-		width: 100%;
-	}
-	.product .osusume p:nth-child(2){
-		float: left;
-	  width: 60%;
-	  margin-right: 2%;
-	}
 
 
-	.brewmaster .section_hd{
-		background-image: url(../image/bg_brewmaster.png);
-		-webkit-background-size: 100%;
-		background-size: 100%;
-		text-align: center;
-		color: #fff;
-		height: 200px;
-	}
-	.brewmaster .section_hd.no_para{
-		display: none;
-	}
-	.brewmaster h1{
-		margin: 0;
-		padding-top: 70px;
-	}
-	.brewmaster .section_wrapper{
-		font-size: 20px;
-	}
-	.brewmaster .section_wrapper h2{
-		font-size: 36px;
-		padding: 40px 0;
-		font-weight: bold;
-	}
-	.brewmaster .suzuki_info{
-		overflow: hidden;
-		margin-bottom: 60px;
-	}
-	.brewmaster .suzuki_info p{
-		width: 67%;
-		margin-right: 6%;
-		line-height: 32px;
-	}
-	.brewmaster .suzuki_info p:first-child{
-		float: right;
-		width: 27%;
-		margin: 0;
-	}
-	.brewmaster .suzuki_info p img{
-		width: 100%;
-	}
-	.brewmaster .suzuki_info p.sp{
-		display: none;
-	}
-	.brewmaster ul{
-		margin: 0 auto 40px;
-	}
-	.brewmaster ul li{
-		margin-bottom: 10px;
-		overflow: hidden;
-	}
-	.brewmaster ul li span{
-		display: block;
-		float: left;
-		line-height: 38px;
-	}
-	.brewmaster ul li p{
-		float: left;
-		width: 95%;
-	}
-	.about_wj .section_hd{
-		background-image: url(../image/bg_about.png);
-		-webkit-background-size: 100%;
-		background-size: 100%;
-		text-align: center;
-		color: #fff;
-		height: 200px;
-		margin-bottom: 40px;
-	}
-	.about_wj .section_hd.no_para{
-		display: none;
-	}
-	.about_wj .section_hd h1{
-		margin: 0;
-		padding-top: 30px;
-	}
-	.about_wj .section_hd h1 img{
-		width: 250px;
-	}
-	.about_wj p{
-		font-size: 20px;
-		line-height: 32px;
-		margin-bottom: 40px;
-	}
+
+
+
+
+
+
 
 	footer{
 		width: 100%;
