@@ -303,6 +303,7 @@
         this.$el.before(this.$bg);
         this.$el.css('background', 'none');
       }
+      this.$bg.css('background-size', 'cover');
     },
 
     /**
