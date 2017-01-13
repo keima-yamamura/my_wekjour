@@ -19,7 +19,8 @@ $(function(){
   $('.wj_bg').css('width', function(){return width_src});
   $('.wj_bg').css('height', function(){return height_src});
   $('.wj_bg').css('position', 'absolute');
-  $('.wj_bg').css('background', 'cover');
+  $('.wj_bg').css('z-index','-1');
+
 });
 
  
@@ -30,7 +31,9 @@ $(window).resize(function(){
   $('.wj_bg').css('width', function(){return width_src});
   $('.wj_bg').css('height', function(){return height_src});
   $('.wj_bg').css('position', 'absolute');
-  $('.wj_bg').css('background', 'cover');
+  $('.wj_bg').css('z-index','-1');
+
+
 
 });
 
