@@ -769,7 +769,7 @@
 		margin-top: 0px;
 	}
 	.weekend_journy{
-		background-image: url(../image/sp_bg_main_03@2x.png);
+		/*background-image: url(../image/sp_bg_main_03@2x.png);*/
 		-webkit-background-size: cover;
 		background-size: cover;
 		padding-bottom: 20px;
