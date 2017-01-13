@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <script src="https://use.typekit.net/abm2tzv.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+  <script src="jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+  $(function(){
+    $('.js_bgmaximage').maximage();
+  });
+  </script>
+  <meta charset="UTF-8">
+  <title>CART | WEBSTORE | WEEKEND_JOURNEY</title>
+  <meta content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="webcart_wrapper js_bgmaximage">
+  <img class="sp" src="../image/sp_bg_main_03@2x.png" alt="" origwidth="640" origheight="1738" ratio="2" style="display: none;">
+    <header class="page_header">
+      <div class="inner">
+        <div class="hum_menu">
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div><!--hum_menu-->
+        <h1><span class="sp">WEBSTORE</span><span class="pc">WEEKEND JOURNEY WEB STORE</span></h1>
+        <div class="pc cart_preview">
+          <a href="#" class="btn_submit">CHECKOUT</a>
+          <span class="count_items">2</span>
+        </div>
+      </div>
+    </header><!--page_header-->
+    <h1 class="site_name">
+      <picture>
+        <source media="(min-width :641px)" srcset="../image/logo.png 1x, ../image/logo@2x.png 2x">
+        <img src="../image/logo@2x.png">
+      </picture>
+    </h1>
+    <div class="section_wrapper">
+      <section class="webcart_main">
+        <h1>CART<span>買い物かご</span></h1>
+        <ul class="item_list">
+          <li class="item_foreach">
+            <picture>
+              <source media="(min-width :641px)" srcset="image/shop_item01.png">
+              <img src="image/shop_item01.png">
+            </picture>
+            <div class="check">
+              <dl>
+                <dt>品名</dt>
+                <dd>WEEKEND JOURNEY<span class="sp"><br></span> 6PACK</dd>
+                <dt>価格</dt>
+                <dd>550円（税別）</dd>
+                <dt>数量</dt>
+                <dd>3</dd>
+              </dl>
+              <a href="#" class="btn_del">削除</a>
+            </div><!--check-->
+          </li><!--item_foreach-->
+          <li class="item_foreach">
+            <picture>
+              <source media="(min-width :641px)" srcset="image/shop_item01.png">
+              <img src="image/shop_item01.png">
+            </picture>
+            <div class="check">
+              <dl>
+                <dt>品名</dt>
+                <dd>WEEKEND JOURNEY<span class="sp"><br></span> 6PACK</dd>
+                <dt>価格</dt>
+                <dd>550円（税別）</dd>
+                <dt>数量</dt>
+                <dd>3</dd>
+              </dl>
+              <a href="#" class="btn_del">削除</a>
+            </div><!--check-->
+          </li><!--item_foreach-->
+        </ul><!--item_list-->
+        <div class="item_checkout">
+          <a href="#" class="btn_submit">CHECKOUT</a>
+        </div>
+      </section><!--webcart_main-->
+
+      <section class="about_wholesale">
+        <h1>卸のご注文の方</h1>
+        <p class="get_text">サンプルテキストサンプルテキストサンプルテキストサンプルテキスト<br>お問い合わせください。</p>
+        <picture>
+          <source media="(min-width :641px)" srcset="image/shop_item_wholesale.png">
+          <img src="image/shop_item_wholesale.png"> 
+        </picture>
+        <a href="#" class="btn_link">購入ページへ</a>
+      </section><!--about_wholesale-->
+    </div><!--section_wrapper-->
+  </div><!--webcart_wrapper-->
+
+  <ul class="links_contents">
+    <li class="product"><a href="#">
+      <p class="en">PRODUCT</p>
+      <p class="ja">(製品概要)</p>
+    </a></li>
+    <li class="brewmaster"><a href="#">
+      <p class="en">BREWMASTER</p>
+      <p class="ja">（醸造家）</p>
+    </a></li>
+    <li class="about_wj"><a href="#">
+      <picture>
+        <source media="(min-width :641px)" srcset="../image/sp_logo_about@2x.png">
+        <img src="../image/sp_logo_about.png" alt="weekend_journy">
+      </picture>
+    </a></li>
+  </ul><!--links_contents-->
+
+  <footer>
+    <ul>
+      <li><a href="#">特定商取引法について</a></li>
+      <li><a href="#">プライバシーポリシー</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+   </footer>
+   <p class="copyright">© copyright 2016 Weekend-J Inc. All Rights Reserved.</p>
+</div><!--wrapper-->
+
+<script>
+/*$(window).on('load resize',function(){
+  var h = $('.webcart_wrapper').height() - 80;
+  console.log('コンテンツ本体：' + h);
+  $('.bg_webcart_wrapper').css('height',h + 'px');
+})*/
+</script>
+</body>
+</html>
