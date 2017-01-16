@@ -267,9 +267,10 @@
 .links_contents{
 	background: #201c15;
 	overflow: hidden;
-	padding: 0 1.875%;
+	padding: 0 1.875% 67px;
 	max-width: 1232px;
 	margin: 0 auto;
+
 }
 .links_contents li {
 	text-align: center;
