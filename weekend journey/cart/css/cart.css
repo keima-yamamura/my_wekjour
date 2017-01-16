@@ -22,14 +22,9 @@
 .cart_preview { 
 	display: none;
 }
-.js_bgmaximage { 
-	position: fixed;
-	z-index: 1;
-	overflow: hidden;
-} 
 .wrapper { background: #201c15; }
 .page_header {
-	z-index: 10;
+	z-index: 100;
 	position: absolute;
 	width: 100%;
 	top: 0;
@@ -70,13 +65,24 @@
 /*-----------------メインStart-----------------*/
 .webcart_wrapper {
 	position: relative;
-	z-index: 5;
-	padding-bottom: 13%;
+	padding-bottom: 40px;
 	background-image: url(../../image/sp_bg_main_03@2x.png);
 	background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
+	.page_bgfadeout {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 88vw;
+		left: 0;
+		bottom: 0;
+		background: -moz-linear-gradient(top, rgba(0,0,10,0) 0%, rgba(32,28,21,1) 95%);
+		background: -webkit-linear-gradient(top, rgba(0,0,10,0) 0%,rgba(32,28,21,1) 95%);
+		background: linear-gradient(to bottom, rgba(0,0,10,0) 0%,rgba(32,28,21,1) 95%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000000a', endColorstr='#201c15',GradientType=0 );
+	}
 .site_name {
 	text-align: center;
     padding: 108px 0 20px;
@@ -88,13 +94,15 @@
 		max-width: 350px;
 	}
 .section_wrapper {
-	width: 93.75%;
+	position: relative;
+	z-index: 10;
+	width: 87.5%;
 	max-width: 1120px;
 	margin: 0 auto;
 }
 /*-----------------CART-----------------*/
 .webcart_main {
-	margin: 0 auto 21%;
+	margin: 0 auto 40px;
 	padding: 0 5%;
 	background: rgba(0,0,0,0.6);
 	color: #fff;
@@ -115,20 +123,20 @@
 		overflow: hidden;
 	}
 		.item_list li img {
-			width: 15%;
+			width: 16.5%;
 			max-width: 88px;
-			margin-right: 6.875%;
+			margin-right: 3.5%;
 			float: left;
 		}
 		.item_list li .check {
 			display: table;
-			width: 78.125%;
+			width: 80%;
 			overflow: hidden;
 			float: left;
 		}
 			.item_list li .check dl {
 				overflow: hidden;
-				font-size: calc(50% + 2.1vw);
+				font-size: calc(50% + 1.9vw);
 			}
 				.item_list li .check dl dt {
 					clear: both;
@@ -144,12 +152,11 @@
 				}
 /*-----------------CARTのボタン-----------------*/
 .item_checkout {
-	padding: 7% 0;
+	padding: 6.5% 0;
 }
 .webcart_main .btn_del {
 	display: block;
 	width: 4em;
-	margin-top: 2.5vw;
 	padding: 6px 0 4px;
 	border: solid 2px #d3d3d3;
 	background-color: rgba(0,0,0,0.4);
@@ -172,23 +179,23 @@
 }
 /*-----------------卸売-----------------*/
 .about_wholesale {
-	padding: 0 5% 8%;
+	padding: 0 5% 6.5%;
 	background: rgba(0,0,0,0.6);
 	color: #fff;
 }
 	.about_wholesale h1 {
-		padding: 8.2vw 0;
+		padding: 24px 0 16px;
 		font-size: calc(50% + 5vw);
 	}
 	.about_wholesale .get_text {
-		margin-bottom: 10vw;
+		margin-bottom: 16px;
 		line-height: 1.5;
 		font-size: calc(55% + 2.2vw);
 	}
 	.about_wholesale img {
 		display: block;
 		width: 40%;
-		margin: 0 auto 10.5vw;
+		margin: 0 auto 24px;
 	}
 .btn_link {
 	display: block;
@@ -196,6 +203,7 @@
 	margin: 0 auto;
 	padding: 20px 0;
 	border: solid 2px #d3d3d3;
+	background-color: rgba(0,0,0,0.2);
 	color: #fff;
 	text-align: center;
 	font-size: calc(80% + 1.8vw);
@@ -210,6 +218,7 @@
 	background-color: rgba(255,255,255,0.8);
 	color: #000;
 	text-shadow: none;
+	transition: 0.3s;
 }
 /*-----------------ページ下部リンク-----------------*/
 .links_contents { 
@@ -295,6 +304,17 @@
 		max-width: 1200px;
 		margin: 0 auto;
 	}
+	.webcart_wrapper {
+		padding-bottom: 40px;
+		background-image: url(../../image/bg_main_01@2x.png);
+	}
+	.page_bgfadeout {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 690px;
+	}
+	
 	/*---右上のカートビュー---*/
 	.cart_preview {
 		position: absolute;
@@ -327,26 +347,37 @@
 			color: #fff;
 		}
 	/*--CART---*/
-	.webcart_main h1 {
-		padding-top: 36px;
-		font-size: 60px;
+	.webcart_main {
+		padding:  0 4%;
 	}
-		.webcart_main h1 span {
-			font-size: 24px;
-			padding-left: 0.5em;
-		}
-		.webcart_main .btn_del {
-			float: right;
-			margin-top: 0;
-			font-size: 16px;
-		}
 		.webcart_main .btn_submit {
 			font-size: 32px;
 		}
-	.item_list li .check dl {
-		float: left;
-		font-size: 16px;
-	}
+		.webcart_main .item_checkout {
+			padding: 40px 0;
+		}
+		.webcart_main h1 {
+			padding-top: 40px;
+			font-size: 60px;
+		}
+			.webcart_main h1 span {
+				font-size: 24px;
+				padding-left: 0.5em;
+			}
+				.webcart_main .item_list li {
+					position: relative;
+					padding: 40px 0;
+				}
+					.webcart_main .item_list li .btn_del {
+						position: absolute;
+						top: 40px;
+						right: 0;
+						font-size: 16px;
+					}
+					.webcart_main .item_list li .check dl {
+						float: left;
+						font-size: 16px;
+					}
 	.btn_link {
 		width: 376px;
 		font-size: 20px;
@@ -358,7 +389,7 @@
 	}
 	.about_wholesale .get_text {
 		margin-bottom: 44px;
-		font-size: 24px;
+		font-size: 20px;
 	}
 	.about_wholesale img {
 		width: 220px;
@@ -465,4 +496,4 @@
 			background-image: url(../../image/sp_bg_about.@2xpng);
 			background-position: 0 80%;
 		}*/
-}/*-----------------CARTのボタン-----------------*/
+}
