@@ -4,12 +4,16 @@
 	.about_wj .section_hd h1,
 	.product h1,
 	.brewmaster h1,
-	.wrapper header h1
+	.wrapper header h1,
+	.links_contents li .en,
+	.links_contents li .ja
 	{
 		font-family: din-condensed, sans-serif;
 		font-style: normal;
 		font-weight: 300;
 		font-size: 60px;
+		color: #fff;
+		text-decoration: none;
 		text-shadow: 0px 0px 20px #000;
 	}
 	html{
@@ -45,12 +49,12 @@
 @media(min-width: 640px){
 	body{
 		min-width: 700px;
+		background: #201c15;
 	}
 	.wrapper .hum_menu{
 			position: absolute;
 			left: 20px;
 			top: 20px;
-			z-index: 1;
 		}
 	.wrapper .hum_menu a{
 		background-color: transparent;
@@ -77,9 +81,9 @@
 		overflow: hidden;
 		position: relative;
 	}
-    .wrapper header h1{
-        font-size: 36px;
-        line-height: 56px;
+  .wrapper header h1{
+    font-size: 36px;
+    line-height: 56px;
     }
 	.wrapper header .header_inner{
 		width: 87.5%;
@@ -129,12 +133,23 @@
 		font-size: 36px;
 		line-height: 77px;
 	}
-	.weekend_journy{
-		padding: 40px 0 120px 0;
+	.weekend_journy_bg{
 		background: url(../image/bg_main_01@2x.png);
 		background-position: center;
 		-webkit-background-size: cover;
 		background-size: cover;
+	}
+	.weekend_journy{
+		padding: 40px 0 120px 0;
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background: -moz-linear-gradient(top, rgba(0,0,10,0) 0%, rgba(32,28,21,1) 95%);
+		background: -webkit-linear-gradient(top, rgba(0,0,10,0) 0%,rgba(32,28,21,1) 95%);
+		background: linear-gradient(to bottom, rgba(0,0,10,0) 0%,rgba(32,28,21,1) 95%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000000a', endColorstr='#201c15',GradientType=0 );
+	}
+
 	}
 	.weekend_journy_wrapper{
 		background: rgba(0,0,0,0.6);
@@ -202,10 +217,6 @@
 		background: #fff;
 		transition: 0.3s;
 	}
-
-
-	.order{}
-
 	.order_contents{
 		background: rgba(0,0,0,0.6);
 		max-width: 1120px;
@@ -216,6 +227,7 @@
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box
+		z-index: 10000;
 	}
   .order .order_contents h1{
 		font-size: 40px;
@@ -252,17 +264,55 @@
 		background: #fff;
 		transition: 0.3s;
 	}
-
-
-
-
-
-
-
-
-
-
-
+.links_contents{
+	background: #201c15;
+	overflow: hidden;
+	padding: 0 1.875%;
+	max-width: 1232px;
+	margin: 0 auto;
+}
+.links_contents li {
+	text-align: center;
+	width: 49.2%;
+	margin-bottom: 2%;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.links_contents li a{
+	text-decoration: none;
+}
+.links_contents li:nth-child(odd) {
+	float: left;
+}
+.links_contents li:nth-child(even) {
+	float: right;
+}
+.links_contents li.product a,
+.links_contents li.brewmaster a{
+	padding: 6.215% 0;
+	display: block;
+}
+.links_contents li.product {
+	background-image: url(../image/bg_product@2x.png);
+	background-size: cover;
+}
+.links_contents li.brewmaster {
+	background-image: url(../image/bg_brewmaster@2x.png);
+	background-size: cover;
+}
+.links_contents li.about_wj {
+	background-image: url(../image/bg_about@2x.png);
+	background-position: 0 80%;
+}
+.links_contents li .en {
+	font-size: 60px;
+}
+.links_contents li .ja {
+	font-size: 24px;
+}
+.links_contents li.about_wj img {
+	width: 202px;
+}
 	footer{
 		width: 100%;
 		text-align: center;
@@ -303,7 +353,12 @@
 
 /*----------------sp-----------------------*/
 
-@media(max-width: 640px){}
+@media(max-width: 640px){
+
+
+
+
+}
 
 
 
