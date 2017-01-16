@@ -5,10 +5,8 @@
 		font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 	}
 	.page_header h1,
-	.webcart_main h1,
-	.links_contents li .en,
-	.btn_del,
-	.btn_submit {
+	.form_section_wrapper .section_basic h1,
+	.links_contents li .en {
 		font-family: din-condensed, sans-serif;
 		font-style: normal;
 		font-weight: 300;
@@ -18,8 +16,7 @@
 /*----------------------------------------
               SP 640pxまで
 ----------------------------------------*/
-.pc,
-.cart_preview { 
+.pc {
 	display: none;
 }
 .wrapper { background: #201c15; }
@@ -83,6 +80,7 @@
 		background: linear-gradient(to bottom, rgba(0,0,10,0) 0%,rgba(32,28,21,1) 95%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000000a', endColorstr='#201c15',GradientType=0 );
 	}
+/*-----------------MAIN-----------------*/
 .form_section_wrapper {
 	position: relative;
 	z-index: 10;
@@ -90,126 +88,80 @@
 	max-width: 1120px;
 	margin: 0 auto;
 }
-/*-----------------CART-----------------*/
-.section_basic {
-	margin: 0 auto 40px;
-	padding: 0 5%;
-	background: rgba(0,0,0,0.6);
-	color: #fff;
-}
-	.section_basic h1 {
-		padding-top: 4.3%;
-		font-size: calc(50% + 9vw);
+	.form_section_wrapper .section_basic {
+		margin: 0 auto 40px;
+		padding: 0 5%;
+		background: rgba(0,0,0,0.6);
+		color: #fff;
 	}
-		.section_basic h1 span {
-			font-size: 0.4em;
-			padding-left: 1em;
+		.form_section_wrapper .section_basic .description {
+			margin-top: 8px;
 		}
-
-.item_list {}
-	.item_list li {
-		padding: 6.1% 0;
-		border-bottom: solid 1px rgba(255,255,255,0.4);
-		overflow: hidden;
-	}
-		.item_list li img {
-			width: 16.5%;
-			max-width: 88px;
-			margin-right: 3.5%;
-			float: left;
+		.form_section_wrapper .section_basic h1 {
+			padding-top: 4.3%;
+			font-size: calc(50% + 9vw);
 		}
-		.item_list li .check {
-			display: table;
-			width: 80%;
-			overflow: hidden;
-			float: left;
-		}
-			.item_list li .check dl {
-				overflow: hidden;
-				font-size: calc(50% + 1.9vw);
+			.form_section_wrapper .section_basic h1 span {
+				font-size: 0.4em;
+				/*padding-left: 1em;*/
 			}
-				.item_list li .check dl dt {
-					clear: both;
-					float: left;
-					width: 3em;
-				}
-				.item_list li .check dl dd {
-					overflow: hidden;
-					margin-bottom: 1em;
-				}
-				.item_list li .check dl:last-child dd {
-					padding-bottom: 0;
-				}
-/*-----------------CARTのボタン-----------------*/
-.item_checkout {
+/*-------------FORM-----------------*/
+.input_wrapper {
+	font-size: calc(50% + 2.2vw);
+}
+	.input_wrapper dt {
+		margin: 32px 0 16px;
+	}
+		.input_wrapper dt span {
+			font-size: 66.7%;
+		}
+	.input_wrapper dd .text_input {
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 500px;
+		padding: 10px;
+		border: solid 1px #aaa;
+		background-color: #fff;
+		color: #000;
+		font-size: 20px;
+	}
+	.input_wrapper dd .textarea_basic {
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		height: 244px;
+		padding: 10px;
+		border: solid 1px #aaa;
+		resize: none;
+		background-color: #fff;
+		color: #000;
+		font-size: 20px;
+	}
+.form_submit {
 	padding: 6.5% 0;
 }
-.webcart_main .btn_del {
-	display: block;
-	width: 4em;
-	padding: 6px 0 4px;
-	border: solid 2px #d3d3d3;
-	background-color: rgba(0,0,0,0.4);
-	color: #fff;
-	text-align: center;
-	font-size: calc(50% + 2.4vw);
-	text-decoration: none;
-}
-.webcart_main .btn_submit {
-	display: block;
-	width: 47%;
-	margin: 0 auto;
-	padding: 16px 0 12px;
-	border: solid 2px #d3d3d3;
-	background-color: rgba(0,0,0,0.2);
-	color: #fff;
-	text-align: center;
-	font-size: calc(80% + 3vw);
-	text-decoration: none;
-}
-/*-----------------卸売-----------------*/
-.about_wholesale {
-	padding: 0 5% 6.5%;
-	background: rgba(0,0,0,0.6);
-	color: #fff;
-}
-	.about_wholesale h1 {
-		padding: 24px 0 16px;
-		font-size: calc(50% + 5vw);
-	}
-	.about_wholesale .get_text {
-		margin-bottom: 16px;
-		line-height: 1.5;
-		font-size: calc(55% + 2.2vw);
-	}
-	.about_wholesale img {
+	.form_submit .submit_normal {
 		display: block;
-		width: 40%;
-		margin: 0 auto 24px;
+		width: 47%;
+		max-width: 376px;
+		margin: 0 auto;
+		padding: 16px 0 12px;
+		border: solid 2px #d3d3d3;
+		background-color: rgba(0,0,0,0.2);
+		color: #fff;
+		text-align: center;
+		font-size: calc(80% + 1.8vw);
+		text-decoration: none;
 	}
-.btn_link {
-	display: block;
-	width: 50%;
-	margin: 0 auto;
-	padding: 20px 0;
-	border: solid 2px #d3d3d3;
-	background-color: rgba(0,0,0,0.2);
-	color: #fff;
-	text-align: center;
-	font-size: calc(80% + 1.8vw);
-	text-decoration: none;
-}
-/*ボタン押し*/
-.webcart_main a.active,	
-.webcart_main a:hover,
-.webcart_main a:active,
-.btn_link:hover {
-	border: solid 2px #fff;
-	background-color: rgba(255,255,255,0.8);
-	color: #000;
-	text-shadow: none;
-	transition: 0.3s;
-}
+	.form_submit .submit_normal:hover {
+		border: solid 2px #fff;
+		background-color: rgba(255,255,255,0.8);
+		color: #000;
+		text-shadow: none;
+		transition: 0.3s;
+		cursor: pointer;
+	}
 /*-----------------ページ下部リンク-----------------*/
 .links_contents { 
 	width: 93.75%;
@@ -304,87 +256,23 @@
 		width: 100%;
 		height: 690px;
 	}
-	
-	/*---右上のカートビュー---*/
-	.cart_preview {
-		position: absolute;
-		top: 19px;
-		right: 0;
-		display: block;
-		overflow: hidden;
-		padding-right: 3.6%;
+	/*---MAIN---*/
+	.form_section_wrapper .section_basic {
+		padding: 0 4%;
 	}
-		.cart_preview .btn_submit {
-			display: block;
-			float: left;
-			margin-right: 14px;
-			padding: 4px 16px 2px;
-			border: solid 2px #fff;
-			color: #fff;
-			font-size: 24px;
-			text-decoration: none;
-		}
-		.cart_preview .count_items {
-			display: block;
-			box-sizing: border-box;
-			float: left;
-			width: 42px;
-			height: 34px;
-			padding-left: 17px;
-			background: url(../image/preview_cart.png) no-repeat left 9px;
-			font-family: "Helvetica", sans-serif;
-			font-size: 24px;
-			color: #fff;
-		}
-	/*--CART---*/
-	.webcart_main {
-		padding:  0 4%;
-	}
-		.webcart_main .btn_submit {
-			font-size: 32px;
-		}
-		.webcart_main .item_checkout {
-			padding: 40px 0;
-		}
-		.webcart_main h1 {
+		.form_section_wrapper .section_basic h1 {
 			padding-top: 40px;
 			font-size: 60px;
 		}
-			.webcart_main h1 span {
-				font-size: 24px;
-				padding-left: 0.5em;
+		.input_wrapper {
+			font-size: 24px;
+		}
+		.form_submit {
+			padding: 40px 0;
+		}
+			.form_submit .submit_normal {
+				font-size: 20px;
 			}
-				.webcart_main .item_list li {
-					position: relative;
-					padding: 40px 0;
-				}
-					.webcart_main .item_list li .btn_del {
-						position: absolute;
-						top: 40px;
-						right: 0;
-						font-size: 16px;
-					}
-					.webcart_main .item_list li .check dl {
-						float: left;
-						font-size: 16px;
-					}
-	.btn_link {
-		width: 376px;
-		font-size: 20px;
-	}
-	/*---卸売---*/
-	.about_wholesale h1 {
-		padding: 50px 0 40px;
-		font-size: 40px;
-	}
-	.about_wholesale .get_text {
-		margin-bottom: 44px;
-		font-size: 20px;
-	}
-	.about_wholesale img {
-		width: 220px;
-		margin: 0 auto 64px;
-	}
 
 	/*---ページ下部リンク---*/
 	.links_contents {
@@ -459,22 +347,22 @@
 		color: #696660;
 	}
 }
-/*---------------TITLE用特殊設定-----------------*/
-@media(min-width: 641px) and (max-width: 799px){
-	.page_header h1 .sp {
+
+/*----------------------------------------
+            テキスト折り返し対策
+----------------------------------------*/
+@media(max-width: 450px) {
+	.form_section_wrapper .section_basic h1 span {
 		display: block;
+		padding-bottom: 8px;
 	}
 }
-@media(min-width: 800px) {
-	.page_header h1 .pc {
-		display: block;
-	}
-}
+
 /*---------------retina設定-----------------*/
 @media (-webkit-min-device-pixel-ratio: 2),
        (min-resolution: 2dppx) {
        	.form_wrapper{
-       		background-image: url(../image/bg_main_02@2x.png);
+       		background-image: url(../../image/bg_main_02@2x.png);
 		}
 		/*.links_contents li.product {
 			background-image: url(../../image/sp_bg_product@2x.png);
