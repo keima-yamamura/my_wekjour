@@ -161,7 +161,6 @@ html {
 }
 .form_main h1 span {
 	font-size: 24px;
-	padding-left: 0.5em;
 }
 .form_main .description {
 	margin-top: 8px;
@@ -329,12 +328,10 @@ p.copyright {
 	}
 	.form_main h1 span {
 		font-size: 0.4em;
-		padding-left: 1em;
 	}
 	.form_main .input_wrapper {
 		font-size: calc(50% + 2.2vw);
 	}
-	
 	
 	/*-----------------ページ下部リンク-----------------*/
 	.links_contents { 
