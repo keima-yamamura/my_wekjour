@@ -24,26 +24,49 @@ $(function(){
   var wj_pb = $('.weekend_journey').css('padding-bottom');
   var width_src = $('.weekend_journey').css('width');
   var height_src =$('.weekend_journey').innerHeight();
-  $('.wj_bg').css('width', function(){return width_src});
-  $('.wj_bg').css('height', function(){return height_src});
-  $('.wj_bg').css('position', 'absolute');
-  $('.wj_bg').css('z-index','-1');
+  var wj_bg = $('.wj_bg');
+  wj_bg.css('width', function(){return width_src});
+  wj_bg.css('height', function(){return height_src});
+  wj_bg.css('position', 'absolute');
+  wj_bg.css('z-index','-1');
 });
 
 //resize時
 $(window).resize(function(){
   var width_src = $('.weekend_journey').css('width');
   var height_src =$('.weekend_journey').innerHeight();
-  $('.wj_bg').css('width', function(){return width_src});
-  $('.wj_bg').css('height', function(){return height_src});
-  $('.wj_bg').css('position', 'absolute');
-  $('.wj_bg').css('z-index','-1');
+  var wj_bg = $('.wj_bg');
+  wj_bg.css('width', function(){return width_src});
+  wj_bg.css('height', function(){return height_src});
+  wj_bg.css('position', 'absolute');
+  wj_bg.css('z-index','-1');
 });
 
 /*------------背景画像フェードイン----------------------*/
+$(document).ready(function(){
 $(".wj_bg").bgswitcher({
-  images: ["image/bg_main_01@2x.png","image/bg_main_03@2x.png","image/bg_main_02@2x.png"],
+  images: ["image/bg_main_01@2x.png",
+           "image/bg_main_03@2x.png",
+           "image/bg_main_02@2x.png",
+          ],
+  interval: 6000,
+  duration: 3000
 });
+});
+
+// $(document).ready(function(){
+// $(".box").bgswitcher({
+// images: [
+// "images/bg1.png",
+// "images/bg2.png",
+// "images/bg3.png",
+// ],
+// effect: "fade",
+// easing: "swing",
+// interval: 5000,
+// loop: true
+// });
+// });
 
 
 
