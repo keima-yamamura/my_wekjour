@@ -207,15 +207,15 @@ html {
 }
 .form_main .form_submit .submit_normal {
 	display: block;
-	width: 47%;
-	max-width: 376px;
+	width: 81.3523750305175%;
+	max-width: 401px;
 	margin: 0 auto;
-	padding: 20px 0;
+	padding: 37px 0;
+	font-size: 16px;
 	border: solid 2px #d3d3d3;
 	background-color: rgba(0,0,0,0.2);
 	color: #fff;
 	text-align: center;
-	font-size: 20px;
 	text-decoration: none;
 }
 .form_main .form_submit .submit_normal:hover {
@@ -331,6 +331,9 @@ p.copyright {
 	}
 	.form_main .input_wrapper {
 		font-size: calc(50% + 2.2vw);
+	}
+	.form_main .form_submit .submit_normal {
+		padding: 7.4% 0;
 	}
 	
 	/*-----------------ページ下部リンク-----------------*/
