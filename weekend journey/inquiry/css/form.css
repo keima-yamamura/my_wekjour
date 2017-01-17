@@ -4,12 +4,6 @@
               共通設定
 ----------------------------------------*/
 
-/*-----------------他リリースまで見せない-----------------*/
-.hum_menu,
-footer ul li:nth-child(2) {
-	display: none;
-}
-
 /*--------------フォント---------------*/
 html {
 	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
@@ -108,7 +102,8 @@ html {
 	padding: 10px 0 8px;
 }
 .page_header .inner h1.logo img {
-	width: 72px;
+	width: 25%;
+	max-width: 156px;
 }
 .page_header .inner .cart_preview {
 	position: absolute;
