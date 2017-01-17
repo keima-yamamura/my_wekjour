@@ -1,378 +1,393 @@
 @charset "UTF-8";
 
-/*-----------フォント設定------------------*/
-	html {
-		font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
-	}
-	.page_header h1,
-	.form_section_wrapper .section_basic h1,
-	.links_contents li .en {
-		font-family: din-condensed, sans-serif;
-		font-style: normal;
-		font-weight: 300;
-		text-shadow: 0px 0px 20px #000;
-	}
-
 /*----------------------------------------
-              SP 640pxまで
+              共通設定
 ----------------------------------------*/
-.pc {
+
+/*-----------------他リリースまで見せない-----------------*/
+.hum_menu,
+footer ul li:nth-child(2) {
 	display: none;
 }
+
+/*--------------フォント---------------*/
+html {
+	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+}
+.page_header h1,
+.form_main h1,
+.links_contents li .en {
+	font-family: din-condensed, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	text-shadow: 0px 0px 20px #000;
+}
+
+/*---------------retina設定-----------------*/
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 2dppx) {
+    .bg_weekend_journy {
+    	background-image: url(../image/bg_main_01@2x.png);
+    } 
+	.links_contents li.product {
+		background-image: url(../../image/bg_product.png);
+	}
+	.links_contents li.brewmaster {
+		background-image: url(../../image/bg_brewmaster.png);
+	}
+	.links_contents li.about_wj {
+		background-image: url(../../image/bg_about.png);
+	}
+}
+
+/*--------------背景---------------*/
 .wrapper { background: #201c15; }
-.page_header {
-	z-index: 100;
-	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.4);
-	font-size: 100%;
-}
-	.page_header h1 {
-		padding: 20px 0 16px;
-		text-align: center;
-		color: #fff;
-		font-size: 32px;
-	}
-.hum_menu{
-	position: absolute;
-	left: 20px;
-	top: 20px;
-}
-	.hum_menu a{
-		background-color: transparent;
-		display: block;
-		width: 30px;
-		height: 30px;
-		padding-top: 5px;
-		box-sizing: border-box;
-	}
-		.hum_menu a span{
-			display: block;
-			width: 30px;
-			height: 3px;
-			background: #fff;
-			border-radius: 10px;
-			margin: 6px auto;
-		}
-		.hum_menu a span:first-child{
-			margin-top: 0px;
-		}
-/*-----------------メインStart-----------------*/
-.form_wrapper {
+.bg_weekend_journy {
 	position: relative;
-	padding: 108px 0 40px;
+	padding-bottom: 40px;
 	background-image: url(../../image/bg_main_01@2x.png);
-	/*background-image: url(../../image/sp_bg_main_03@2x.png);*/
 	background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
-	.page_bgfadeout {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 88vw;
-		left: 0;
-		bottom: 0;
-		background: -moz-linear-gradient(top, rgba(0,0,10,0) 0%, rgba(32,28,21,1) 95%);
-		background: -webkit-linear-gradient(top, rgba(0,0,10,0) 0%,rgba(32,28,21,1) 95%);
-		background: linear-gradient(to bottom, rgba(0,0,10,0) 0%,rgba(32,28,21,1) 95%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000000a', endColorstr='#201c15',GradientType=0 );
-	}
-/*-----------------MAIN-----------------*/
-.form_section_wrapper {
+.bg_weekend_journy:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 88vw;
+	left: 0;
+	bottom: 0;
+	background: -moz-linear-gradient(top, rgba(0,0,10,0) 0%, rgba(32,28,21,1) 95%);
+	background: -webkit-linear-gradient(top, rgba(0,0,10,0) 0%,rgba(32,28,21,1) 95%);
+	background: linear-gradient(to bottom, rgba(0,0,10,0) 0%,rgba(32,28,21,1) 95%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000000a', endColorstr='#201c15',GradientType=0 );
+}
+
+/*--------------ヘッダー---------------*/
+.page_header {
+	background: rgba(0,0,0,0.4);
+	font-size: 100%;
+}
+.page_header .inner {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.hum_menu {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+.hum_menu a {
+	background-color: transparent;
+	display: block;
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	box-sizing: border-box;
+}
+.hum_menu a span {
+	display: block;
+	width: 30px;
+	height: 3px;
+	background: #fff;
+	border-radius: 10px;
+	margin: 6px auto;
+}
+.hum_menu a span:first-child {
+	margin-top: 0px;
+}
+
+.page_header .inner h1 {
+	padding: 20px 0 16px;
+	text-align: center;
+	color: #fff;
+	font-size: 32px;
+}
+.page_header .inner h1.logo {
+	padding: 10px 0 8px;
+}
+.page_header .inner h1.logo img {
+	width: 72px;
+}
+.page_header .inner .cart_preview {
+	position: absolute;
+	top: 19px;
+	right: 0;
+	display: block;
+	overflow: hidden;
+	padding-right: 3.6%;
+}
+.page_header .inner .cart_preview .btn_submit {
+	display: block;
+	float: left;
+	margin-right: 14px;
+	padding: 4px 16px 2px;
+	border: solid 2px #fff;
+	color: #fff;
+	font-size: 24px;
+	text-decoration: none;
+}
+.page_header .inner .cart_preview .count_items {
+	display: block;
+	box-sizing: border-box;
+	float: left;
+	width: 42px;
+	height: 34px;
+	padding-left: 17px;
+	background: url(../image/preview_cart.png) no-repeat left 9px;
+	font-family: "Helvetica", sans-serif;
+	font-size: 24px;
+	color: #fff;
+}
+
+/*--------------メインエリア---------------*/
+.section_wrapper_basic {
 	position: relative;
 	z-index: 10;
 	width: 87.5%;
 	max-width: 1120px;
 	margin: 0 auto;
 }
-	.form_section_wrapper .section_basic {
-		margin: 0 auto 40px;
-		padding: 0 5%;
-		background: rgba(0,0,0,0.6);
-		color: #fff;
-	}
-		.form_section_wrapper .section_basic .description {
-			margin-top: 8px;
-		}
-		.form_section_wrapper .section_basic h1 {
-			padding-top: 4.3%;
-			font-size: calc(50% + 9vw);
-		}
-			.form_section_wrapper .section_basic h1 span {
-				font-size: 0.4em;
-				/*padding-left: 1em;*/
-			}
-/*-------------FORM-----------------*/
-.input_wrapper {
-	font-size: calc(50% + 2.2vw);
+.form_main {
+	margin: 40px auto;
+	padding: 0 5%;
+	background: rgba(0,0,0,0.6);
+	color: #fff;
 }
-	.input_wrapper dt {
-		margin: 32px 0 16px;
-	}
-		.input_wrapper dt span {
-			font-size: 66.7%;
-		}
-	.input_wrapper dd .text_input {
-		display: block;
-		box-sizing: border-box;
-		width: 100%;
-		max-width: 500px;
-		padding: 10px;
-		border: solid 1px #aaa;
-		background-color: #fff;
-		color: #000;
-		font-size: 20px;
-	}
-	.input_wrapper dd .textarea_basic {
-		display: block;
-		box-sizing: border-box;
-		width: 100%;
-		height: 244px;
-		padding: 10px;
-		border: solid 1px #aaa;
-		resize: none;
-		background-color: #fff;
-		color: #000;
-		font-size: 20px;
-	}
-.form_submit {
-	padding: 6.5% 0;
+.form_main h1 {
+	padding-top: 40px;
+	font-size: 60px;
 }
-	.form_submit .submit_normal {
-		display: block;
-		width: 47%;
-		max-width: 376px;
-		margin: 0 auto;
-		padding: 16px 0 12px;
-		border: solid 2px #d3d3d3;
-		background-color: rgba(0,0,0,0.2);
-		color: #fff;
-		text-align: center;
-		font-size: calc(80% + 1.8vw);
-		text-decoration: none;
-	}
-	.form_submit .submit_normal:hover {
-		border: solid 2px #fff;
-		background-color: rgba(255,255,255,0.8);
-		color: #000;
-		text-shadow: none;
-		transition: 0.3s;
-		cursor: pointer;
-	}
+.form_main h1 span {
+	font-size: 24px;ß
+}
+.form_main .description {
+	margin-top: 8px;
+}
+
+/*------------フォーム入力エリア-----------*/
+.form_main .input_wrapper {
+	font-size: 24px;
+}
+.form_main .input_wrapper dt {
+	margin: 32px 0 16px;
+}
+.form_main .input_wrapper dt span {
+	font-size: 66.7%;
+}
+.form_main .input_wrapper dt span.must {
+	color: #ff0000;
+}
+.form_main .input_wrapper dd .text_input {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 500px;
+	padding: 10px;
+	border: solid 1px #aaa;
+	background-color: #fff;
+	color: #000;
+	font-size: 20px;
+}
+.form_main .input_wrapper dd .textarea_basic {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 244px;
+	padding: 10px;
+	border: solid 1px #aaa;
+	resize: none;
+	background-color: #fff;
+	color: #000;
+	font-size: 20px;
+}
+.form_main .form_submit {
+	padding: 40px 0;
+}
+.form_main .form_submit .submit_normal {
+	display: block;
+	width: 47%;
+	max-width: 376px;
+	margin: 0 auto;
+	padding: 20px 0;
+	border: solid 2px #d3d3d3;
+	background-color: rgba(0,0,0,0.2);
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+}
+.form_main .form_submit .submit_normal:hover {
+	border: solid 2px #fff;
+	background-color: rgba(255,255,255,0.8);
+	color: #000;
+	text-shadow: none;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
 /*-----------------ページ下部リンク-----------------*/
-.links_contents { 
-	width: 93.75%;
-	margin: 0 auto 6.25vw;
+.links_contents {
+	overflow: hidden;
+	width: 96.25%;
+	max-width: 1232px;
+	margin: 0 auto 72px;
 }
+.links_contents li {
+	width: 49.2%;
+	margin-bottom: 2%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+}
+.links_contents li:nth-child(odd) {
+	float: left;
+}
+.links_contents li:nth-child(even) {
+	float: right;
+}
+.links_contents li.product {
+	background-image: url(../../image/bg_product.png);
+}
+.links_contents li.brewmaster {
+	background-image: url(../../image/bg_brewmaster.png);
+}
+.links_contents li.about_wj {
+	background-image: url(../../image/bg_about.png);
+	background-position: 0 80%;
+}
+.links_contents li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+.links_contents li.product a,
+.links_contents li.brewmaster a {
+    padding: 6.215% 0;
+}
+.links_contents li a .en {
+	font-size: 60px;
+}
+.links_contents li a .ja {
+	font-size: 24px;
+}
+.links_contents li.about_wj a {
+	padding: 1% 0;
+}
+.links_contents li.about_wj a img {
+    width: 202px;
+}
+
+/*-----------------footer-----------------*/
+footer {
+	width: 100%;
+	text-align: center;
+	background: #31312d;
+	line-height: 60px;
+}
+footer ul {
+	margin: 0 auto;
+}
+footer ul li {
+	display: inline;
+	width: 200px;
+	color: #fff;
+}
+footer ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+footer ul li a:after {
+	content: "|";
+	padding: 15px;
+	color: #696660;
+}
+footer ul li:last-child a:after {
+	content: none;
+}
+p.copyright {
+	margin: 0 auto;
+	height: 126px;
+	line-height: 126px;
+	background: #282824;
+	text-align: center;
+	color: #696660;
+}
+
+/*----------------------------------------
+             SP専用 640pxまで
+----------------------------------------*/
+@media(max-width: 640px){
+	.page_header {
+	}
+	/*----------FORM----------*/
+	.form_main h1 {
+		padding-top: 4.3%;
+		font-size: calc(50% + 9vw);
+	}
+	.form_main h1 span {
+		font-size: 0.4em;
+	}
+	.form_main .input_wrapper {
+		font-size: calc(50% + 2.2vw);
+	}
+	
+	
+	/*-----------------ページ下部リンク-----------------*/
+	.links_contents { 
+		width: 93.75%;
+		margin: 0 auto 6.25vw;
+	}
 	.links_contents li {
-		-webkit-background-size: cover;
-		background-size: cover;
-		text-align: center;
-		color: #fff;
+		float: none;
+		width: 100%;
 		margin-bottom: 6%;
 	}
-		.links_contents li.product {
-			background-image: url(../../image/sp_bg_product.png);
-		}
-		.links_contents li.brewmaster {
-			background-image: url(../../image/sp_bg_brewmaster.png);
-		}
-		.links_contents li.about_wj {
-			background-image: url(../../image/sp_bg_about.png);
-			background-position: 0 48%;
-		}
-			.links_contents li.about_wj img {
-				width: 40%;
-			}
-			.links_contents li .en {
-				font-size: calc(50% + 9vw);
-			}
-			.links_contents li .ja {
-				font-size: calc(50% + 3vw);
-				text-shadow: 0px 0px 10px #000;
-			}
-			.links_contents li a {
-				display: block;
-				padding: 0;
-				color: #fff;
-				text-decoration: none;
-			}
-			.links_contents li.product a,
-			.links_contents li.brewmaster a {
-				padding: 6.215% 0;
-			}
-			.links_contents li.about_wj a {
-				padding: 1% 0;
-			}
-/*---------------footer-----------------*/
-@media(max-width: 640px){
-	footer{
-			background: #31312d;
-		}
-		footer ul{
-			padding: 0 5%;
-		}
-			footer ul li{
-				font-size: calc(50% + 2.5vw);
-			}
-				footer ul li a{
-					text-decoration: none;
-					color: #fff;
-					display: block;
-					padding: 7.3% 0;
-				}
-	p.copyright{
-		background: #282824;
-		text-align: center;
-		color: #696660;
-		line-height: 64px;
-		margin-bottom: 0;
+	.links_contents li.product {
+		background-image: url(../../image/sp_bg_product.png);
+	}
+	.links_contents li.brewmaster {
+		background-image: url(../../image/sp_bg_brewmaster.png);
+	}
+	.links_contents li.about_wj {
+		background-image: url(../../image/sp_bg_about.png);
+		background-position: 0 80%;
+	}
+	.links_contents li.product a,
+	.links_contents li.brewmaster a {
+	    padding: 6.215% 0;
+	}
+	.links_contents li.about_wj a {
+		padding: 1% 0;
+	}
+	.links_contents li a .en {
+		font-size: 60px;
+	}
+	.links_contents li a .ja {
+		font-size: 24px;
+	}
+	.links_contents li.about_wj a img {
+	    width: 202px;
+	}
+
+	/*-----------------footer-----------------*/
+	footer ul{
+		padding: 0 5%;
+	}
+	footer ul li{
+		display: block;
+		text-align: left;
+		font-size: calc(50% + 2.5vw);
+		width: 100%;
+	}
+	footer ul li a{
+		padding: 7.3% 0%;
+	}
+	footer ul li a:after{
+		content: none;
+	}
+	.copyright{
 		font-size: 8px;
 	}
-}
-
-/*----------------------------------------
-              PC 641px-
-----------------------------------------*/
-@media(min-width: 641px) {
-	.sp {
-		display: none;
-	}
-	.page_header .inner {
-		position: relative;
-		max-width: 1200px;
-		margin: 0 auto;
-	}
-	.form_wrapper {
-		padding: 108px 0 40px;
-		/*background-image: url(../../image/bg_main_01@2x.png);*/
-	}
-	.page_bgfadeout {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 690px;
-	}
-	/*---MAIN---*/
-	.form_section_wrapper .section_basic {
-		padding: 0 4%;
-	}
-		.form_section_wrapper .section_basic h1 {
-			padding-top: 40px;
-			font-size: 60px;
-		}
-		.input_wrapper {
-			font-size: 24px;
-		}
-		.form_submit {
-			padding: 40px 0;
-		}
-			.form_submit .submit_normal {
-				font-size: 20px;
-			}
-
-	/*---ページ下部リンク---*/
-	.links_contents {
-		overflow: hidden;
-		width: 96.25%;
-		max-width: 1232px;
-		margin: 0 auto 72px;
-	}
-		.links_contents li {
-			width: 49.2%;
-			margin-bottom: 2%;
-			-webkit-background-size: 100%;
-			background-size: 100%;
-		}
-		.links_contents li:nth-child(odd) {
-			float: left;
-		}
-		.links_contents li:nth-child(even) {
-			float: right;
-		}
-		/*.links_contents li.product {
-			background-image: url(../../image/sp_bg_product@2x.png);
-		}
-		.links_contents li.brewmaster {
-			background-image: url(../../image/sp_bg_brewmaster@2x.png);
-		}
-		.links_contents li.about_wj {
-			background-image: url(../../image/sp_bg_about.@2xpng);
-			background-position: 0 80%;
-		}*/
-			.links_contents li .en {
-				font-size: 60px;
-			}
-			.links_contents li .ja {
-				font-size: 24px;
-			}
-			.links_contents li.about_wj img {
-				width: 202px;
-			}
-
-	/*---footer---*/
-	footer {
-		width: 100%;
-		text-align: center;
-		background: #31312d;
-		height: 60px;
-		line-height: 60px;
-	}
-		footer ul li {
-			display: inline;
-			width: 200px;
-			color: #fff;
-		}
-			footer ul li a {
-				color: #fff;
-				text-decoration: none;
-			}
-				footer ul li a:after {
-					content: "|";
-					padding: 15px;
-					color: #696660;
-				}
-				footer ul li:last-child a:after{
-					content: none;
-				}
-	p.copyright {
-		margin: 0 auto;
-		height: 126px;
-		line-height: 126px;
-		background: #282824;
-		text-align: center;
-		color: #696660;
-	}
-}
-
-/*----------------------------------------
-            テキスト折り返し対策
-----------------------------------------*/
-@media(max-width: 450px) {
-	.form_section_wrapper .section_basic h1 span {
-		display: block;
-		padding-bottom: 8px;
-	}
-}
-
-/*---------------retina設定-----------------*/
-@media (-webkit-min-device-pixel-ratio: 2),
-       (min-resolution: 2dppx) {
-       	.form_wrapper{
-       		background-image: url(../../image/bg_main_02@2x.png);
-		}
-		/*.links_contents li.product {
-			background-image: url(../../image/sp_bg_product@2x.png);
-		}
-		.links_contents li.brewmaster {
-			background-image: url(../../image/sp_bg_brewmaster@2x.png);
-		}
-		.links_contents li.about_wj {
-			background-image: url(../../image/sp_bg_about.@2xpng);
-			background-position: 0 80%;
-		}*/
 }
