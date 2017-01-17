@@ -26,7 +26,7 @@
 	}
 /*---------------retina設定-----------------*/
 @media (-webkit-min-device-pixel-ratio: 2),
-       X(min-resolution: 2dppx) {
+     (min-resolution: 2dppx) {
     .weekend_journy{
     background-image: url(../image/bg_main_02@2x.png);
 		}
@@ -47,8 +47,7 @@
 
 /*-------------pc--------------------*/
 
-	body{
-		min-width: 700px;
+	.wrapper{
 		background: #201c15;
 	}
 	.wrapper .hum_menu{
@@ -163,11 +162,15 @@
 	.weekend_journy_wrapper h1 span{
 		font-size: 24px;
 	}
+	.weekend_journy_wrapper h1 br{
+		display: none;
+	}
+
 	.weekend_journy_wrapper dl{
-	    overflow: hidden;
-	    font-size: 16px;
-	    line-height: 24px;
-	    padding-top: 10px;
+	  overflow: hidden;
+	  font-size: 16px;
+	  line-height: 24px;
+	  padding-top: 10px;
 	}
 	.weekend_journy_wrapper dt{
 		float: left;
@@ -193,27 +196,34 @@
 		text-align: center;
 	}
 	.weekend_journy_wrapper .product_box div img{
-			width: 69.7%;
-			margin-bottom: 62px;
+		width: 69.7%;
+		margin-bottom: 62px;
 	}
 	.weekend_journy_wrapper .product_box div .text{
 		margin-bottom: 32px;
 	}
 	.weekend_journy_wrapper .product_box div .add_cart{
-		border: 2px solid #fff;
 		box-sizing: border-box;
 	}
 	.weekend_journy_wrapper .product_box div .add_cart a{
+		border: 2px solid #fff;
 		display: block;
-		padding: 7.5% 0;
+		padding: 7.4% 0;
 		background: rgba(0,0,0,0.2);;
 		text-decoration: none;
 		color: #fff;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 	.weekend_journy_wrapper .product_box div .add_cart a:hover{
+		background: rgba(255,255,255,0.8);
 		color: #000;
-		background: #fff;
+		border: 2px solid #fff;
 		transition: 0.3s;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 	.order_contents{
 		background: rgba(0,0,0,0.6);
@@ -246,19 +256,23 @@
 		width: 46.25%;
 		text-align: center;
 		margin: 0 auto;
-		border: 2px solid #fff;
 		box-sizing: border-box;
 	}
 	.order .order_contents .contact a{
+		border: 2px solid #fff;
 		display: block;
-		padding: 7.5% 0;
-		background: rgba(0,0,0,0.2);;
+		padding: 7.4% 0;
+		background: rgba(0,0,0,0.2);
 		text-decoration: none;
 		color: #fff;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 	.order .order_contents .contact a:hover{
+		background: rgba(255,255,255,0.8);
 		color: #000;
-		background: #fff;
+		border: 2px solid #fff;
 		transition: 0.3s;
 	}
 	.links_contents{
@@ -268,53 +282,52 @@
 		max-width: 1232px;
 		margin: 0 auto;
 	}
-.links_contents li {
-	text-align: center;
-	width: 49.2%;
-	margin-bottom: 2%;
-	-webkit-background-size: 100%;
-	background-size: 100%;
-}
-.links_contents li a{
-	text-decoration: none;
-}
-.links_contents li:nth-child(odd) {
-	float: left;
-}
-.links_contents li:nth-child(even) {
-	float: right;
-}
-.links_contents li.product a,
-.links_contents li.brewmaster a{
-	padding: 6.215% 0;
-	display: block;
-}
-.links_contents li.product {
-	background-image: url(../image/bg_product@2x.png);
-	background-size: cover;
-}
-.links_contents li.brewmaster {
-	background-image: url(../image/bg_brewmaster@2x.png);
-	background-size: cover;
-}
-.links_contents li.about_wj {
-	background-image: url(../image/bg_about@2x.png);
-	background-position: 0 80%;
-}
-.links_contents li .en {
-	font-size: 60px;
-}
-.links_contents li .ja {
-	font-size: 24px;
-}
-.links_contents li.about_wj img {
-	width: 202px;
-}
+	.links_contents li {
+		text-align: center;
+		width: 49.2%;
+		margin-bottom: 2%;
+		-webkit-background-size: 100%;
+		background-size: 100%;
+	}
+	.links_contents li a{
+		text-decoration: none;
+	}
+	.links_contents li:nth-child(odd) {
+		float: left;
+	}
+	.links_contents li:nth-child(even) {
+		float: right;
+	}
+	.links_contents li.product a,
+	.links_contents li.brewmaster a{
+		padding: 6.215% 0;
+		display: block;
+	}
+	.links_contents li.product {
+		background-image: url(../image/bg_product@2x.png);
+		background-size: cover;
+	}
+	.links_contents li.brewmaster {
+		background-image: url(../image/bg_brewmaster@2x.png);
+		background-size: cover;
+	}
+	.links_contents li.about_wj {
+		background-image: url(../image/bg_about@2x.png);
+		background-position: 0 80%;
+	}
+	.links_contents li .en {
+		font-size: 60px;
+	}
+	.links_contents li .ja {
+		font-size: 24px;
+	}
+	.links_contents li.about_wj img {
+		width: 202px;
+	}
 	footer{
 		width: 100%;
 		text-align: center;
 		background: #31312d;
-		height: 60px;
 		line-height: 60px;
 	}
 	footer ul{
@@ -350,12 +363,105 @@
 
 /*----------------sp-----------------------*/
 
+
+
+@media(max-width: 950px){
+/*------ヘッダーの文字数--------*/
+	.pc{
+		display: none;
+	}
+	.weekend_journy_wrapper h1 br{
+		display: block;
+	}
+}
+
+
 @media(max-width: 640px){
+	body{
+		min-width: 320px;
+	}
+	header .header_inner .cart_box{
+		display: none;
+	}
+	.weekend_journy{
+		padding: 40px 0;
+	}
+	.wrapper .weekend_journy_wrapper{
+		margin-bottom: 40px;
+		padding-top: 7.3%;
+	}
+	.wrapper .weekend_journy_wrapper h1{
+	font-size: calc(50% + 9vw);
+	text-align: center;
+	line-height: 24px;
+	}
+	.wrapper .weekend_journy_wrapper h1 span{
+		font-size: 3.75vw;
+	}
+	.wrapper .weekend_journy_wrapper dl{
+		display: none;
+	}
+	.wrapper .weekend_journy_wrapper .product_box{
+		display: block;
+		padding-top: 40px;
+	}
+	.wrapper .weekend_journy_wrapper .product_box div{
+		width: 100%;
+	}
+	.wrapper .weekend_journy_wrapper .product_box div:first-child{
+		margin-bottom: 80px;
+	}
+	.wrapper .weekend_journy_wrapper .product_box div p:first-of-type{
+		margin-bottom: -40px;
+	}
+	.order .order_contents{
+		text-align: center;
+	}
+	.order .order_contents .ordered img{
+    width: 65.7%;
+	}
+	.order .order_contents .contact{
+		width:  85.02%;
+	}
+	.order .order_contents .contact a{
+
+	}
+
+
+	.wrapper .links_contents{
+		padding-bottom: 0;
+	}
+	.wrapper .links_contents li{
+		float: none;
+		width: 100%;
+		margin-bottom: 6%;
+	}
+	.wrapper .links_contents li a{
+		width: 100%;
+		font-size: calc(50% + 9vw);
+	}
+	footer ul{
+		padding: 0 5%;
+	}
+	footer ul li{
+		display: block;
+		text-align: left;
+		font-size: calc(50% + 2.5vw);
+		width: 100%;
+	}
+	footer ul li a{
+		padding: 7.3% 0%;
+	}
+	footer ul li a:after{
+		content: none;
+	}
+	.copyright{
+		font-size: 8px;
+	}
+}
 	
 
 
-
-}
 
 
 
