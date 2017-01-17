@@ -307,6 +307,9 @@ html {
 .links_contents li a .ja {
 	font-size: 24px;
 }
+.links_contents li.about_wj a {
+	padding: 1% 0;
+}
 .links_contents li.about_wj a img {
     width: 202px;
 }
@@ -352,6 +355,9 @@ p.copyright {
              SP専用 640pxまで
 ----------------------------------------*/
 @media(max-width: 640px){
+	.page_header .inner .cart_preview {
+		display: none;
+	}
 	/*----------CART----------*/
 	.webcart_main h1 {
 		padding-top: 4.3%;
