@@ -12,32 +12,32 @@
   <meta content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no" name="viewport">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="image/favicon.ico">
   <meta charset="UTF-8">
   <title>store</title>
 </head>
 <body>
 <div class="wrapper">
-<header>
-  <div class="header_inner">
-    <h1><span class="pc">WEEKEND&nbsp;JOURNEY&nbsp;</span>WEB&nbsp;STORE</h1>
-    <div class="cart_box">
-      <p class="check">CHECK&nbsp;OUT</p>
-      <p><span>2</span></p>
-    </div><!--cart_box-->
-    <div class="hum_menu">
-      <a href="#">
-        <span></span>
-        <span></span>
-        <span></span>
-      </a>
-    </div><!--hum_menu-->
-  </div><!--header_inner-->
-</header>
 <div class="weekend_journy_bg">
+  <header class="page_header">
+    <div class="inner">
+      <div class="hum_menu">
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div><!--hum_menu-->
+      <h1><img src="image/image/logo@2x.png" alt=""></h1>
+      <div class="cart_preview">
+        <a href="#" class="btn_submit">CHECKOUT</a>
+        <span class="count_items">2</span>
+      </div>
+    </div>
+  </header><!--page_header-->
   <div class="weekend_journy">
     <div class="weekend_journy_wrapper">
-      <h1>WEEKEND&nbsp;JOURNEY<br><span>(ウィークエンド・ジャーニー)</span></h1>
+      <h1>WEEKEND&nbsp;JOURNEY&nbsp;WEB&nbsp;STORE</h1>
       <dl>
         <dt>価格</dt><dd>550円</dd>  
         <dt>内容量</dt><dd>330ml</dd>  
@@ -46,12 +46,22 @@
       </dl>
       <div class="product_box">
         <div class="pack_6">
-          <p><img src="image/shop_item01.png" alt=""></p>
+          <p>
+            <picture>
+              <source media="(min-width :641px)" srcset="image/beer_6pack.png 1x, image/beer_6pack@2x.png x2">
+              <source media="(min-width :320px)" srcset="img/sp_beer_6pack.png x1, image/beer_6pack@2x.png x2" alt="weekend_journy">
+              <img src="image/sp_beer_6pack.png" srcset="img/sp_beer_6pack.png x1, image/beer_6pack@2x.png x2" alt="weekend_journy">
+            </picture>
           <p class="text">WEEKEND JOURNEY 6 PACK</p>
           <p class="add_cart"><a href="#">カートに入れる</a></p>
         </div>
         <div class="pack_24">
-          <p><img src="image/shop_item01.png" alt=""></p>
+          <p>
+          <picture>
+            <source media="(min-width :641px)" srcset="image/beer_24pack.png 1x, image/beer_24pack@2x.png x2">
+            <img src="image/sp_beer_24pack.png" srcset="img/sp_beer_24pack.png x1, image/beer_24pack@2x.png x2" alt="weekend_journy">
+          </picture>
+          </p>
           <p class="text">WEEKEND JOURNEY 24 PACK</p>
           <p class="add_cart"><a href="#">カートに入れる</a></p>
         </div>
@@ -63,7 +73,11 @@
         <h1>卸のご注文の方</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sequi.</p>
         <p>お問い合わせください。</p>
-        <p class="ordered"><img src="image/shop_item_wholesale.png" alt=""></p>
+        <p class="ordered">
+        <picture>
+          <source media="(min-width :641px)" srcset="image/beer_keg.png 1x, image/beer_keg@2x.png x2">
+          <img src="image/sp_beer_keg.png" srcset="img/sp_beer_keg.png x1, image/beer_keg@2x.png x2" alt="weekend_journy">
+        </picture>
         <p class="contact"><a href="#">お問い合わせ</a></p>
       </div><!--order_contents-->
     </section><!--order-->
@@ -106,4 +120,16 @@
 </div><!--wrapper-->
   
 </body>
+<script>
+  $(function(){
+      if(window.devicePixelRatio > 1){
+          $(".2x").each(function() {
+              $(this).attr("src", $(this).attr("src").replace(/(\.)(png)/, "@2x$1$2"));
+          });
+      }
+  });
+</script>
+
+
+
 </html>
