@@ -157,7 +157,7 @@
 		box-sizing: border-box;
 	}
 	.weekend_journy_wrapper h1 span{
-		font-size: 24px;
+		font-size: 60px;
 	}
 	.weekend_journy_wrapper h1 br{
 		display: none;
@@ -368,13 +368,14 @@
 
 
 
-@media(max-width: 950px){
-/*------ヘッダーの文字数--------*/
-	.pc{
-		display: none;
+@media(max-width: 800px){
+/*------weekend_journeyの文字数--------*/
+	.weekend_journy_wrapper h1{
+		text-align: center;
 	}
-	.weekend_journy_wrapper h1 br{
-		display: block;
+	.weekend_journy_wrapper h1 span{
+		display: none;
+		text-align: center;
 	}
 }
 
