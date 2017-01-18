@@ -48,7 +48,7 @@ $(function(){
 $(window).resize(function(){
   var width_src = $('.weekend_journey').css('width');
   var height_src =$('.weekend_journey').innerHeight();
-  var wj_bg = $('.wj_bg');
+  var wj_bg = $('.wj_bg').prev();
   wj_bg.css('width', function(){return width_src});
   wj_bg.css('height', function(){return height_src});
   wj_bg.css('position', 'absolute');
