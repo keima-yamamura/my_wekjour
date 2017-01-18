@@ -6,7 +6,8 @@
 	.brewmaster h1,
 	.wrapper header h1,
 	.links_contents li .en,
-	.links_contents li .ja
+	.links_contents li .ja,
+	.btn_submit
 	{
 		font-family: din-condensed, sans-serif;
 		font-style: normal;
@@ -75,63 +76,58 @@
 	.wrapper .hum_menu a span:first-child{
 		margin-top: 0px;
 	}
-	.wrapper header{
-		height: 64px;
-		background: #000;
-		overflow: hidden;
-		position: relative;
+	
+	.page_header {
+		background: rgba(0,0,0,0.4);
+		font-size: 100%;
 	}
-  .wrapper header h1{
-    font-size: 36px;
-    line-height: 56px;
-    }
-	.wrapper header .header_inner{
-		width: 87.5%;
-		max-width: 1120px;
+	.page_header .inner {
+		position: relative;
+		max-width: 1200px;
 		margin: 0 auto;
-		position: relative;
 	}
-	.wrapper header .cart_box{
-		top: 23px;
-		right: 0;
-		position: absolute;
-		font-family: din-condensed, sans-serif;
-		font-style: normal;
-		font-weight: 300;
-		font-size: 24px;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		justify-content: space-between;
-	}
-	.wrapper header .cart_box .check{
-		border: 2px solid #fff;
-		background: #000;
-		font-size: 24px;
+	.page_header .inner h1 {
+		padding: 20px 0 16px;
+		text-align: center;
 		color: #fff;
-		padding: 2px 20px;
+		font-size: 32px;
 	}
-	.wrapper header .cart_box p:nth-child(2){
-		padding: 0 20px; 
+	.page_header .inner .cart_preview {
+		position: absolute;
+		top: 19px;
+		right: 0;
+		display: block;
+		overflow: hidden;
+		padding-right: 3.6%;
+	}
+	.page_header .inner .cart_preview .btn_submit {
+		display: block;
+		float: left;
+		margin-right: 12px;
+		padding: 4px 16px 2px;
+		border: solid 2px #fff;
+		color: #fff;
+		font-size: 22px;
+		text-decoration: none;
+	}
+	.page_header .inner .cart_preview .btn_submit:hover {
+		border: solid 2px #fff;
+		background-color: rgba(255,255,255,0.8);
+		color: #000;
+		text-shadow: none;
+		transition: 0.3s;
+	}
+	.page_header .inner .cart_preview .count_items {
+		display: block;
+		box-sizing: border-box;
+		float: left;
 		width: 42px;
 		height: 34px;
-		background-image: url(../image/preview_cart.png);
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-	.wrapper header .cart_box p span{
-    color: #fff;
-    padding-left: 5px;
-    display: block;
-    text-align: center;
-	}
-	.wrapper header h1{
+		padding-left: 17px;
+		background: url(../image/preview_cart.png) no-repeat left 7px;
+		font-family: "Helvetica", sans-serif;
+		font-size: 24px;
 		color: #fff;
-		text-align: center;
-		font-size: 36px;
-		line-height: 77px;
 	}
 	.weekend_journy_bg{
 		background: url(../image/bg_main_01@2x.png);
@@ -384,7 +380,7 @@
 	body{
 		min-width: 320px;
 	}
-	header .header_inner .cart_box{
+	.page_header .inner .cart_preview .btn_submit {
 		display: none;
 	}
 	.weekend_journy{
