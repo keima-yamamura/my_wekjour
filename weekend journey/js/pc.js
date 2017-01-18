@@ -13,7 +13,7 @@ var s= skrollr.init({
 //wj_bg 読み込み時
 var wj_bg = $('.wj_bg');
 $(function(){
-    $('html').css('overflow','hidden');
+    $('html').css('overflow-x','hidden');
     var width_src = $('.weekend_journey').css('width');
     var height_src =$('.weekend_journey').innerHeight();
 
