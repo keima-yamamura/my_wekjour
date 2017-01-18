@@ -160,14 +160,14 @@ html {
 	overflow: hidden;
 }
 .webcart_main .item_list li img {
-	width: 16.5%;
-	max-width: 88px;
-	margin-right: 3.5%;
+	width: 19.5%;
+	max-width: 114px;
+	margin-right: 2.5%;
 	float: left;
 }
 .webcart_main .item_list li .check {
 	display: table;
-	width: 80%;
+	width: 78%;
 	float: left;
 }
 .webcart_main .item_list li .check dl {
@@ -229,23 +229,23 @@ html {
 
 /*-----------------卸売-----------------*/
 .about_wholesale {
-	padding: 0 5% 60px;
+	padding: 50px 5.535714285714286%;
 	background: rgba(0,0,0,0.6);
 	color: #fff;
 }
 .about_wholesale h1 {
-	padding: 44px 0 30px;
 	font-size: 40px;
+	margin-bottom: 24px;
 }
 .about_wholesale .get_text {
-	margin-bottom: 44px;
 	line-height: 1.5;
 	font-size: 20px;
 }
 .about_wholesale img {
 	display: block;
-	width: 220px;
-	margin: 0 auto 64px;
+	width: 40%;
+	max-width: 220px;
+	margin: 40px auto;
 }
 .about_wholesale .btn_link {
 	display: block;
@@ -400,12 +400,7 @@ p.copyright {
 		padding: 5.2% 0 4%;
 	}
 	.about_wholesale .get_text {
-		margin-bottom: 16px;
 		font-size: calc(55% + 2.2vw);
-	}
-	.about_wholesale img {
-		width: 40%;
-		margin: 0 auto 24px;
 	}
 	.about_wholesale .btn_link {
 		padding: 7.4% 0;
