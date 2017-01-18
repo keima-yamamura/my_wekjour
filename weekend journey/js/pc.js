@@ -13,6 +13,7 @@ var s= skrollr.init({
 //wj_bg 読み込み時
 var wj_bg = $('.wj_bg');
 $(function(){
+    $('html').css('overflow','hidden');
     var width_src = $('.weekend_journey').css('width');
     var height_src =$('.weekend_journey').innerHeight();
 
@@ -20,8 +21,6 @@ $(function(){
     wj_bg.css('height', function(){return height_src});
     wj_bg.css('position', 'absolute');
     wj_bg.css('z-index','-1');
-
-
 
     var retinaSwitch = window.devicePixelRatio;
     if(retinaSwitch == 1) {
