@@ -25,7 +25,7 @@
     <span></span>
   </a>
 </div><!--hum_menu-->	 
-<div class="wj_bg"></div>
+<div id="wj_bg"></div>
 <div class="weekend_journey">
   <h1>
     <a href="#" class="to_top">
@@ -159,42 +159,20 @@
 	 <p class="copyright">© copyright 2016 Weekend-J Inc. All Rights Reserved.</p>
 </div><!--wrapper-->
 
-
 <script type="text/javascript">
-// 読み込み時の画面幅でのjsファイル判別
 var s = document.createElement("script");
-$(function(){
-    var egwidth = $(window).width();
-    if (egwidth <= 640) { 
-        s.src = "js/sp.js"; 
-        document.getElementsByTagName("head")[0].appendChild(s);
-    } else if (egwidth > 641) { 
-        s.src = "js/pc.js"; 
-        document.getElementsByTagName("head")[0].appendChild(s);
-    }
-
-//リサイズした時の画面幅でjsファイル判別
-    var timer = false;
-    $(window).resize(function() {
-        if (timer !== false) {
-            clearTimeout(timer);
-        }
-        var s = document.createElement("script");
-        timer = setTimeout(function() {
-            var egwidth = $(window).width();
-            if (egwidth <= 641) { 
-
-                s.src = "js/sp.js"; 
-                document.getElementsByTagName("head")[0].appendChild(s);
-                //alert('sp'+egwidth);
-            } else if (egwidth > 641) { 
-
-                s.src = "js/pc.js"; 
-                document.getElementsByTagName("head")[0].appendChild(s);
-            }
-        }, 200);
-    });
-});
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+  //スマホの場合無効になる処理
+  $(function(){
+    s.src = "js/pc.js";
+     document.getElementsByTagName("head")[0].appendChild(s);
+  });
+  } else {
+  //スマホの場合有効になる処理
+  $(function(){
+    //none;
+  });
+}
 </script>
 
 </body>
