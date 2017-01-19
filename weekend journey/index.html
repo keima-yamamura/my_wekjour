@@ -28,10 +28,13 @@
 <div class="wj_bg"></div>
 <div class="weekend_journey">
   <h1>
-    <picture>
-	  <source media="(min-width :641px)" srcset="image/logo@2x.png">
-	  <img src="image/logo@2x.png">	
-	</picture>
+    <a href="#" class="to_top">
+      <picture>
+        <source media="(min-width :641px)" srcset="image/logo.png 1x,image/logo@2x.png 2x">
+        <source media="(min-width :320px)" srcset="image/sp_logo.png 1x,image/sp_logo@2x.png 2x">
+        <img src="image/logo.png" srcset="image/logo.png 1x,image/logo@2x.png 2x" alt="logo">
+      </picture>
+    </a>
   </h1>
 <p class="sp">GOOD&nbsp;BEER&nbsp;WITH&nbsp;GOOD&nbsp;MUSIC</p>
 <div class="weekend_journey_wrapper">
@@ -81,8 +84,9 @@
   <div class="osusume">
     <p>
       <picture>
-        <source media="(min-width :641px)" srcset="image/img_howtodrink.png">
-        <img src="image/sp_img_howtodrink@2x.png" alt="ビール">
+        <source media="(min-width :641px)" srcset="image/img_howtodrink.png 1x,image/img_howtodrink@2x.png 2x">
+        <source media="(min-width :320px)" srcset="image/sp_img_howtodrink.png 1x,image/sp_img_howtodrink@2x.png 2x">
+        <img src="image/logo.png" srcset="image/img_howtodrink.png 1x,image/img_howtodrink@2x.png 2x" alt="飲み方">
       </picture>
     </p>
 		<p>オレンジビールやコリアンダーのスパイスが加わっているため、爽やかな香りを楽しめるのがWeekendJourneyの特徴です。その特徴をより楽しんでいただくためにワイングラスでお飲みいただくスタイルを推奨しています。</p>
@@ -104,8 +108,9 @@
 	<div class="suzuki_info">
 		<p>
 			<picture>
-				<source media="(min-width :641px)" srcset="image/img_shinyasuzuki.png">
-				<img src="image/sp_img_shinyasuzuki@2x.png" alt="鈴木真也">
+        <source media="(min-width :641px)" srcset="image/img_shinyasuzuki.png 1x,image/img_shinyasuzuki@2x.png 2x">
+				<source media="(min-width :320px)" srcset="image/sp_img_shinyasuzuki.png 1x,image/sp_img_shinyasuzuki@2x.png 2x">
+				<img src="image/img_shinyasuzuki.png" srcset="image/img_shinyasuzuki.png 1x,image/img_shinyasuzuki@2x.png 2x" alt="鈴木真也">
 			</picture>
 		</p>
 		<p class="sp name">鈴木真也</p>
@@ -117,24 +122,28 @@
 		<li><span>・</span><p>チェコ最大のビール審査会「GOLD BREWER'S SEAL」審査員</p></li>
 	</ul>
 </div><!--section_wrapper-->
-
 </section><!--brewmaster-->
+
 	 	 <section class="about_wj">
 	 	 	<div class="section_hd para3 pc" data-bottom-top="background-position:0px 0%;" data-top-bottom="background-position: 0px 50%;">
 	 	 		<h1>
-	 	 			<picture>
-	 	 				<source media="(min-width :641px)" srcset="image/sp_logo_about@2x.png">
-	 	 				<img src="image/sp_logo_about.png" alt="weekend_journey">
-	 	 			</picture>
+          <a href="#" class="to_top">
+            <picture>
+              <source media="(min-width :641px)" srcset="image/sp_logo_about.png 1x,image/sp_logo_about@2x.png 2x">
+              <img src="image/ex1.png" srcset="image/img_shinyasuzuki.png 1x,image/ex2.png 2x" alt="鈴木真也">
+            </picture>
+          </a>
 	 	 		</h1>
 	 	 	</div><!-- /.section_hd -->
 	 	 	<section class="about_wj">
 	 	 		<div class="section_hd no_para_about_wj">
 	 	 			<h1>
-	 	 				<picture>
-	 	 					<source media="(min-width :641px)" srcset="image/sp_logo_about@2x.png">
-	 	 					<img src="image/sp_logo_about@2x.png" alt="weekend_journey">
-	 	 				</picture>
+            <a href="#" class="to_top">
+  	 	 				<picture>
+  	 	 					<source media="(min-width :320px)" srcset="image/sp_logo_about.png 1x,image/sp_logo_about@2x.png 2x">
+  	 	 					<img src="image/sp_logo_about.png 1x,image/sp_logo_about@2x.png 2x" alt="about_weekend_journey">
+  	 	 				</picture>
+            </a>
 	 	 			</h1>
 	 	 		</div><!-- /.section_hd -->
 	 	 	<div class="section_wrapper">
@@ -153,42 +162,20 @@
 	 <p class="copyright">© copyright 2016 Weekend-J Inc. All Rights Reserved.</p>
 </div><!--wrapper-->
 
-
 <script type="text/javascript">
-// 読み込み時の画面幅でのjsファイル判別
 var s = document.createElement("script");
-$(function(){
-    var egwidth = $(window).width();
-    if (egwidth <= 640) { 
-        s.src = "js/sp.js"; 
-        document.getElementsByTagName("head")[0].appendChild(s);
-    } else if (egwidth > 641) { 
-        s.src = "js/pc.js"; 
-        document.getElementsByTagName("head")[0].appendChild(s);
-    }
-
-//リサイズした時の画面幅でjsファイル判別
-    var timer = false;
-    $(window).resize(function() {
-        if (timer !== false) {
-            clearTimeout(timer);
-        }
-        var s = document.createElement("script");
-        timer = setTimeout(function() {
-            var egwidth = $(window).width();
-            if (egwidth <= 641) { 
-
-                s.src = "js/sp.js"; 
-                document.getElementsByTagName("head")[0].appendChild(s);
-                //alert('sp'+egwidth);
-            } else if (egwidth > 641) { 
-
-                s.src = "js/pc.js"; 
-                document.getElementsByTagName("head")[0].appendChild(s);
-            }
-        }, 200);
-    });
-});
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+  //スマホの場合無効になる処理
+  $(function(){
+    s.src = "js/pc.js";
+     document.getElementsByTagName("head")[0].appendChild(s);
+  });
+  } else {
+  //スマホの場合有効になる処理
+  $(function(){
+    //none;
+  });
+}
 </script>
 
 </body>
