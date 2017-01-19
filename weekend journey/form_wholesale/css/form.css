@@ -97,18 +97,16 @@ html {
 .hum_menu a span:first-child {
 	margin-top: 0px;
 }
-
+.page_header{
+	height: 100px;
+}
 .page_header .inner h1 {
-	padding: 20px 0 16px;
 	text-align: center;
 	color: #fff;
-	font-size: 32px;
 }
-.page_header .inner h1.logo {
-	padding: 10px 0 8px;
-}
-.page_header .inner h1.logo img {
-	width: 72px;
+.page_header .inner h1 img {
+	width: 120px;
+	padding-top: 10px;
 }
 .page_header .inner .cart_preview {
 	position: absolute;
@@ -319,6 +317,9 @@ p.copyright {
              SP専用 640pxまで
 ----------------------------------------*/
 @media(max-width: 640px){
+	body{
+		min-width: 320px;
+	}
 	.page_header {
 	}
 	/*----------FORM----------*/
