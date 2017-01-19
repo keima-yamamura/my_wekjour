@@ -370,6 +370,9 @@ p.copyright {
              SP専用 640pxまで
 ----------------------------------------*/
 @media(max-width: 640px){
+	body{
+		min-width: 320px;
+	}
 	.page_header .inner .cart_preview .btn_submit {
 		display: none;
 	}
