@@ -88,6 +88,7 @@ html {
 }
 .page_header .inner h1.logo img {
     width: 120px;
+    padding-top: 10px;
 }
 .page_header .inner .cart_preview {
 	position: absolute;
