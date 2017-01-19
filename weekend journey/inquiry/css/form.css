@@ -99,11 +99,10 @@ html {
 	font-size: 32px;
 }
 .page_header .inner h1.logo {
-	padding: 10px 0 8px;
+	padding: 7px 0 0;
 }
 .page_header .inner h1.logo img {
-	width: 25%;
-	max-width: 156px;
+	width: 96px;
 }
 .page_header .inner .cart_preview {
 	position: absolute;
