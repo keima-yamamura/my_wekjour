@@ -94,19 +94,17 @@ html {
 	margin-top: 0px;
 }
 
-
 .page_header .inner h1 {
-	padding: 20px 0 16px;
+	padding-top: 20px;
 	text-align: center;
 	color: #fff;
 	font-size: 32px;
 }
 .page_header .inner h1.logo {
-
+	padding: 8px 0 0;
 }
 .page_header .inner h1.logo img {
-	width: 28.8%;
-	max-width: 180px;
+	width: 180px;
 }
 
 /*--------------メインエリア---------------*/
