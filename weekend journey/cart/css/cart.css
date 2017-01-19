@@ -78,15 +78,12 @@ html {
 }
 
 .page_header .inner h1 {
-	padding-top: 50px;
 	text-align: center;
 	color: #fff;
 	font-size: 32px;
+	padding-top: 6px;
 }
-.page_header .inner h1.logo {
-	padding-top: 10px;
-}
-.page_header .inner h1.logo img {
+.page_header .inner h1 img {
     width: 120px;
     padding-top: 10px;
 }
