@@ -59,6 +59,8 @@ html {
 
 /*--------------ヘッダー---------------*/
 .page_header {
+	height: 100px;
+	box-sizing: border-box;
 	background: rgba(0,0,0,0.4);
 	font-size: 100%;
 }
@@ -67,10 +69,10 @@ html {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-.hum_menu {
+.page_header .hum_menu {
 	position: absolute;
 	left: 20px;
-	top: 20px;
+	top: 35px;
 }
 .hum_menu a {
 	background-color: transparent;
@@ -92,18 +94,12 @@ html {
 	margin-top: 0px;
 }
 
-.page_header .inner h1 {
-	padding: 20px 0 16px;
-	text-align: center;
-	color: #fff;
-	font-size: 32px;
-}
 .page_header .inner h1.logo {
-	padding: 10px 0 8px;
+	text-align: center;
 }
 .page_header .inner h1.logo img {
-	width: 25%;
-	max-width: 156px;
+	padding-top: 10px;
+    width: 120px;
 }
 .page_header .inner .cart_preview {
 	position: absolute;
@@ -353,19 +349,13 @@ p.copyright {
 	}
 	.links_contents li.product a,
 	.links_contents li.brewmaster a {
-	    padding: 6.215% 0;
+	    padding: 18px 0;
 	}
 	.links_contents li.about_wj a {
-		padding: 1% 0;
-	}
-	.links_contents li a .en {
-		font-size: 60px;
-	}
-	.links_contents li a .ja {
-		font-size: 24px;
+		padding: 0;
 	}
 	.links_contents li.about_wj a img {
-	    width: 202px;
+	    height: 118px;
 	}
 
 	/*-----------------footer-----------------*/
