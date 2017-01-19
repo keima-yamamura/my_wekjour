@@ -337,7 +337,7 @@
 		}
 		.about_wj .section_hd h1{
 			margin: 0;
-			padding-top: 30px;
+			padding-top: 20px;
 		}
 		.about_wj .section_hd h1 img{
 			width: 250px;
@@ -691,7 +691,7 @@
 	}
 	.about_wj .section_hd h1{
 		margin: 0;
-		padding-top: 30px;
+		padding-top: 20px;
 	}
 	.about_wj .section_hd h1 img{
 		width: 250px;
@@ -879,7 +879,6 @@
 	.section_wrapper{
 		padding: 0 5%;
 	}
-
 	.product .section_hd{
 	background-image: url(../image/sp_bg_product.png);
 	-webkit-background-size: 640px 240px;
@@ -888,6 +887,9 @@
 	color: #fff;
 	padding: 12% 0;
 	}
+	.product .section_hd .no_para_product{
+	background-image: url(../image/sp_bg_product.png);
+	} 
 	.product .section_hd.pc{
 		display: none;
 	}
@@ -948,6 +950,9 @@
 		margin-bottom: 40px;
 		padding: 12% 0;
 	}
+	.brewmaster .section_hd .no_para_brewmastar{
+		background-image: url(../image/sp_bg_brewmaster.png);
+	}
 	.brewmaster .section_hd.pc{
 		display: none;
 	}
@@ -999,6 +1004,9 @@
 		-webkit-background-size: cover;
 		background-size: cover;
 		margin-bottom: 40px;	
+	}
+	.about_wj .section_hd .no_para_about_wj{
+		background-image: url(../image/sp_bg_about.png);
 	}
 	.about_wj .section_hd.pc{
 		display: none;

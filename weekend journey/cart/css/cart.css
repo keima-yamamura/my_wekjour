@@ -42,6 +42,8 @@ html {
 
 /*--------------ヘッダー---------------*/
 .page_header {
+	height: 100px;
+	box-sizing: border-box;
 	background: rgba(0,0,0,0.4);
 	font-size: 100%;
 }
@@ -50,10 +52,10 @@ html {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-.hum_menu {
+.page_header .hum_menu {
 	position: absolute;
 	left: 20px;
-	top: 20px;
+	top: 35px;
 }
 .hum_menu a {
 	background-color: transparent;
@@ -76,14 +78,18 @@ html {
 }
 
 .page_header .inner h1 {
-	padding: 20px 0 16px;
 	text-align: center;
 	color: #fff;
 	font-size: 32px;
+	padding-top: 6px;
+}
+.page_header .inner h1 img {
+    width: 120px;
+    padding-top: 10px;
 }
 .page_header .inner .cart_preview {
 	position: absolute;
-	top: 19px;
+	top: 35px;
 	right: 0;
 	display: block;
 	overflow: hidden;
@@ -138,7 +144,7 @@ html {
 }
 
 .webcart_main {
-	margin: 0 auto 40px;
+	margin: 40px auto;
 	padding: 0 5%;
 	background: rgba(0,0,0,0.6);
 	color: #fff;
@@ -305,7 +311,7 @@ html {
 }
 .links_contents li.product a,
 .links_contents li.brewmaster a {
-    padding: 6.215% 0;
+    padding: 32px 0;
 }
 .links_contents li a .en {
 	font-size: 60px;
@@ -314,7 +320,7 @@ html {
 	font-size: 24px;
 }
 .links_contents li.about_wj a {
-	padding: 1% 0;
+	padding: 8px 0;
 }
 .links_contents li.about_wj a img {
     width: 202px;
@@ -361,6 +367,9 @@ p.copyright {
              SP専用 640pxまで
 ----------------------------------------*/
 @media(max-width: 640px){
+	body{
+		min-width: 320px;
+	}
 	.page_header .inner .cart_preview .btn_submit {
 		display: none;
 	}
@@ -427,19 +436,13 @@ p.copyright {
 	}
 	.links_contents li.product a,
 	.links_contents li.brewmaster a {
-	    padding: 6.215% 0;
+	    padding: 18px 0;
 	}
 	.links_contents li.about_wj a {
-		padding: 1% 0;
-	}
-	.links_contents li a .en {
-		font-size: 60px;
-	}
-	.links_contents li a .ja {
-		font-size: 24px;
+		padding: 0;
 	}
 	.links_contents li.about_wj a img {
-	    width: 202px;
+	    height: 118px;
 	}
 
 	/*-----------------footer-----------------*/
@@ -471,18 +474,6 @@ p.copyright {
 		font-size: 8px;
 	}
 }
-
-/*---------------TITLE用特殊設定-----------------*/
-/*@media(min-width: 641px) and (max-width: 799px){
-	.page_header .inner h1 .title_sp {
-		display: block;
-	}
-}
-@media(min-width: 800px) {
-	.page_header .inner h1 .title_pc {
-		display: block;
-	}
-}*/
 
 /*----------------------------------------
               retina設定
