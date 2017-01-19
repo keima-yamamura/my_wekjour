@@ -332,9 +332,11 @@ p.copyright {
 	body{
 		min-width: 320px;
 	}
-	.page_header {
-	}
 	/*----------FORM----------*/
+	.form_main{
+		padding: 0 5.535714285714286%;
+	}
+
 	.form_main h1 {
 		padding-top: 4.3%;
 		font-size: calc(50% + 9vw);
@@ -345,6 +347,15 @@ p.copyright {
 	.form_main .input_wrapper {
 		font-size: calc(50% + 2.2vw);
 	}
+	
+	form .form_submit .submit_normal{
+		height: 72px;
+		padding: 0 8.035714285714286%;
+	}
+	.form_main .form_submit .submit_normal{
+		width: 100%;
+	}
+
 	
 	
 	/*-----------------ページ下部リンク-----------------*/
