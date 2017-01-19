@@ -101,6 +101,9 @@ html {
 	padding-top: 10px;
     width: 120px;
 }
+.page_header .inner h1.logo img {
+	width: 100px;
+}
 .page_header .inner .cart_preview {
 	position: absolute;
 	top: 19px;
