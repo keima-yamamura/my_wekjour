@@ -42,6 +42,8 @@ html {
 
 /*--------------ヘッダー---------------*/
 .page_header {
+	height: 128px;
+	box-sizing: border-box;
 	background: rgba(0,0,0,0.4);
 	font-size: 100%;
 }
@@ -50,10 +52,10 @@ html {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-.hum_menu {
+.page_header .hum_menu {
 	position: absolute;
 	left: 20px;
-	top: 20px;
+	top: 48px;
 }
 .hum_menu a {
 	background-color: transparent;
@@ -76,14 +78,20 @@ html {
 }
 
 .page_header .inner h1 {
-	padding: 20px 0 16px;
+	padding-top: 50px;
 	text-align: center;
 	color: #fff;
 	font-size: 32px;
 }
+.page_header .inner h1.logo {
+	padding-top: 8px;
+}
+.page_header .inner h1.logo img {
+    width: 180px;
+}
 .page_header .inner .cart_preview {
 	position: absolute;
-	top: 19px;
+	top: 48px;
 	right: 0;
 	display: block;
 	overflow: hidden;
@@ -138,7 +146,7 @@ html {
 }
 
 .webcart_main {
-	margin: 0 auto 40px;
+	margin: 40px auto;
 	padding: 0 5%;
 	background: rgba(0,0,0,0.6);
 	color: #fff;
