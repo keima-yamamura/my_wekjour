@@ -58,7 +58,7 @@ html {
 
 /*--------------ヘッダー---------------*/
 .page_header {
-	height: 128px;
+	height: 100px;
 	box-sizing: border-box;
 	background: rgba(0,0,0,0.4);
 	font-size: 100%;
@@ -94,16 +94,14 @@ html {
 }
 
 .page_header .inner h1 {
-	padding-top: 20px;
+	padding-top: 6px;
 	text-align: center;
 	color: #fff;
 	font-size: 32px;
 }
-.page_header .inner h1.logo {
-	padding: 8px 0 0;
-}
 .page_header .inner h1.logo img {
-	width: 180px;
+	width: 120px;
+	padding-top: 10px;
 }
 
 /*--------------メインエリア---------------*/
