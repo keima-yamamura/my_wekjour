@@ -220,11 +220,10 @@ html {
 	width: 47%;
 	max-width: 376px;
 	margin: 0 auto;
-	padding: 20px 0;
 	border: solid 2px #d3d3d3;
 	background-color: rgba(0,0,0,0.2);
 	color: #fff;
-	height: 72px;
+	height: 56px;
 	text-align: center;
 	font-size: 20px;
 	text-decoration: none;
@@ -349,12 +348,10 @@ p.copyright {
 		font-size: calc(50% + 2.2vw);
 	}
 	
-	form .form_submit .submit_normal{
-		height: 72px;
-		padding: 0 8.035714285714286%;
-	}
 	.form_main .form_submit .submit_normal{
 		width: 100%;
+		height: 56px;
+		line-height: 56px;
 	}
 
 	
