@@ -420,6 +420,7 @@
 		padding: 0px;
 		line-height: 56px;
 		height: 100%;
+		border: 1px solid #fff;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div:first-child{
 		margin-bottom: 80px;
