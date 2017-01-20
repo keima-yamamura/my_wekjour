@@ -1017,10 +1017,10 @@
 	}
 	.about_wj .section_hd h1{
 		text-align: center;
-		padding: 4% 0;
 	}
 	.about_wj .section_hd h1 img{
-		width: 60%;
+		width: 262px;
+		padding: 4% 0;
 	}
 	.about_wj p{
 		font-size: calc(50% + 2.5vw);
