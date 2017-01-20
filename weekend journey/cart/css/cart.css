@@ -99,7 +99,6 @@ html {
 	display: block;
 	float: left;
 	margin-right: 12px;
-	padding: 4px 16px 2px;
 	border: solid 2px #fff;
 	color: #fff;
 	font-size: 22px;
@@ -215,7 +214,8 @@ html {
 	width: 81.3523750305175%;
 	max-width: 401px;
 	margin: 0 auto;
-	padding: 34px 0;
+	height: 56px;
+	line-height: 56px;
 	font-size: 22px;
 	border: solid 2px #d3d3d3;
 	background-color: rgba(0,0,0,0.2);
@@ -258,7 +258,8 @@ html {
 	width: 81.3523750305175%;
 	max-width: 401px;
 	margin: 0 auto;
-	padding: 37px 0;
+	height: 56px;
+	line-height: 56px;
 	font-size: 16px;
 	border: solid 2px #d3d3d3;
 	background-color: rgba(0,0,0,0.2);
@@ -394,11 +395,9 @@ p.copyright {
 		position: static;
 		font-size: calc(50% + 1.9vw);
 	}
-	.webcart_main .item_checkout {
-		padding: 6.5% 0;
-	}
+
 	.webcart_main .item_checkout .btn_submit {
-		padding: 6.79% 0;	
+		box-sizing: border-box;
 	}
 	/*-----------------卸売-----------------*/
 	.about_wholesale {
@@ -412,7 +411,9 @@ p.copyright {
 		font-size: calc(55% + 2.2vw);
 	}
 	.about_wholesale .btn_link {
-		padding: 7.4% 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 	}
 	/*-----------------ページ下部リンク-----------------*/
 	.links_contents { 
