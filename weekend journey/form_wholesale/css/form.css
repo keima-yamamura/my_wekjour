@@ -67,6 +67,18 @@ html {
 .page_header {
 	background: rgba(0,0,0,0.4);
 	font-size: 100%;
+	height: 100px;
+}
+.page_header .inner h1 {
+	text-align: center;
+	color: #fff;
+}
+.page_header .inner h1{
+	padding-top: 6px;
+}
+.page_header .inner h1 img {
+	width: 120px;
+	padding-top: 10px;
 }
 .page_header .inner {
 	position: relative;
@@ -97,18 +109,16 @@ html {
 .hum_menu a span:first-child {
 	margin-top: 0px;
 }
-
+.page_header{
+	height: 100px;
+}
 .page_header .inner h1 {
-	padding: 20px 0 16px;
 	text-align: center;
 	color: #fff;
-	font-size: 32px;
 }
-.page_header .inner h1.logo {
-	padding: 10px 0 8px;
-}
-.page_header .inner h1.logo img {
-	width: 72px;
+.page_header .inner h1 img {
+	width: 120px;
+	padding-top: 10px;
 }
 .page_header .inner .cart_preview {
 	position: absolute;
@@ -264,7 +274,7 @@ html {
 }
 .links_contents li.product a,
 .links_contents li.brewmaster a {
-    padding: 6.215% 0;
+    padding: 32px 0;
 }
 .links_contents li a .en {
 	font-size: 60px;
@@ -273,7 +283,7 @@ html {
 	font-size: 24px;
 }
 .links_contents li.about_wj a {
-	padding: 1% 0;
+	padding: 8px 0;
 }
 .links_contents li.about_wj a img {
     width: 202px;
@@ -319,9 +329,14 @@ p.copyright {
              SP専用 640pxまで
 ----------------------------------------*/
 @media(max-width: 640px){
-	.page_header {
+	body{
+		min-width: 320px;
 	}
 	/*----------FORM----------*/
+	.form_main{
+		padding: 0 5.535714285714286%;
+	}
+
 	.form_main h1 {
 		padding-top: 4.3%;
 		font-size: calc(50% + 9vw);
@@ -332,6 +347,15 @@ p.copyright {
 	.form_main .input_wrapper {
 		font-size: calc(50% + 2.2vw);
 	}
+	
+	form .form_submit .submit_normal{
+		height: 72px;
+		padding: 0 8.035714285714286%;
+	}
+	.form_main .form_submit .submit_normal{
+		width: 100%;
+	}
+
 	
 	
 	/*-----------------ページ下部リンク-----------------*/
@@ -356,19 +380,13 @@ p.copyright {
 	}
 	.links_contents li.product a,
 	.links_contents li.brewmaster a {
-	    padding: 6.215% 0;
+	    padding: 18px 0;
 	}
 	.links_contents li.about_wj a {
-		padding: 1% 0;
-	}
-	.links_contents li a .en {
-		font-size: 60px;
-	}
-	.links_contents li a .ja {
-		font-size: 24px;
+		padding: 0;
 	}
 	.links_contents li.about_wj a img {
-	    width: 202px;
+	    height: 118px;
 	}
 
 	/*-----------------footer-----------------*/

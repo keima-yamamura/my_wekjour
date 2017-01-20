@@ -9,7 +9,6 @@ html {
 	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
 }
 .page_header h1,
-.form_main h1,
 .links_contents li .en {
 	font-family: din-condensed, sans-serif;
 	font-style: normal;
@@ -59,20 +58,20 @@ html {
 
 /*--------------ヘッダー---------------*/
 .page_header {
+	height: 100px;
+	box-sizing: border-box;
 	background: rgba(0,0,0,0.4);
 	font-size: 100%;
-	height: 100px
 }
 .page_header .inner {
 	position: relative;
 	max-width: 1200px;
 	margin: 0 auto;
 }
-.page_header .hum_menu {
+.hum_menu {
 	position: absolute;
 	left: 20px;
-	top: 35px;
-	display: none;
+	top: 20px;
 }
 .hum_menu a {
 	background-color: transparent;
@@ -93,44 +92,16 @@ html {
 .hum_menu a span:first-child {
 	margin-top: 0px;
 }
-.page_header .inner h1{
+
+.page_header .inner h1 {
+	padding-top: 6px;
 	text-align: center;
-  color: #fff;
-  padding-top: 6px;
+	color: #fff;
+	font-size: 32px;
 }
-.page_header .inner h1 img {
+.page_header .inner h1.logo img {
 	width: 120px;
-  padding-top: 10px;
-}
-.page_header .inner .cart_preview {
-	position: absolute;
-	top: 19px;
-	right: 0;
-	display: block;
-	overflow: hidden;
-	padding-right: 3.6%;
-}
-.page_header .inner .cart_preview .btn_submit {
-	display: block;
-	float: left;
-	margin-right: 14px;
-	padding: 4px 16px 2px;
-	border: solid 2px #fff;
-	color: #fff;
-	font-size: 24px;
-	text-decoration: none;
-}
-.page_header .inner .cart_preview .count_items {
-	display: block;
-	box-sizing: border-box;
-	float: left;
-	width: 42px;
-	height: 34px;
-	padding-left: 17px;
-	background: url(../image/preview_cart.png) no-repeat left 9px;
-	font-family: "Helvetica", sans-serif;
-	font-size: 24px;
-	color: #fff;
+	padding-top: 10px;
 }
 
 /*--------------メインエリア---------------*/
@@ -141,82 +112,28 @@ html {
 	max-width: 1120px;
 	margin: 0 auto;
 }
-.form_main {
+.tokusyou_main {
 	margin: 40px auto;
-	padding: 0 5%;
+	padding: 40px 5%;
 	background: rgba(0,0,0,0.6);
 	color: #fff;
 }
-.form_main h1 {
-	padding-top: 40px;
-	font-size: 60px;
+.tokusyou_main h1 {
+	font-size: 40px;
+	margin-bottom: 24px;
 }
-.form_main h1 span {
-	font-size: 24px;
-}
-.form_main .description {
-	margin-top: 8px;
-}
-
-/*------------フォーム入力エリア-----------*/
-.form_main .input_wrapper {
-	font-size: 24px;
-}
-.form_main .input_wrapper dt {
-	margin: 32px 0 16px;
-}
-.form_main .input_wrapper dt span {
-	font-size: 66.7%;
-}
-.form_main .input_wrapper dt span.must {
-	color: #ff0000;
-}
-.form_main .input_wrapper dd .text_input {
-	display: block;
-	box-sizing: border-box;
-	width: 100%;
-	max-width: 500px;
-	padding: 10px;
-	border: solid 1px #aaa;
-	background-color: #fff;
-	color: #000;
+.tokusyou_main dl {
+	line-height: 1.5;
 	font-size: 20px;
 }
-.form_main .input_wrapper dd .textarea_basic {
-	display: block;
-	box-sizing: border-box;
-	width: 100%;
-	height: 244px;
-	padding: 10px;
-	border: solid 1px #aaa;
-	resize: none;
-	background-color: #fff;
-	color: #000;
-	font-size: 20px;
+.tokusyou_main dl dt {
+	font-size: 1.2em;
 }
-.form_main .form_submit {
-	padding: 40px 0;
+.tokusyou_main dl dd {
+	margin-bottom: 32px;	
 }
-.form_main .form_submit .submit_normal {
-	display: block;
-	width: 81.3523750305175%;
-	max-width: 401px;
-	margin: 0 auto;
-	padding: 37px 0;
-	font-size: 16px;
-	border: solid 2px #d3d3d3;
-	background-color: rgba(0,0,0,0.2);
-	color: #fff;
-	text-align: center;
-	text-decoration: none;
-}
-.form_main .form_submit .submit_normal:hover {
-	border: solid 2px #fff;
-	background-color: rgba(255,255,255,0.8);
-	color: #000;
-	text-shadow: none;
-	transition: 0.3s;
-	cursor: pointer;
+.tokusyou_main dl dd:last-child {
+	margin-bottom: 0;
 }
 
 /*-----------------ページ下部リンク-----------------*/
@@ -314,28 +231,12 @@ p.copyright {
 	body {
 		min-width: 320px;
 	}
-	/*----------FORM----------*/
-	.form_main{
-		padding: 0 5.535714285714286%;
+	/*----------メイン----------*/
+	.tokusyou_main h1 {
+		font-size: calc(50% + 5vw);
 	}
-	.form_main h1 {
-		padding-top: 4.3%;
-		font-size: calc(50% + 9vw);
-	}
-	.form_main h1 span {
-		font-size: 0.4em;
-	}
-	.form_main .input_wrapper {
+	.tokusyou_main dl {
 		font-size: calc(50% + 2.2vw);
-	}
-	.form_main .form_submit .submit_normal {
-		padding: 0 8.035714285714286%;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-		height: 72px;
-		font-size: calc(80% + 1.3vw);
-		text-align: center;
 	}
 	
 	/*-----------------ページ下部リンク-----------------*/

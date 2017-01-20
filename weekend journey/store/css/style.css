@@ -54,7 +54,7 @@
 	.wrapper .hum_menu{
 			position: absolute;
 			left: 20px;
-			top: 20px;
+			top: 35px;
 			display: none;
 		}
 	.wrapper .hum_menu a{
@@ -80,7 +80,7 @@
 	.page_header {
 		background: rgba(0,0,0,0.4);
 		font-size: 100%;
-		height: 64px;
+		height: 100px;
 	}
 	.page_header .inner {
 		position: relative;
@@ -94,11 +94,12 @@
 		padding-top: 6px;
 	}
 	.page_header .inner h1 img{
-		width: 10%;
+		width: 120px;	
+		padding-top: 10px;
 	}
 	.page_header .inner .cart_preview {
 		position: absolute;
-		top: 17px;
+		top: 35px;
 		right: 0;
 		display: block;
 		overflow: hidden;
@@ -160,7 +161,8 @@
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-	.weekend_journy_wrapper h1 span{
+	.weekend_journy_wrapper h1{
+		word-wrap: break-word;
 		font-size: 60px;
 	}
 	.weekend_journy_wrapper h1 br{
@@ -282,22 +284,18 @@
 		border: 2px solid #fff;
 		transition: 0.3s;
 	}
-	.links_contents{
-		background: #201c15;
+	.links_contents {
 		overflow: hidden;
-		padding: 0 1.875% 67px;
+		width: 96.25%;
 		max-width: 1232px;
-		margin: 0 auto;
+		margin: 0 auto 72px;
 	}
 	.links_contents li {
-		text-align: center;
 		width: 49.2%;
 		margin-bottom: 2%;
-		-webkit-background-size: 100%;
-		background-size: 100%;
-	}
-	.links_contents li a{
-		text-decoration: none;
+		-webkit-background-size: cover;
+		background-size: cover;
+		text-align: center;
 	}
 	.links_contents li:nth-child(odd) {
 		float: left;
@@ -305,32 +303,38 @@
 	.links_contents li:nth-child(even) {
 		float: right;
 	}
-	.links_contents li.product a,
-	.links_contents li.brewmaster a{
-		padding: 6.215% 0;
-		display: block;
-	}
 	.links_contents li.product {
-		background-image: url(../image/bg_product@2x.png);
-		background-size: cover;
+		background-image: url(../../image/bg_product.png);
 	}
 	.links_contents li.brewmaster {
-		background-image: url(../image/bg_brewmaster@2x.png);
-		background-size: cover;
+		background-image: url(../../image/bg_brewmaster.png);
 	}
 	.links_contents li.about_wj {
-		background-image: url(../image/bg_about@2x.png);
+		background-image: url(../../image/bg_about.png);
 		background-position: 0 80%;
 	}
-	.links_contents li .en {
+	.links_contents li a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+	}
+	.links_contents li.product a,
+	.links_contents li.brewmaster a {
+	    padding: 32px 0;
+	}
+	.links_contents li a .en {
 		font-size: 60px;
 	}
-	.links_contents li .ja {
+	.links_contents li a .ja {
 		font-size: 24px;
 	}
-	.links_contents li.about_wj img {
-		width: 202px;
+	.links_contents li.about_wj a {
+		padding: 8px 0;
 	}
+	.links_contents li.about_wj a img {
+	    width: 202px;
+	}
+
 	footer{
 		width: 100%;
 		text-align: center;
@@ -375,12 +379,7 @@
 @media(max-width: 786px){
 
 	.weekend_journy_wrapper h1{
-		text-align: center;
 		font-size: 3.75vw;
-	}
-	.weekend_journy_wrapper h1 span{
-		display: none;
-		text-align: center;
 	}
 }
 
@@ -401,11 +400,7 @@
 	}
 	.wrapper .weekend_journy_wrapper h1{
 	font-size: calc(50% + 9vw);
-	text-align: center;
-	line-height: 24px;
-	}
-	.wrapper .weekend_journy_wrapper h1 span{
-		font-size: 3.75vw;
+	word-wrap: break-word;
 	}
 	.wrapper .weekend_journy_wrapper dl{
 		display: none;
@@ -449,18 +444,34 @@
 		height: 100%;
 		line-height: 72px;
 	}
-	.wrapper .links_contents{
-		padding-bottom: 0;
+	.links_contents { 
+		width: 93.75%;
+		margin: 0 auto 6.25vw;
 	}
-	.wrapper .links_contents li{
+	.links_contents li {
 		float: none;
 		width: 100%;
 		margin-bottom: 6%;
 	}
-	.wrapper .links_contents li a{
-		width: 100%;
-		height: 100%;
-		font-size: calc(50% + 9vw);
+	.links_contents li.product {
+		background-image: url(../../image/sp_bg_product.png);
+	}
+	.links_contents li.brewmaster {
+		background-image: url(../../image/sp_bg_brewmaster.png);
+	}
+	.links_contents li.about_wj {
+		background-image: url(../../image/sp_bg_about.png);
+		background-position: 0 80%;
+	}
+	.links_contents li.product a,
+	.links_contents li.brewmaster a {
+	    padding: 18px 0;
+	}
+	.links_contents li.about_wj a {
+		padding: 0;
+	}
+	.links_contents li.about_wj a img {
+	    height: 118px;
 	}
 	footer ul{
 		padding: 0 5%;
