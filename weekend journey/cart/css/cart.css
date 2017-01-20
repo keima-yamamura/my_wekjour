@@ -381,15 +381,13 @@ p.copyright {
 	.page_header .inner .cart_preview .btn_submit {
 		display: none;
 	}
-	.section_wrapper_basic .webcart_main h1{
+	.section_wrapper_basic .webcart_main h1 {
+		padding-top: 20px;
 		font-size: calc(50% + 7.5vw)
-	}
-	.section_wrapper_basic .about_wholesale h1{
-		font-size: calc(50% + 3.7vw);
 	}
 	/*----------CART----------*/
 	.webcart_main {
-		margin: 32px auto 80px;
+		margin: 32px auto 40px;
 	}
 	.webcart_main h1 {
 		font-size: calc(50% + 9vw);
@@ -398,9 +396,13 @@ p.copyright {
 		font-size: 0.4em;
 		padding-left: 1em;
 	}
+	.webcart_main .item_checkout {
+		padding: 20px 0;
+	}
 	.webcart_main .item_checkout .btn_submit {
 		font-size: calc(120% + 1.3vw)
 	}
+
 	/*----------CART中身----------*/
 	.webcart_main .item_list li {
 		padding: 6.1% 0;
@@ -413,18 +415,16 @@ p.copyright {
 		position: static;
 		font-size: calc(50% + 1.9vw);
 	}
-
-
 	.webcart_main .item_checkout .btn_submit {
 		box-sizing: border-box;
 	}
 	/*-----------------卸売-----------------*/
 	.about_wholesale {
 		margin-bottom: 80px;
-		padding: 50px 5%;
+		padding: 20px 5%;
 	}
-	.about_wholesale h1 {
-		font-size: calc(50% + 5vw);
+	.about_wholesale h1{
+		font-size: calc(50% + 3.7vw);
 	}
 	.about_wholesale .get_text {
 		font-size: calc(55% + 2.2vw);

@@ -337,6 +337,7 @@ p.copyright {
 		padding: 0 5.535714285714286%;
 	}
 	.form_main h1 {
+		padding-top: 20px;
 		font-size: calc(50% + 7.5vw);
 	}
 	.form_main h1 span {
@@ -344,6 +345,9 @@ p.copyright {
 	}
 	.form_main .input_wrapper {
 		font-size: calc(50% + 2.2vw);
+	}
+	.form_main .form_submit {
+		padding: 20px 0;
 	}
 	.form_main .form_submit .submit_normal{
 		width: 100%;

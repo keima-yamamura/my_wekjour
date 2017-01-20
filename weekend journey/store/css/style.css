@@ -396,7 +396,7 @@
 	}
 	.wrapper .weekend_journy_wrapper{
 		margin-bottom: 40px;
-		padding-top: 7.3%;
+		padding: 20px 5.535714285714286%;
 	}
 	.wrapper .weekend_journy_wrapper h1{
 	font-size: calc(50% + 7.5vw);
@@ -427,6 +427,9 @@
 	}
 	.wrapper .weekend_journy_wrapper .product_box div p:first-of-type{
 		margin-bottom: -40px;
+	}
+	.order .order_contents {
+		padding: 20px 5.535714285714286%;
 	}
 	.order .order_contents h1{
 		font-size: calc(50% + 5vw);

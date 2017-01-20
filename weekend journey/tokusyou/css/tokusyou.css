@@ -232,6 +232,9 @@ p.copyright {
 		min-width: 320px;
 	}
 	/*----------メイン----------*/
+	.tokusyou_main {
+		padding: 20px 5%;
+	}
 	.tokusyou_main h1 {
 		font-size: calc(50% + 3.7vw);
 	}

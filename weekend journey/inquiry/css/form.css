@@ -304,12 +304,15 @@ p.copyright {
 		padding: 0 5.535714285714286%;
 	}
 	.form_main h1 {
+		padding-top: 20px;
 		font-size: calc(50% + 7.5vw);
 	}
 	.form_main h1 span {
 		font-size: 0.4em;
 	}
-
+	.form_main .form_submit {
+		padding: 20px 0;
+	}
 	.form_main .form_submit .submit_normal{
 		border: 1px solid #fff;
 	}

@@ -231,6 +231,9 @@ p.copyright {
 		min-width: 320px;
 	}
 	/*----------メイン----------*/
+	.policy_main {
+		padding: 20px 5%;
+	}
 	.policy_main h1 {
 		font-size: calc(50% + 7.5vw);
 	}
