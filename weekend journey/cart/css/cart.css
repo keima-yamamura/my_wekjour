@@ -21,7 +21,6 @@ html {
 .wrapper { background: #201c15; }
 .bg_weekend_journy {
 	position: relative;
-	padding-bottom: 40px;
 	background-image: url(../../image/bg_main_01@2x.png);
 	background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -144,7 +143,7 @@ html {
 }
 
 .webcart_main {
-	margin: 40px auto;
+	margin: 40px auto 120px;
 	padding: 0 5%;
 	background: rgba(0,0,0,0.6);
 	color: #fff;
@@ -213,10 +212,10 @@ html {
 .webcart_main .item_checkout .btn_submit {
 	display: block;
 	width: 79.886%;
-    max-width: 401px;
+    max-width: 356px;
 	margin: 0 auto;
-	line-height: 68px;
-	font-size: 22px;
+	line-height: 60px;
+	font-size: 32px;
 	border: solid 2px #d3d3d3;
 	background-color: rgba(0,0,0,0.2);
 	color: #fff;
@@ -235,6 +234,7 @@ html {
 
 /*-----------------卸売-----------------*/
 .about_wholesale {
+	margin-bottom: 120px;
 	padding: 50px 5.535714285714286%;
 	background: rgba(0,0,0,0.6);
 	color: #fff;
@@ -256,10 +256,10 @@ html {
 .about_wholesale .btn_link {
 	display: block;
 	width: 79.886%;
-	max-width: 401px;
+	max-width: 356px;
 	margin: 0 auto;
-	padding: 37px 0;
-	font-size: 16px;
+	line-height: 60px;
+	font-size: 20px;
 	border: solid 2px #fff;
 	background-color: rgba(0,0,0,0.2);
 	color: #fff;
@@ -374,6 +374,9 @@ p.copyright {
 		display: none;
 	}
 	/*----------CART----------*/
+	.webcart_main {
+		margin: 32px auto 80px;
+	}
 	.webcart_main h1 {
 		font-size: calc(50% + 9vw);
 	}
@@ -401,6 +404,7 @@ p.copyright {
 	}
 	/*-----------------卸売-----------------*/
 	.about_wholesale {
+		margin-bottom: 80px;
 		padding: 50px 5%;
 	}
 	.about_wholesale h1 {
