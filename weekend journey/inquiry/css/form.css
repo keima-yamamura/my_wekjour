@@ -304,7 +304,6 @@ p.copyright {
 		padding: 0 5.535714285714286%;
 	}
 	.form_main h1 {
-		padding-top: 4.3%;
 		font-size: calc(50% + 7.5vw);
 	}
 	.form_main h1 span {
@@ -382,7 +381,7 @@ p.copyright {
 (-webkit-min-device-pixel-ratio: 2) and (min-width: 641px),
 (            min-resolution: 2dppx) and (min-width: 641px) {
     .bg_weekend_journy {
-    	background-image: url(../image/bg_main_01@2x.png);
+    	background-image: url(../../image/bg_main_01@2x.png);
     }
     .links_contents li.product {
 		background-image: url(../../image/bg_product@2x.png);
@@ -399,7 +398,7 @@ p.copyright {
 (-webkit-min-device-pixel-ratio: 2) and (max-width: 640px),
 (            min-resolution: 2dppx) and (max-width: 640px) {
     .bg_weekend_journy {
-    	background-image: url(../image/sp_bg_main_01@2x.png);
+    	background-image: url(../../image/sp_bg_main_01@2x.png);
     }
     .links_contents li.product {
 		background-image: url(../../image/sp_bg_product@2x.png);
