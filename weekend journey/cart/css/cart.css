@@ -99,6 +99,7 @@ html {
 	float: left;
 	margin-right: 12px;
 	border: solid 2px #fff;
+	padding: 4px 16px 2px;
 	color: #fff;
 	font-size: 22px;
 	text-decoration: none;
@@ -211,7 +212,7 @@ html {
 .webcart_main .item_checkout .btn_submit {
 	display: block;
 	width: 55.946%;
-    max-width: 401px;
+  max-width: 401px;
 	margin: 0 auto;
 	height: 56px;
 	line-height: 56px;
@@ -219,6 +220,9 @@ html {
 	border: solid 2px #d3d3d3;
 	background-color: rgba(0,0,0,0.2);
 	color: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	text-align: center;
 	text-decoration: none;
 }
@@ -266,6 +270,9 @@ html {
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .about_wholesale .btn_link:hover {
 	border: solid 2px #fff;
@@ -417,7 +424,7 @@ p.copyright {
 		font-size: calc(55% + 2.2vw);
 	}
 	.about_wholesale .btn_link {
-		line-height: 46px;
+		line-height: 56px;
 		padding: 0;
 		font-size: calc(80% + 1.3vw);
 		-webkit-box-sizing: border-box;
