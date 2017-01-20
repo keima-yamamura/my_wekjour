@@ -73,7 +73,7 @@ html {
 	text-align: center;
 	color: #fff;
 }
-.page_header .inner h1{
+.page_header .inner h1 {
 	padding-top: 6px;
 }
 .page_header .inner h1 img {
@@ -336,10 +336,8 @@ p.copyright {
 	.form_main{
 		padding: 0 5.535714285714286%;
 	}
-
 	.form_main h1 {
-		padding-top: 4.3%;
-		font-size: calc(50% + 9vw);
+		font-size: calc(50% + 7.5vw);
 	}
 	.form_main h1 span {
 		font-size: 0.4em;
@@ -347,15 +345,12 @@ p.copyright {
 	.form_main .input_wrapper {
 		font-size: calc(50% + 2.2vw);
 	}
-	
 	.form_main .form_submit .submit_normal{
 		width: 100%;
 		height: 56px;
 		line-height: 56px;
 		border: 1px solid #fff;
 	}
-
-	
 	
 	/*-----------------ページ下部リンク-----------------*/
 	.links_contents { 
