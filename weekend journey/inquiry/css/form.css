@@ -17,29 +17,12 @@ html {
 	text-shadow: 0px 0px 20px #000;
 }
 
-/*---------------retina設定-----------------*/
-@media (-webkit-min-device-pixel-ratio: 2),
-       (min-resolution: 2dppx) {
-    .bg_weekend_journy {
-    	background-image: url(../image/bg_main_01@2x.png);
-    } 
-	.links_contents li.product {
-		background-image: url(../../image/bg_product.png);
-	}
-	.links_contents li.brewmaster {
-		background-image: url(../../image/bg_brewmaster.png);
-	}
-	.links_contents li.about_wj {
-		background-image: url(../../image/bg_about.png);
-	}
-}
-
 /*--------------背景---------------*/
 .wrapper { background: #201c15; }
 .bg_weekend_journy {
 	position: relative;
 	padding-bottom: 40px;
-	background-image: url(../../image/bg_main_01@2x.png);
+	background-image: url(../../image/bg_main_01.png);
 	background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
@@ -199,12 +182,12 @@ html {
 }
 .form_main .form_submit .submit_normal {
 	display: block;
-	width: 81.3523750305175%;
+	width: 50.881%;
 	max-width: 401px;
 	margin: 0 auto;
-	height: 72px;
-	font-size: 16px;
-	border: solid 2px #d3d3d3;
+	line-height: 52px;
+	font-size: 1.2em;
+	border: solid 1px #d3d3d3;
 	background-color: rgba(0,0,0,0.2);
 	color: #fff;
 	text-align: center;
@@ -329,11 +312,7 @@ p.copyright {
 		font-size: calc(50% + 2.2vw);
 	}
 	.form_main .form_submit .submit_normal {
-		padding: 0 8.035714285714286%;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-		height: 72px;
+		line-height: 46px;
 		font-size: calc(80% + 1.3vw);
 		text-align: center;
 	}
@@ -356,7 +335,6 @@ p.copyright {
 	}
 	.links_contents li.about_wj {
 		background-image: url(../../image/sp_bg_about.png);
-		background-position: 0 80%;
 	}
 	.links_contents li.product a,
 	.links_contents li.brewmaster a {
@@ -387,5 +365,43 @@ p.copyright {
 	}
 	.copyright{
 		font-size: 8px;
+	}
+}
+
+/*----------------------------------------
+             retina設定
+----------------------------------------*/
+/*PC*/
+@media
+(-webkit-min-device-pixel-ratio: 2) and (min-width: 641px),
+(            min-resolution: 2dppx) and (min-width: 641px) {
+    .bg_weekend_journy {
+    	background-image: url(../image/bg_main_01@2x.png);
+    }
+    .links_contents li.product {
+		background-image: url(../../image/bg_product@2x.png);
+	}
+	.links_contents li.brewmaster {
+		background-image: url(../../image/bg_brewmaster@2x.png);
+	}
+	.links_contents li.about_wj {
+		background-image: url(../../image/bg_about@2x.png);
+	}
+}
+/*SP*/
+@media
+(-webkit-min-device-pixel-ratio: 2) and (max-width: 640px),
+(            min-resolution: 2dppx) and (max-width: 640px) {
+    .bg_weekend_journy {
+    	background-image: url(../image/sp_bg_main_01@2x.png);
+    }
+    .links_contents li.product {
+		background-image: url(../../image/sp_bg_product@2x.png);
+	}
+	.links_contents li.brewmaster {
+		background-image: url(../../image/sp_bg_brewmaster@2x.png);
+	}
+	.links_contents li.about_wj {
+		background-image: url(../../image/sp_bg_about@2x.png);
 	}
 }
