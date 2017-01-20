@@ -185,9 +185,11 @@ html {
 	width: 50.881%;
 	max-width: 401px;
 	margin: 0 auto;
-	line-height: 52px;
+	line-height: 56px;
+	height: 56px;
 	font-size: 1.2em;
-	border: solid 1px #d3d3d3;
+	box-sizing: border-box;
+	border: solid 2px #d3d3d3;
 	background-color: rgba(0,0,0,0.2);
 	color: #fff;
 	text-align: center;
@@ -307,6 +309,10 @@ p.copyright {
 	}
 	.form_main h1 span {
 		font-size: 0.4em;
+	}
+
+	.form_main .form_submit .submit_normal{
+		border: 1px solid #fff;
 	}
 	.form_main .input_wrapper {
 		font-size: calc(50% + 2.2vw);
