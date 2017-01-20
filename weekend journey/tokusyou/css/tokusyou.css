@@ -233,7 +233,7 @@ p.copyright {
 	}
 	/*----------メイン----------*/
 	.tokusyou_main h1 {
-		font-size: calc(50% + 5vw);
+		font-size: calc(50% + 3.7vw);
 	}
 	.tokusyou_main dl {
 		font-size: calc(50% + 2.2vw);

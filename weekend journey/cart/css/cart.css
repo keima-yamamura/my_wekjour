@@ -381,6 +381,12 @@ p.copyright {
 	.page_header .inner .cart_preview .btn_submit {
 		display: none;
 	}
+	.section_wrapper_basic .webcart_main h1{
+		font-size: calc(50% + 7.5vw)
+	}
+	.section_wrapper_basic .about_wholesale h1{
+		font-size: calc(50% + 3.7vw);
+	}
 	/*----------CART----------*/
 	.webcart_main {
 		margin: 32px auto 80px;

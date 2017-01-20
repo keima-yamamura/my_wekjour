@@ -399,7 +399,7 @@
 		padding-top: 7.3%;
 	}
 	.wrapper .weekend_journy_wrapper h1{
-	font-size: calc(50% + 9vw);
+	font-size: calc(50% + 7.5vw);
 	word-wrap: break-word;
 	}
 	.wrapper .weekend_journy_wrapper dl{
@@ -493,14 +493,3 @@
 		font-size: 8px;
 	}
 }
-	
-
-
-
-
-
-
-
-
-
-

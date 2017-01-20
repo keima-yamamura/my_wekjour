@@ -232,7 +232,7 @@ p.copyright {
 	}
 	/*----------メイン----------*/
 	.policy_main h1 {
-		font-size: calc(50% + 9vw);
+		font-size: calc(50% + 7.5vw);
 	}
 		.policy_main h1 span {
 			display: block;
