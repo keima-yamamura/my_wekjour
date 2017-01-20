@@ -211,10 +211,10 @@ html {
 }
 .webcart_main .item_checkout .btn_submit {
 	display: block;
-	width: 79.886%;
-    max-width: 356px;
+	width: 55.946%;
+    max-width: 401px;
 	margin: 0 auto;
-	line-height: 68px;
+	line-height: 52px;
 	font-size: 32px;
 	border: solid 2px #d3d3d3;
 	background-color: rgba(0,0,0,0.2);
@@ -255,12 +255,12 @@ html {
 }
 .about_wholesale .btn_link {
 	display: block;
-	width: 79.886%;
-	max-width: 356px;
+	width: 55.946%;
+	max-width: 401px;
 	margin: 0 auto;
-	line-height: 68px;
-	font-size: 20px;
-	border: solid 2px #fff;
+	line-height: 52px;
+	font-size: 1.2em;
+	border: solid 1px #fff;
 	background-color: rgba(0,0,0,0.2);
 	color: #fff;
 	text-align: center;
@@ -385,7 +385,7 @@ p.copyright {
 		padding-left: 1em;
 	}
 	.webcart_main .item_checkout .btn_submit {
-		font-size: calc(110% + 1.3vw)
+		font-size: calc(120% + 1.3vw)
 	}
 	/*----------CART中身----------*/
 	.webcart_main .item_list li {
@@ -414,8 +414,7 @@ p.copyright {
 		font-size: calc(55% + 2.2vw);
 	}
 	.about_wholesale .btn_link {
-		height: 100%;
-		line-height: 68px;
+		line-height: 46px;
 		padding: 0;
 		font-size: calc(80% + 1.3vw);
 	}
