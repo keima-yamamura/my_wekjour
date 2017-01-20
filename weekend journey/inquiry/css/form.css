@@ -256,7 +256,7 @@ html {
 }
 .links_contents li.product a,
 .links_contents li.brewmaster a {
-    padding: 6.215% 0;
+    padding: 32px 0;
 }
 .links_contents li a .en {
 	font-size: 60px;
@@ -265,7 +265,7 @@ html {
 	font-size: 24px;
 }
 .links_contents li.about_wj a {
-	padding: 1% 0;
+	padding: 8px 0;
 }
 .links_contents li.about_wj a img {
     width: 202px;
@@ -311,7 +311,8 @@ p.copyright {
              SP専用 640pxまで
 ----------------------------------------*/
 @media(max-width: 640px){
-	.page_header {
+	body {
+		min-width: 320px;
 	}
 	/*----------FORM----------*/
 	.form_main{
