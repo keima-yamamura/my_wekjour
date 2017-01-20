@@ -232,7 +232,6 @@ p.copyright {
 	/*----------メイン----------*/
 	.policy_main h1 {
 		font-size: calc(50% + 9vw);
-		text-align: center;
 	}
 		.policy_main h1 span {
 			display: block;
