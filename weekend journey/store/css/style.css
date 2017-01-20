@@ -413,12 +413,12 @@
 		width: 100%;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div .add_cart{
-		height: 72px;
+		height: 56px;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div .add_cart a{
 		font-size: calc(80% + 1.3vw);
 		padding: 0px;
-		line-height: 72px;
+		line-height: 56px;
 		height: 100%;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div:first-child{
@@ -437,12 +437,12 @@
 		width: 100%;
 		font-size: calc(80% + 1.3vw);
 		padding: 0 8.035714285714286%;
-		height: 72px;
+		height: 56px;
 	}
 	.order .order_contents .contact a{
 		padding: 0px;
 		height: 100%;
-		line-height: 72px;
+		line-height: 56px;
 	}
 	.links_contents { 
 		width: 93.75%;
