@@ -161,7 +161,8 @@
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-	.weekend_journy_wrapper h1 span{
+	.weekend_journy_wrapper h1{
+		word-wrap: break-word;
 		font-size: 60px;
 	}
 	.weekend_journy_wrapper h1 br{
@@ -378,12 +379,7 @@
 @media(max-width: 786px){
 
 	.weekend_journy_wrapper h1{
-		text-align: center;
 		font-size: 3.75vw;
-	}
-	.weekend_journy_wrapper h1 span{
-		display: none;
-		text-align: center;
 	}
 }
 
@@ -404,11 +400,7 @@
 	}
 	.wrapper .weekend_journy_wrapper h1{
 	font-size: calc(50% + 9vw);
-	text-align: center;
-	line-height: 24px;
-	}
-	.wrapper .weekend_journy_wrapper h1 span{
-		font-size: 3.75vw;
+	word-wrap: break-word;
 	}
 	.wrapper .weekend_journy_wrapper dl{
 		display: none;
