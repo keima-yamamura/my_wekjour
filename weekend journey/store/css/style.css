@@ -437,14 +437,14 @@
 	}
 	.order .order_contents .contact{
 		width: 100%;
-		font-size: calc(80% + 1.3vw);
+		font-size: 100%;
 		padding: 0 8.035714285714286%;
-		height: 56px;
 	}
 	.order .order_contents .contact a{
 		padding: 0px;
 		height: 100%;
-		line-height: 56px;
+		line-height: 48px;
+		height: 48px;
 	}
 	.links_contents { 
 		width: 93.75%;
