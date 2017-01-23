@@ -750,10 +750,14 @@
 
 
 /*----------------sp-----------------------*/
-@media all and (-ms-high-contrast:none) and (min-width: 640px){
-    *::-ms-backdrop, .weekend_journey_contents ul li a { font-size: 80%; } /* IE11 */
-  }
 
+@media all and (-ms-high-contrast:none){
+  *::-ms-backdrop, .body { background: red } /* IE11 */
+}
+
+@media all and (-ms-high-contrast:none){
+  *::-ms-backdrop, .foo { color: red } /* IE11 */
+}
 @media(max-width: 640px){
 	.weekend_journey .weekend_journey_wrapper h1,
 	.about_wj .section_hd h1,
