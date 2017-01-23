@@ -750,6 +750,9 @@
 
 
 /*----------------sp-----------------------*/
+@media all and (-ms-high-contrast:none) and (min-width: 320px){
+    *::-ms-backdrop, .weekend_journey_contents ul li a { font-size: 80%; } /* IE11 */
+  }
 
 @media(max-width: 640px){
 	.weekend_journey .weekend_journey_wrapper h1,
