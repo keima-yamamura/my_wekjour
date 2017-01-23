@@ -442,9 +442,9 @@
 	}
 	.order .order_contents .contact a{
 		padding: 0px;
-		height: 100%;
 		line-height: 48px;
 		height: 48px;
+		border: 1px solid #fff;
 	}
 	.links_contents { 
 		width: 93.75%;
