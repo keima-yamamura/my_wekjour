@@ -220,8 +220,8 @@
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-		height: 56px;
-		line-height: 56px;
+		height: 48px;
+		line-height: 48px;
 	}
 	.weekend_journy_wrapper .product_box div .add_cart a:hover{
 		background: rgba(255,255,255,0.8);
@@ -414,12 +414,12 @@
 		width: 100%;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div .add_cart{
-		height: 56px;
+		height: 48px;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div .add_cart a{
-		font-size: calc(80% + 1.3vw);
+		font-size: 100%;
 		padding: 0px;
-		line-height: 56px;
+		line-height: 48px;
 		height: 100%;
 		border: 1px solid #fff;
 	}
