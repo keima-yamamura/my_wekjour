@@ -49,7 +49,7 @@
 .hum_menu{
 	display: none;
 }
-@media(min-width: 1041px) {
+@media(min-width: 1150px) {
 		.hum_menu{
 			position: absolute;
 			left: 50px;
@@ -116,6 +116,10 @@
 		}
 		.weekend_journey_contents h1{
 			padding: 40px 0 20px 0;
+			line-height: 40px;
+		}
+		.weekend_journey_contents h1 br{
+			display: none;
 		}
 		.weekend_journey_contents h1 span{
 			font-size: 24px;
@@ -397,7 +401,7 @@
 
 
 /*-------------pc_1040px_under--------------------*/
-@media(min-width: 641px) and (max-width: 1040px) {
+@media(min-width: 641px) and (max-width: 1150px) {
 	.hum_menu{
 		position: absolute;
 		left: 50px;
@@ -464,6 +468,10 @@
 	}
 	.weekend_journey_contents h1{
 		padding: 40px 0 20px 0;
+		line-height: 40px;
+	}
+	.weekend_journey_contents h1 br{
+		display: block;
 	}
 	.weekend_journey_contents h1 span{
 		font-size: 24px;
