@@ -215,7 +215,7 @@ p.copyright {
 		min-width: 320px;
 	}
 	.bg_weekend_journy {
-    	background-image: url(../../image/sp_bg_main_01_on.png), url(../../image/sp_bg_main_01.jpg);
+    	background-image: url(../../image/sp_bg_main_01.jpg);
 	}
 	.bg_weekend_journy:before {
 		height: 20px;
@@ -308,7 +308,7 @@ p.copyright {
 (-webkit-min-device-pixel-ratio: 2) and (max-width: 640px),
 (            min-resolution: 2dppx) and (max-width: 640px) {
 	.bg_weekend_journy {
-		background-image: url(../../image/sp_bg_main_01_on.png), url(../../image/sp_bg_main_01.jpg);
+		background-image: url(../../image/sp_bg_main_01.jpg);
 	} 
 	.links_contents li.product {
 		background-image: url(../../image/bg_product.png);
