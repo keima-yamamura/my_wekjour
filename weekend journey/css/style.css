@@ -22,17 +22,14 @@
 	}
 /*---------------retina設定-----------------*/
 @media (-webkit-min-device-pixel-ratio: 2),
- (min-resolution: 2dppx) {
-		.product .section_hd,
-		.product .section_hd.no_para_product{
+ (min-resolution: 2dppx),(min-width: 641px){
+		.product .section_hd{
 		background-image: url(../image/bg_product@2x.png);
 		}
-		.brewmaster .section_hd,
-		.brewmaster .section_hd.no_para_brewmaster{
+		.brewmaster .section_hd{
 		background-image: url(../image/bg_brewmaster@2x.png)
 		}
-		.about_wj .section_hd,
-		.about_wj .section_hd.no_para_about_wj{
+		.about_wj .section_hd{
 		background-image: url(../image/bg_about@2x.png)
 		}
 }
@@ -780,7 +777,7 @@
 		margin-top: 0px;
 	}
 	.weekend_journey{
-		background-image: url(../image/sp_bg_main_03@2x.png);
+		background-image: url(../image/sp_bg_main_03.jpg);
 		-webkit-background-size: cover;
 		background-size: cover;
 		padding-bottom: 20px;
