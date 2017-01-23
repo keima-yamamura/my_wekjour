@@ -25,26 +25,6 @@
 		font-style: normal;
 		font-weight: 400;
 	}
-/*---------------retina設定-----------------*/
-@media (-webkit-min-device-pixel-ratio: 2),
-     (min-resolution: 2dppx) {
-    .weekend_journy{
-    background-image: url(../image/bg_main_02@2x.png);
-		}
-		.product .section_hd,
-		.product .section_hd.no_para_product{
-		background-image: url(../image/bg_product@2x.png);
-		}
-		.brewmaster .section_hd,
-		.brewmaster .section_hd.no_para_brewmaster{
-		background-image: url(../image/bg_brewmaster@2x.png)
-		}
-		.about_wj .section_hd,
-		.about_wj .section_hd.no_para_about_wj{
-		background-image: url(../image/bg_about@2x.png)
-		}
-}
-	
 
 /*-------------pc--------------------*/
 
@@ -135,20 +115,13 @@
 		color: #fff;
 	}
 	.weekend_journy_bg{
-		background: url(../image/bg_main_01@2x.png);
-		background-position: center;
-		-webkit-background-size: cover;
-		background-size: cover;
+		background-image: url(../../image/bg_main_04.png);
+		background-repeat: no-repeat;
+		-webkit-background-size: 100%;
+		background-size: 100%;
 	}
 	.weekend_journy{
 		padding: 40px 0;
-		background-position: center;
-		-webkit-background-size: cover;
-		background-size: cover;
-		background: -moz-linear-gradient(top, rgba(0,0,10,0) 0%, rgba(32,28,21,1) 95%);
-		background: -webkit-linear-gradient(top, rgba(0,0,10,0) 0%,rgba(32,28,21,1) 95%);
-		background: linear-gradient(to bottom, rgba(0,0,10,0) 0%,rgba(32,28,21,1) 95%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000000a', endColorstr='#201c15',GradientType=0 );
 	}
 	.weekend_journy_wrapper{
 		background: rgba(0,0,0,0.6);
@@ -389,6 +362,9 @@
 	body{
 		min-width: 320px;
 	}
+	.weekend_journy_bg{
+		background-image: url(../../image/sp_bg_main_04.png);
+	}
 	.page_header .inner .cart_preview .btn_submit {
 		display: none;
 	}
@@ -417,7 +393,7 @@
 		height: 56px;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div .add_cart a{
-		font-size: calc(80% + 1.3vw);
+		font-size: 100%;
 		padding: 0px;
 		line-height: 56px;
 		height: 100%;
@@ -437,7 +413,7 @@
 	}
 	.order .order_contents .contact{
 		width: 100%;
-		font-size: calc(80% + 1.3vw);
+		font-size: 100%;
 		padding: 0 8.035714285714286%;
 		height: 56px;
 	}
@@ -493,4 +469,42 @@
 	.copyright{
 		font-size: 8px;
 	}
+}
+
+
+/*----------------------------------------
+             retina設定
+----------------------------------------*/
+/*PC*/
+@media
+(-webkit-min-device-pixel-ratio: 2) and (min-width: 641px),
+(            min-resolution: 2dppx) and (min-width: 641px) {
+	.weekend_journy_bg {
+    	background-image: url(../../image/bg_main_04@2x.png);
+	} 
+	.links_contents li.product {
+		background-image: url(../../image/bg_product@2x.png);
+	}
+	.links_contents li.brewmaster {
+		background-image: url(../../image/bg_brewmaster@2x.png);
+	}
+	.links_contents li.about_wj {
+		background-image: url(../../image/bg_about@2x.png);
+	}
+}
+/*SP*/
+@media
+(-webkit-min-device-pixel-ratio: 2) and (max-width: 640px),
+(            min-resolution: 2dppx) and (max-width: 640px) {
+	.weekend_journy_bg {
+		background-image: url(../../image/bg_main_04.png);
+	} 
+	.links_contents li.product {
+		background-image: url(../../image/bg_product.png);
+	}
+	.links_contents li.brewmaster {
+		background-image: url(../../image/bg_brewmaster.png);
+	}
+	.links_contents li.about_wj {
+		background-image: url(../../image/bg_about.png);
 }

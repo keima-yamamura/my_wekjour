@@ -201,7 +201,7 @@ html {
 .webcart_main .item_checkout .btn_submit {
 	display: block;
 	width: 55.946%;
-  max-width: 401px;
+	max-width: 401px;
 	margin: 0 auto;
 	height: 56px;
 	line-height: 56px;
@@ -392,7 +392,7 @@ p.copyright {
 		padding: 20px 0;
 	}
 	.webcart_main .item_checkout .btn_submit {
-		font-size: calc(120% + 1.3vw)
+		font-size: 130%;
 	}
 
 	/*----------CART中身----------*/
@@ -424,7 +424,7 @@ p.copyright {
 	.about_wholesale .btn_link {
 		line-height: 56px;
 		padding: 0;
-		font-size: calc(80% + 1.3vw);
+		font-size: 100%;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
