@@ -258,7 +258,8 @@
 		margin: 30px 0;
 	}	
 	.order .order_contents .ordered img{
-	width: 40%;
+		width: 40%;
+		max-width: 220px;
 	}
 	.order .order_contents .contact{
 		width: 46.25%;
@@ -376,10 +377,10 @@
 
 /*------weekend_journeyの文字数--------*/
 
-@media(max-width: 786px){
+@media(max-width: 835px){
 
-	.weekend_journy_wrapper h1{
-		font-size: 3.75vw;
+	.weekend_journy_wrapper h1 .sp{
+		display: block;
 	}
 }
 
@@ -433,9 +434,6 @@
 	}
 	.order .order_contents h1{
 		font-size: calc(50% + 5vw);
-	}
-	.order .order_contents .ordered img{
-    width: 65.7%;
 	}
 	.order .order_contents .contact{
 		width: 100%;
