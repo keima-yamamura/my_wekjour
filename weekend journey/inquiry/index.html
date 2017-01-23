@@ -34,20 +34,20 @@
     <section class="form_main">
       <h1>CONTACT<span>（お問い合わせ）</span></h1>
       <p class="description">説明テキスト説明テキスト説明テキスト説明テキスト</p>
-      <form action="#">
+      <form action="mailto:yuki.yamamura@generace.co.jp" method="POST" enctype="text/plain" name="mail">
         <dl class="input_wrapper">
           <dt>お名前<span class="must">（※必須）</span></dt>
-          <dd><input class="text_input" type="text"></dd>
+          <dd><input class="text_input" type="text" required="required"></dd>
           <dt>会社名</dt>
           <dd><input class="text_input" type="text"></dd>
           <dt>email<span class="must">（※必須）</span></dt>
-          <dd><input class="text_input" type="text"></dd>
+          <dd><input class="text_input" type="text" required="required"></dd>
           <dt>email<span>（確認用）</span></dt>
           <dd><input class="text_input" type="text"></dd>
           <dt>お電話番号</dt>
           <dd><input class="text_input" type="text"></dd>
           <dt>本文<span class="must">（※必須）</span></dt>
-          <dd><textarea class="textarea_basic"></textarea></dd>
+          <dd><textarea class="textarea_basic" required="required"></textarea></dd>
         </dl><!--input_wrapper-->
         <div class="form_submit">
           <button class="submit_normal" type="submit" name="action" value="send">確&nbsp;認</button>

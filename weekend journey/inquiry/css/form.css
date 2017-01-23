@@ -182,7 +182,7 @@ html {
 }
 .form_main .form_submit .submit_normal {
 	display: block;
-	width: 50.881%;
+	width: 60.69%;
 	max-width: 401px;
 	margin: 0 auto;
 	line-height: 56px;
@@ -313,16 +313,11 @@ p.copyright {
 	.form_main .form_submit {
 		padding: 20px 0;
 	}
-	.form_main .form_submit .submit_normal{
-		border: 1px solid #fff;
-	}
 	.form_main .input_wrapper {
 		font-size: calc(50% + 2.2vw);
 	}
 	.form_main .form_submit .submit_normal {
-		line-height: 46px;
 		font-size: calc(80% + 1.3vw);
-		text-align: center;
 	}
 	
 	/*-----------------ページ下部リンク-----------------*/
