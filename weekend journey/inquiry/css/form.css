@@ -21,7 +21,7 @@ html {
 .wrapper { background: #201c15; }
 .bg_weekend_journy {
 	position: relative;
-	padding-bottom: 40px;
+	margin-bottom: 40px;
 	background-image: url(../../image/bg_main_04.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: 100%;
@@ -113,7 +113,7 @@ html {
 	margin: 0 auto;
 }
 .form_main {
-	margin: 40px auto;
+	margin: 40px auto 0;
 	padding: 0 5%;
 	background: rgba(0,0,0,0.6);
 	color: #fff;
@@ -184,7 +184,7 @@ html {
 	text-decoration: none;
 }
 .form_main .form_submit .submit_normal:hover {
-	border: solid 2px #fff;
+	border-color: #fff;
 	background-color: rgba(255,255,255,0.8);
 	color: #000;
 	text-shadow: none;
@@ -308,7 +308,10 @@ p.copyright {
 		font-size: calc(50% + 2.2vw);
 	}
 	.form_main .form_submit .submit_normal {
-		font-size: calc(80% + 1.3vw);
+		height: 48px;
+		line-height: 48px;
+		border-width: 1px;
+		font-size: 100%;
 	}
 	
 	/*-----------------ページ下部リンク-----------------*/
