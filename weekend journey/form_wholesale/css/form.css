@@ -299,6 +299,9 @@ p.copyright {
 	body{
 		min-width: 320px;
 	}
+	.bg_weekend_journy {
+    	background-image: url(../../image/sp_bg_main_04.png);
+	} 
 	/*----------FORM----------*/
 	.form_main{
 		padding: 0 5.535714285714286%;
@@ -372,16 +375,15 @@ p.copyright {
 	}
 }
 
-
 /*----------------------------------------
              retina設定
 ----------------------------------------*/
 /*PC*/
 @media
-(-webkit-min-device-pixel-ratio: 2) and (min-device-width: 641px),
-(            min-resolution: 2dppx) and (min-device-width: 641px) {
+(-webkit-min-device-pixel-ratio: 2) and (min-width: 641px),
+(            min-resolution: 2dppx) and (min-width: 641px) {
 	.bg_weekend_journy {
-    	background-image: url(../image/bg_main_04@2x.png);
+    	background-image: url(../../image/bg_main_04@2x.png);
 	} 
 	.links_contents li.product {
 		background-image: url(../../image/bg_product@2x.png);
@@ -395,10 +397,10 @@ p.copyright {
 }
 /*SP*/
 @media
-(-webkit-min-device-pixel-ratio: 2) and (max-device-width: 640px),
-(            min-resolution: 2dppx) and (max-device-width: 640px) {
+(-webkit-min-device-pixel-ratio: 2) and (max-width: 640px),
+(            min-resolution: 2dppx) and (max-width: 640px) {
 	.bg_weekend_journy {
-		background-image: url(../image/bg_main_04.png);
+		background-image: url(../../image/bg_main_04.png);
 	} 
 	.links_contents li.product {
 		background-image: url(../../image/bg_product.png);
@@ -409,4 +411,3 @@ p.copyright {
 	.links_contents li.about_wj {
 		background-image: url(../../image/bg_about.png);
 }
-
