@@ -752,7 +752,7 @@
 /*----------------sp-----------------------*/
 
 @media all and (-ms-high-contrast:none){
-  *::-ms-backdrop, .body { background: red } /* IE11 */
+ .body { background: red } /* IE11 */
 }
 
 @media all and (-ms-high-contrast:none){
