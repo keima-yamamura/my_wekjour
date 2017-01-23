@@ -287,6 +287,9 @@ p.copyright {
 	body {
 		min-width: 320px;
 	}
+	.bg_weekend_journy {
+    	background-image: url(../image/sp_bg_main_04.png);
+	} 
 	/*----------FORM----------*/
 	.form_main{
 		padding: 0 5.535714285714286%;
