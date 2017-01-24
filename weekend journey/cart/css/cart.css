@@ -144,7 +144,7 @@ html {
 }
 
 .webcart_main {
-	margin: 40px auto 0;
+	margin: 40px auto;
 	padding: 0 5%;
 	background: rgba(0,0,0,0.6);
 	color: #fff;
@@ -254,6 +254,7 @@ html {
 .about_wholesale img {
 	display: block;
 	width: 40%;
+	min-width: 150px;
 	max-width: 220px;
 	margin: 40px auto;
 }
@@ -389,9 +390,6 @@ p.copyright {
 		font-size: calc(50% + 7.5vw)
 	}
 	/*----------CART----------*/
-	.webcart_main {
-		margin: 40px auto;
-	}
 	.webcart_main h1 {
 		font-size: calc(50% + 9vw);
 	}
