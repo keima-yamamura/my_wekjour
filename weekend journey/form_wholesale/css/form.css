@@ -375,9 +375,6 @@ p.copyright {
 	}
 
 	/*-----------------footer-----------------*/
-	footer ul{
-		padding: 0 5%;
-	}
 	footer ul li{
 		display: block;
 		text-align: left;
@@ -385,7 +382,8 @@ p.copyright {
 		width: 100%;
 	}
 	footer ul li a{
-		padding: 7.3% 0%;
+		padding: 0 5%;
+		display: block;
 	}
 	footer ul li a:after{
 		content: none;
