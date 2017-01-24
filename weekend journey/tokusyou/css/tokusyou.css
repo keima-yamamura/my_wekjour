@@ -217,9 +217,6 @@ p.copyright {
 	.bg_weekend_journy {
     	background-image: url(../../image/sp_bg_main_01.jpg);
 	}
-	.bg_weekend_journy:before {
-		height: 20px;
-	}
 	/*----------メイン----------*/
 	.tokusyou_main {
 		padding: 20px 5%;
