@@ -420,6 +420,9 @@ p.copyright{
 		font-size: calc(50% + 9vw);
 		text-shadow: 0px 0px 20px #000;
 	}
+	body{
+		min-width: 320px;
+	}
 	.hum_menu{
 		position: absolute;
 		left: 20px;
@@ -485,7 +488,7 @@ p.copyright{
 		padding-top: 67.2%;
 		margin-bottom: 0;
 		padding-bottom: 0;
-		line-height: 40px;
+		line-height: 24px;
 	}
 	.weekend_journey .weekend_journey_wrapper h1 span{
 		display: block;
