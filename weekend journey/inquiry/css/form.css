@@ -240,11 +240,18 @@ html {
 .form_main .form_confirm {
 	font-size: 20px;
 }
-	.form_main .form_confirm dt {
-		margin: 40px 0 12px;
-		font-size: 0.8em;
-		color: rgba(255,255,255,0.6);
-	}
+.form_main .form_confirm dt {
+	margin: 40px 0 12px;
+	font-size: 0.8em;
+	color: rgba(255,255,255,0.6);
+}
+.form_main .form_confirm dd a {
+	color: #fff;
+	text-decoration: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
 
 /*-----------------ページ下部リンク-----------------*/
 .links_contents {
