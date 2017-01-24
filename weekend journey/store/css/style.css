@@ -466,10 +466,10 @@
 		padding: 6.808vw 0;
 	}
 	.links_contents li.about_wj a {
-		padding: 0;
+		padding: 15px 0;
 	}
 	.links_contents li.about_wj a img {
-	    height: 25vw;
+	    height: calc(24vw - 20px);
 	}
 	.links_contents li a .en {
 		font-size: calc(50% + 7.5vw);
