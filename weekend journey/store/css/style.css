@@ -195,6 +195,9 @@
 	.weekend_journy_wrapper .product_box div .text{
 		margin-bottom: 32px;
 	}
+	.weekend_journy_wrapper .product_box div .text br{
+		display: none;
+	}
 	.weekend_journy_wrapper .product_box div .add_cart{
 		box-sizing: border-box;
 	}
@@ -246,7 +249,6 @@
 	}	
 	.order .order_contents .ordered img{
 		width: 40%;
-		min-width: 150px;
 		max-width: 220px;
 	}
 	.order .order_contents .contact{
@@ -396,10 +398,12 @@
 	}
 	.wrapper .weekend_journy_wrapper .product_box{
 		display: block;
-		padding-top: 40px;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div{
 		width: 100%;
+	}
+	.wrapper .weekend_journy_wrapper .product_box div .text {
+		margin-bottom: 16px;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div .add_cart{
 		height: 48px;
@@ -412,10 +416,10 @@
 		border: 1px solid #fff;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div:first-child{
-		margin-bottom: 80px;
+		margin-bottom: 20px;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div p:first-of-type{
-		margin-bottom: -40px;
+		margin-bottom: -65px;
 	}
 	.order .order_contents {
 		padding: 20px 5.535714285714286%;
@@ -426,17 +430,22 @@
 	.order .order_contents p{
 		font-size: calc(55% + 2.2vw);
 	}
+	.order .order_contents .ordered{
+		margin: 20px 0;
+	}	
+	.order .order_contents .ordered img{
+		min-width: 135px;
+	}
 	.order .order_contents .contact{
 		width: 100%;
 		font-size: 100%;
 		padding: 0 8.035714285714286%;
-		height: 56px;
 	}
 	.order .order_contents .contact a{
 		height: 48px;
 		padding: 0px;
-		border-width: 1px;
 		line-height: 48px;
+		border-width: 1px;
 	}
 	.links_contents { 
 		width: 93.75%;
@@ -487,6 +496,11 @@
 	}
 }
 
+@media(max-width: 400px){
+	ç
+		display: block;
+	}
+}
 
 /*----------------------------------------
              retina設定
