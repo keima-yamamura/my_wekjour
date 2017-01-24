@@ -449,8 +449,8 @@ p.copyright{
 	}
 	.weekend_journey{
 		background-image: url(../image/sp_bg_main_01.jpg);
-		-webkit-background-size: cover;
-		background-size: cover;
+		-webkit-background-size: 100%;
+		background-size: 100%;
 		padding-bottom: 20px;
 	}
 	.weekend_journey > h1{
