@@ -17,7 +17,7 @@ html {
 }
 
 /*--------------背景---------------*/
-.wrapper { background: #201c15; }
+.wrapper { background: #2a261d; }
 .bg_weekend_journy {
 	position: relative;
 	padding-bottom: 40px;
@@ -216,9 +216,6 @@ p.copyright {
 	}
 	.bg_weekend_journy {
     	background-image: url(../../image/sp_bg_main_01.jpg);
-	}
-	.bg_weekend_journy:before {
-		height: 20px;
 	}
 	/*----------メイン----------*/
 	.tokusyou_main {
