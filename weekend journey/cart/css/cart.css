@@ -254,9 +254,8 @@ html {
 .about_wholesale img {
 	display: block;
 	width: 40%;
-	min-width: 150px;
 	max-width: 220px;
-	margin: 40px auto;
+	margin: 30px auto;
 }
 .about_wholesale .btn_link {
 	display: block;
@@ -434,6 +433,10 @@ p.copyright {
 	}
 	.about_wholesale .get_text {
 		font-size: calc(55% + 2.2vw);
+	}
+	.about_wholesale img {
+		margin: 20px auto;
+		min-width: 135px;
 	}
 	.about_wholesale .btn_link {
 		height: 48px;
