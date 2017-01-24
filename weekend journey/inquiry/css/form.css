@@ -298,11 +298,8 @@ html {
 .links_contents li a .ja {
 	font-size: 24px;
 }
-.links_contents li.about_wj a {
-	padding: 8px 0;
-}
 .links_contents li.about_wj a img {
-    width: 202px;
+	height: 146px;
 }
 
 /*-----------------footer-----------------*/
@@ -415,13 +412,19 @@ p.copyright {
 	}
 	.links_contents li.product a,
 	.links_contents li.brewmaster a {
-	    padding: 18px 0;
+		padding: 6.808vw 0;
 	}
 	.links_contents li.about_wj a {
 		padding: 0;
 	}
 	.links_contents li.about_wj a img {
-	    height: 118px;
+	    height: 25vw;
+	}
+	.links_contents li a .en {
+		font-size: calc(50% + 7.5vw);
+	}
+	.links_contents li a .ja {
+		font-size: calc(50% + 2vw);
 	}
 
 	/*-----------------footer-----------------*/
