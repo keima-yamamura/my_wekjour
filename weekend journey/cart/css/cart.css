@@ -336,7 +336,6 @@ footer {
 	width: 100%;
 	text-align: center;
 	background: #31312d;
-	height: 60px;
 	line-height: 60px;
 }
 footer ul {
@@ -348,15 +347,15 @@ footer ul li {
 	color: #fff;
 }
 footer ul li a {
-	color: #fff;
 	text-decoration: none;
+	color: #fff;
 }
 footer ul li a:after {
 	content: "|";
 	padding: 15px;
 	color: #696660;
 }
-footer ul li:last-child a:after{
+footer ul li:last-child a:after {
 	content: none;
 }
 p.copyright {
@@ -482,26 +481,18 @@ p.copyright {
 	}
 
 	/*-----------------footer-----------------*/
-	footer {
+	footer ul li{
+		display: block;
 		text-align: left;
-		height: auto;
-		line-height: 1;
-	}
-	footer ul {
-		margin: 0 5%;
-	}
-	footer ul li {
-		display: block;
-		width: 100%;
 		font-size: calc(50% + 2.5vw);
+		width: 100%;
 	}
-	footer ul li a {
+	footer ul li a{
+		padding: 0 5%;
 		display: block;
-		padding: 7.3% 0;
 	}
-	footer ul li a:after {
+	footer ul li a:after{
 		content: none;
-		padding: 0;
 	}
 	p.copyright {
 		margin: 0 auto;
