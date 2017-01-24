@@ -246,6 +246,7 @@
 	}	
 	.order .order_contents .ordered img{
 		width: 40%;
+		min-width: 150px;
 		max-width: 220px;
 	}
 	.order .order_contents .contact{
@@ -382,9 +383,6 @@
 	.page_header .inner .cart_preview .btn_submit {
 		display: none;
 	}
-	.weekend_journy{
-		padding: 40px 0;
-	}
 	.wrapper .weekend_journy_wrapper{
 		margin-bottom: 40px;
 		padding: 20px 5.535714285714286%;
@@ -423,7 +421,10 @@
 		padding: 20px 5.535714285714286%;
 	}
 	.order .order_contents h1{
-		font-size: calc(50% + 5vw);
+		font-size: calc(50% + 3.7vw);
+	}
+	.order .order_contents p{
+		font-size: calc(55% + 2.2vw);
 	}
 	.order .order_contents .contact{
 		width: 100%;
