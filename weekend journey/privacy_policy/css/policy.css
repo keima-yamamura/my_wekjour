@@ -274,6 +274,10 @@ p.copyright {
 		padding: 0 5%;
 		display: block;
 	}
+	footer ul li a:hover {
+		background: #666;
+		transition: 0.3s;
+	}
 	footer ul li a:after{
 		content: none;
 	}
