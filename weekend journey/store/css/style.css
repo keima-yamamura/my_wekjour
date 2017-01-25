@@ -34,21 +34,30 @@
 		background-image: url(../image/bg_product@2x.png);
 		}
 		.brewmaster{
-		background-image: url(../image/bg_brewmaster@2x.png)
+		background-image: url(../image/bg_brewmaster@2x.png);
 		}
 		.about_wj{
-		background-image: url(../image/bg_about@2x.png)
+		background-image: url(../image/bg_about@2x.png);
 		}
 }
 @media (-webkit-min-device-pixel-ratio: 2)and(max-width: 640px){
 	.weekend_journy{
 		background-image: url(../../image/sp_bg_main_01@2x.jpg);
 	}
+	.product{
+		background-image: none;
+	}
 	.product a{
 		background-image: url(../../image/sp_bg_product@2x.png);
 	}
+	.brewmaster{
+		background-image: none;
+	}
 	.brewmaster a{
 		background-image: url(../../image/sp_bg_brewmaster@2x.png);
+	}
+	.about_wj{
+		background-image: none;
 	}
 	.about_wj a{
 		background-image: url(../../sp_bg_about@2x.png);		
