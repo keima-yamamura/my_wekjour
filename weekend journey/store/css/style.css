@@ -26,7 +26,7 @@
 		font-weight: 400;
 	}
 /*---------------retina設定-----------------*/
-@media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx){
+@media(min-resolution: 2dppx)and(min-width: 641px){
     .weekend_journy{
     background-image: url(../image/bg_main_02@2x.png);
 		}
@@ -486,11 +486,5 @@
 	}
 	.copyright{
 		font-size: 8px;
-	}
-}
-
-@media(max-width: 400px){
-	.wrapper .weekend_journy_wrapper .product_box div .text br {
-		display: block;
 	}
 }
