@@ -488,3 +488,9 @@
 		font-size: 8px;
 	}
 }
+
+@media(max-width: 400px){
+	.wrapper .weekend_journy_wrapper .product_box div .text br {
+		display: block;
+	}
+}
