@@ -328,7 +328,7 @@
 		float: right;
 	}
 	.links_contents li.product a,
-	.links_contents li.brewmaster a,{
+	.links_contents li.brewmaster a{
 		padding: 6.215% 0;
 		display: block;
 	}
