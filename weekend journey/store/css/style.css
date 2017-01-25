@@ -417,6 +417,7 @@
 	}
 	.order .order_contents h1{
 		font-size: calc(50% + 3.7vw);
+		margin-bottom: 5%;
 	}
 	.order .order_contents p {
 		font-size: calc(55% + 2.2vw);

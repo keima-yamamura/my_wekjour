@@ -426,6 +426,7 @@ p.copyright {
 	}
 	.about_wholesale h1{
 		font-size: calc(50% + 3.7vw);
+		margin-bottom: 5%;
 	}
 	.about_wholesale .get_text {
 		font-size: calc(55% + 2.2vw);

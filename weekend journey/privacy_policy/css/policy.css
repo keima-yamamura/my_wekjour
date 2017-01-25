@@ -219,6 +219,7 @@ p.copyright {
 	}
 	.policy_main h1 {
 		font-size: calc(50% + 7.5vw);
+		margin-bottom: 5%;
 	}
 		.policy_main h1 span {
 			display: block;
