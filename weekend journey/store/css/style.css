@@ -62,7 +62,7 @@
 		background-image: none;
 	}
 	.about_wj a{
-		background-image: url(../../sp_bg_about@2x.png);		
+		background-image: url(../../sp_bg_about@2x.png);
 		background-position: center 20%;
 	}
 }
@@ -328,7 +328,7 @@
 		float: right;
 	}
 	.links_contents li.product a,
-	.links_contents li.brewmaster a{
+	.links_contents li.brewmaster a,{
 		padding: 6.215% 0;
 		display: block;
 	}
@@ -343,6 +343,9 @@
 	.links_contents li.about_wj {
 		background-image: url(../image/bg_about@2x.png);
 		background-position: 0 80%;
+	}
+	.links_contents li.about_wj a{
+		display: block;
 	}
 	.links_contents li .en {
 		font-size: 60px;
