@@ -30,7 +30,7 @@
     .weekend_journy{
     background-image: url(../image/bg_main_02@2x.png);
 		}
-		.product{
+	  .product{
 		background-image: url(../image/bg_product@2x.png);
 		}
 		.brewmaster{
@@ -44,7 +44,7 @@
 	.weekend_journy{
 		background-image: url(../../image/sp_bg_main_01@2x.jpg);
 	}
-	.product{
+	ul.links_contents li.product{
 		background-image: none;
 	}
 	.product a{
