@@ -60,7 +60,7 @@
 	.page_header {
 		background: rgba(0,0,0,0.4);
 		font-size: 100%;
-		height: 64px;
+		height: 100px;
 	}
 	.page_header .inner {
 		position: relative;
@@ -74,11 +74,12 @@
 		padding-top: 6px;
 	}
 	.page_header .inner h1 img{
-		width: 10%;
+		width: 120px;
+		padding-top: 10px;
 	}
 	.page_header .inner .cart_preview {
 		position: absolute;
-		top: 17px;
+		top: 35px;
 		right: 0;
 		display: block;
 		overflow: hidden;
@@ -205,8 +206,8 @@
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-		height: 64px;
-		line-height: 64px;
+		height: 56px;
+		line-height: 56px;
 	}
 	.weekend_journy_wrapper .product_box div .add_cart a:hover{
 		background: rgba(255,255,255,0.8);
@@ -356,23 +357,21 @@
 
 
 
-/*----------------sp-----------------------*/
+
 
 /*------weekend_journeyの文字数--------*/
 
-@media(max-width: 786px){
-
+@media(max-width: 800px){
 	.weekend_journy_wrapper h1{
-		text-align: center;
+		text-align: left;
 		font-size: 3.75vw;
 	}
-	.weekend_journy_wrapper h1 span{
-		display: none;
-		text-align: center;
+	.weekend_journy_wrapper h1 br{
+		display: block;
 	}
 }
 
-
+/*----------------sp-----------------------*/
 @media(max-width: 640px){
 	body{
 		min-width: 320px;
@@ -388,8 +387,8 @@
 		padding: 20px 5.535714285714286%;
 	}
 	.wrapper .weekend_journy_wrapper h1{
-		font-size: calc(50% + 7.5vw);
-		line-height: 51px;
+	font-size: calc(50% + 7.5vw);
+	line-height: 51px;
 	}
 	.wrapper .weekend_journy_wrapper h1 span{
 		font-size: 3.75vw;
@@ -405,7 +404,7 @@
 		width: 100%;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div .add_cart{
-		height: 72px;
+		height: 48px;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div .add_cart a{
 		width: 78.87%;
