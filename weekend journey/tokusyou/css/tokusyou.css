@@ -279,8 +279,10 @@ p.copyright {
 	footer ul li a:after{
 		content: none;
 	}
-	.copyright{
+	p.copyright{
+		line-height: 64px;
 		font-size: 8px;
+		height: auto;
 	}
 }
 
