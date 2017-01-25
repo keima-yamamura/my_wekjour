@@ -26,46 +26,25 @@
 		font-weight: 400;
 	}
 /*---------------retina設定-----------------*/
-@media(min-resolution: 2dppx)and(min-width: 641px){
+@media (-webkit-min-device-pixel-ratio: 2),
+     (min-resolution: 2dppx) {
     .weekend_journy{
     background-image: url(../image/bg_main_02@2x.png);
 		}
-	  .product{
+		.product .section_hd,
+		.product .section_hd.no_para_product{
 		background-image: url(../image/bg_product@2x.png);
 		}
-		.brewmaster{
-		background-image: url(../image/bg_brewmaster@2x.png);
+		.brewmaster .section_hd,
+		.brewmaster .section_hd.no_para_brewmaster{
+		background-image: url(../image/bg_brewmaster@2x.png)
 		}
-		.about_wj{
-		background-image: url(../image/bg_about@2x.png);
+		.about_wj .section_hd,
+		.about_wj .section_hd.no_para_about_wj{
+		background-image: url(../image/bg_about@2x.png)
 		}
 }
-@media (-webkit-min-device-pixel-ratio: 2)and(max-width: 640px){
-	.weekend_journy{
-		background-image: url(../../image/sp_bg_main_01@2x.jpg);
-	}
-	ul.links_contents li.product{
-		background-image: none;
-	}
-	.product a{
-		background-image: url(../../image/sp_bg_product@2x.png);
-		background-position: center 20%;
-	}
-	ul.links_contents li.brewmaster{
-		background-image: none;
-	}
-	.brewmaster a{
-		background-image: url(../../image/sp_bg_brewmaster@2x.png);
-		background-position: center 20%;
-	}
-	ul.links_contents li.about_wj{
-		background-image: none;
-	}
-	.about_wj a{
-		background-image: url(../../sp_bg_about@2x.png);
-		background-position: center 20%;
-	}
-}
+	
 
 /*-------------pc--------------------*/
 
@@ -101,7 +80,7 @@
 	.page_header {
 		background: rgba(0,0,0,0.4);
 		font-size: 100%;
-		height: 100px;
+		height: 64px;
 	}
 	.page_header .inner {
 		position: relative;
@@ -115,12 +94,11 @@
 		padding-top: 6px;
 	}
 	.page_header .inner h1 img{
-		width: 120px;
-		padding-top: 10px;
+		width: 10%;
 	}
 	.page_header .inner .cart_preview {
 		position: absolute;
-		top: 35px;
+		top: 17px;
 		right: 0;
 		display: block;
 		overflow: hidden;
@@ -160,6 +138,16 @@
 		background-position: center;
 		-webkit-background-size: cover;
 		background-size: cover;
+	}
+	.weekend_journy{
+		padding: 40px 0;
+		background-position: center;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background: -moz-linear-gradient(top, rgba(0,0,10,0) 0%, rgba(32,28,21,1) 95%);
+		background: -webkit-linear-gradient(top, rgba(0,0,10,0) 0%,rgba(32,28,21,1) 95%);
+		background: linear-gradient(to bottom, rgba(0,0,10,0) 0%,rgba(32,28,21,1) 95%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000000a', endColorstr='#201c15',GradientType=0 );
 	}
 	.weekend_journy_wrapper{
 		background: rgba(0,0,0,0.6);
@@ -224,14 +212,14 @@
 	.weekend_journy_wrapper .product_box div .add_cart a{
 		border: 2px solid #fff;
 		display: block;
-		background: rgba(0,0,0,0.2);
+		background: rgba(0,0,0,0.2);;
 		text-decoration: none;
 		color: #fff;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-		height: 56px;
-		line-height: 56px;
+		height: 64px;
+		line-height: 64px;
 	}
 	.weekend_journy_wrapper .product_box div .add_cart a:hover{
 		background: rgba(255,255,255,0.8);
@@ -252,6 +240,7 @@
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box
+		z-index: 10000;
 	}
   .order .order_contents h1{
 		font-size: 40px;
@@ -278,8 +267,8 @@
 	.order .order_contents .contact a{
 		border: 2px solid #fff;
 		display: block;
-		height: 56px;
-		line-height: 56px;
+		height: 64px;
+		line-height: 64px;
 		background: rgba(0,0,0,0.2);
 		text-decoration: none;
 		color: #fff;
@@ -333,9 +322,6 @@
 		background-image: url(../image/bg_about@2x.png);
 		background-position: 0 80%;
 	}
-	.links_contents li.about_wj a{
-		display: block;
-	}
 	.links_contents li .en {
 		font-size: 60px;
 	}
@@ -382,21 +368,23 @@
 
 
 
-
+/*----------------sp-----------------------*/
 
 /*------weekend_journeyの文字数--------*/
 
-@media(max-width: 800px){
+@media(max-width: 786px){
+
 	.weekend_journy_wrapper h1{
-		text-align: left;
+		text-align: center;
 		font-size: 3.75vw;
 	}
-	.weekend_journy_wrapper h1 br{
-		display: block;
+	.weekend_journy_wrapper h1 span{
+		display: none;
+		text-align: center;
 	}
 }
 
-/*----------------sp-----------------------*/
+
 @media(max-width: 640px){
 	body{
 		min-width: 320px;
@@ -413,7 +401,8 @@
 	}
 	.wrapper .weekend_journy_wrapper h1{
 	font-size: calc(50% + 9vw);
-	line-height: 51px;
+	text-align: center;
+	line-height: 24px;
 	}
 	.wrapper .weekend_journy_wrapper h1 span{
 		font-size: 3.75vw;
@@ -429,12 +418,12 @@
 		width: 100%;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div .add_cart{
-		height: 48px;
+		height: 72px;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div .add_cart a{
-		font-size: 100%;
+		font-size: calc(80% + 1.3vw);
 		padding: 0px;
-		line-height: 48px;
+		line-height: 72px;
 		height: 100%;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div:first-child{
@@ -451,14 +440,14 @@
 	}
 	.order .order_contents .contact{
 		width: 100%;
-		font-size:100%;
+		font-size: calc(80% + 1.3vw);
 		padding: 0 8.035714285714286%;
-		height: 48px;
+		height: 72px;
 	}
 	.order .order_contents .contact a{
 		padding: 0px;
 		height: 100%;
-		line-height: 48px;
+		line-height: 72px;
 	}
 	.wrapper .links_contents{
 		padding-bottom: 0;
@@ -472,7 +461,6 @@
 		width: 100%;
 		height: 100%;
 		font-size: calc(50% + 9vw);
-		display: block;
 	}
 	footer ul{
 		padding: 0 5%;
@@ -493,3 +481,14 @@
 		font-size: 8px;
 	}
 }
+	
+
+
+
+
+
+
+
+
+
+
