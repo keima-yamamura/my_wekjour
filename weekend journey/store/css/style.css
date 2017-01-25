@@ -159,7 +159,7 @@
 	  overflow: hidden;
 	  font-size: 16px;
 	  line-height: 24px;
-	  padding-top: 10px;
+	  padding-top: 20px;
 	}
 	.weekend_journy_wrapper dt{
 		float: left;
@@ -355,10 +355,6 @@
 		color: #696660;
 	}
 
-
-
-
-
 /*------weekend_journeyの文字数--------*/
 
 @media(max-width: 800px){
@@ -379,16 +375,12 @@
 	.page_header .inner .cart_preview .btn_submit {
 		display: none;
 	}
-	.weekend_journy{
-		padding: 40px 0;
-	}
 	.wrapper .weekend_journy_wrapper{
 		margin-bottom: 40px;
 		padding: 20px 5.535714285714286%;
 	}
 	.wrapper .weekend_journy_wrapper h1{
-	font-size: calc(50% + 7.5vw);
-	line-height: 51px;
+		font-size: calc(50% + 7.5vw);
 	}
 	.wrapper .weekend_journy_wrapper h1 span{
 		font-size: 3.75vw;
@@ -398,10 +390,12 @@
 	}
 	.wrapper .weekend_journy_wrapper .product_box{
 		display: block;
-		padding-top: 40px;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div{
 		width: 100%;
+	}
+	.wrapper .weekend_journy_wrapper .product_box div .text{
+		margin-bottom: 20px;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div .add_cart{
 		height: 48px;
@@ -415,11 +409,8 @@
 		line-height: 48px;
 		font-size: 100%;
 	}
-	.wrapper .weekend_journy_wrapper .product_box div:first-child{
-		margin-bottom: 80px;
-	}
 	.wrapper .weekend_journy_wrapper .product_box div p:first-of-type{
-		margin-bottom: -40px;
+		margin-bottom: -65px;
 	}
 	.order .order_contents {
 		padding: 20px 5%;
