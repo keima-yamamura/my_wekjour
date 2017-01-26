@@ -18,7 +18,7 @@ html {
 }
 
 /*--------------背景---------------*/
-.wrapper { background: #201c15; }
+.wrapper { background: #2a261d; }
 .bg_weekend_journy {
 	position: relative;
 	padding-bottom: 40px;
@@ -426,8 +426,10 @@ p.copyright {
 	.links_contents li a .ja {
 		font-size: calc(8px + 2vw);
 	}
+}
 
-	/*-----------------footer-----------------*/
+/*-----------------footer-----------------*/
+@media(max-width: 750px){
 	footer ul li{
 		display: block;
 		text-align: left;

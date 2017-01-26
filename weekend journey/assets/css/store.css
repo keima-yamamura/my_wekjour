@@ -29,7 +29,7 @@
 /*-------------pc--------------------*/
 
 	.wrapper{
-		background: #201c15;
+		background: #2a261d;
 	}
 	.wrapper .hum_menu{
 			position: absolute;
@@ -227,8 +227,7 @@
 		padding: 50px 5.535714285714286% 50px;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
-		box-sizing: border-box
-		z-index: 10000;
+		box-sizing: border-box;ß
 	}
   .order .order_contents h1{
 		font-size: 40px;
@@ -320,33 +319,33 @@
 	.links_contents li.about_wj a img {
 		height: 146px;
 	}
-	footer{
+	footer {
 		width: 100%;
 		text-align: center;
 		background: #31312d;
 		line-height: 60px;
 	}
-	footer ul{
+	footer ul {
 		margin: 0 auto;
 	}
-	footer ul li{
+	footer ul li {
 		display: inline;
 		width: 200px;
 		color: #fff;
 	}
-	footer ul li a{
+	footer ul li a {
 		text-decoration: none;
 		color: #fff;
 	}
-	footer ul li a:after{
+	footer ul li a:after {
 		content: "|";
 		padding: 15px;
 		color: #696660;
 	}
-	footer ul li:last-child a:after{
+	footer ul li:last-child a:after {
 		content: none;
 	}
-	p.copyright{
+	p.copyright {
 		margin: 0 auto;
 		height: 126px;
 		line-height: 126px;
@@ -475,9 +474,9 @@
 	.links_contents li a .ja {
 		font-size: calc(8px + 2vw);
 	}
-	footer ul{
-		padding: 0 5%;
-	}
+}
+
+@media(max-width: 750px){
 	footer ul li{
 		display: block;
 		text-align: left;
@@ -485,7 +484,12 @@
 		width: 100%;
 	}
 	footer ul li a{
-		padding: 7.3% 0%;
+		padding: 0 5%;
+		display: block;
+	}
+	footer ul li a:hover {
+		background: #666;
+		transition: 0.3s;
 	}
 	footer ul li a:after{
 		content: none;
@@ -496,7 +500,6 @@
 		height: auto;
 	}
 }
-
 
 /*----------------------------------------
              retina設定

@@ -330,34 +330,33 @@ html{
 	line-height: 32px;
 	margin-bottom: 40px;
 }
-footer{
+footer {
 	width: 100%;
 	text-align: center;
 	background: #31312d;
-	height: 60px;
 	line-height: 60px;
 }
-footer ul{
+footer ul {
 	margin: 0 auto;
 }
-footer ul li{
+footer ul li {
 	display: inline;
 	width: 200px;
 	color: #fff;
 }
-footer ul li a{
+footer ul li a {
 	text-decoration: none;
 	color: #fff;
 }
-footer ul li a:after{
+footer ul li a:after {
 	content: "|";
 	padding: 15px;
 	color: #696660;
 }
-footer ul li:last-child a:after{
+footer ul li:last-child a:after {
 	content: none;
 }
-p.copyright{
+p.copyright {
 	margin: 0 auto;
 	height: 126px;
 	line-height: 126px;
@@ -735,39 +734,33 @@ p.copyright{
 		margin-bottom: 40px;
 		line-height: 1.25em;
 	}
-	footer{
-		background: #31312d;
-		height: auto;
-		text-align: left;
-	}
-	footer ul{
-		padding: 0 5%;
-	}
+}
+/*-----------------footer-----------------*/
+@media(max-width: 750px){
 	footer ul li{
-		font-size: calc(8px + 2.5vw);
 		display: block;
-		width: auto;
-		line-height: 24px;
+		text-align: left;
+		font-size: calc(8px + 2.5vw);
+		width: 100%;
 	}
 	footer ul li a{
-		text-decoration: none;
-    color: #fff;
-    display: block;
-    padding: 7.3% 0;
+		padding: 0 5%;
+		display: block;
+	}
+	footer ul li a:hover {
+		background: #666;
+		transition: 0.3s;
 	}
 	footer ul li a:after{
 		content: none;
 	}
 	p.copyright{
-		background: #282824;
-		text-align: center;
-		color: #696660;
 		line-height: 64px;
-		margin-bottom: 0;
 		font-size: 8px;
 		height: auto;
 	}
 }
+
 /*------------pc---retina設定-----------------*/
 @media(-webkit-min-device-pixel-ratio: 2) and (min-width: 641px),
 (min-resolution: 2dppx) and (min-width: 641px) {
