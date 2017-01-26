@@ -117,7 +117,7 @@
 	.weekend_journy_bg{
 		position: relative;
 		padding-bottom: 40px;
-		background-image: url(../../image/bg_main_01_on.png), url(../../image/bg_main_01.jpg);
+		background-image: url(../image/bg_main_01_on.png) , url(../image/bg_main_01.jpg);
 		background-repeat: no-repeat;
 		-webkit-background-size: 100%;
 		background-size: 100%;
@@ -293,13 +293,13 @@
 		float: right;
 	}
 	.links_contents li.product {
-		background-image: url(../../image/bg_product.png);
+		background-image: url(../image/bg_product.png);
 	}
 	.links_contents li.brewmaster {
-		background-image: url(../../image/bg_brewmaster.png);
+		background-image: url(../image/bg_brewmaster.png);
 	}
 	.links_contents li.about_wj {
-		background-image: url(../../image/bg_about.png);
+		background-image: url(../image/bg_about.png);
 		background-position: 0 80%;
 	}
 	.links_contents li a {
@@ -451,13 +451,13 @@
 		margin-bottom: 6%;
 	}
 	.links_contents li.product {
-		background-image: url(../../image/sp_bg_product.png);
+		background-image: url(../image/sp_bg_product.png);
 	}
 	.links_contents li.brewmaster {
-		background-image: url(../../image/sp_bg_brewmaster.png);
+		background-image: url(../image/sp_bg_brewmaster.png);
 	}
 	.links_contents li.about_wj {
-		background-image: url(../../image/sp_bg_about.png);
+		background-image: url(../image/sp_bg_about.png);
 	}
 	.links_contents li.product a,
 	.links_contents li.brewmaster a {
@@ -506,16 +506,16 @@
 (-webkit-min-device-pixel-ratio: 2) and (min-width: 641px),
 (            min-resolution: 2dppx) and (min-width: 641px) {
 	.weekend_journy_bg{
-		background-image: url(../../image/bg_main_01_on.png), url(../../image/bg_main_01@2x.jpg);
+		background-image: url(../image/bg_main_01_on.png) , url(../image/bg_main_01@2x.jpg);
 	} 
 	.links_contents li.product {
-		background-image: url(../../image/bg_product@2x.png);
+		background-image: url(../image/bg_product@2x.png);
 	}
 	.links_contents li.brewmaster {
-		background-image: url(../../image/bg_brewmaster@2x.png);
+		background-image: url(../image/bg_brewmaster@2x.png);
 	}
 	.links_contents li.about_wj {
-		background-image: url(../../image/bg_about@2x.png);
+		background-image: url(../image/bg_about@2x.png);
 	}
 }
 /*SP*/
@@ -523,14 +523,14 @@
 (-webkit-min-device-pixel-ratio: 2) and (max-width: 640px),
 (            min-resolution: 2dppx) and (max-width: 640px) {
 	.weekend_journy_bg {
-		background-image: url(../../image/sp_bg_main_01@2x.jpg);
+		background-image: url(../image/sp_bg_main_01@2x.jpg);
 	} 
 	.links_contents li.product {
-		background-image: url(../../image/sp_bg_product@2x.png);
+		background-image: url(../image/sp_bg_product@2x.png);
 	}
 	.links_contents li.brewmaster {
-		background-image: url(../../image/sp_bg_brewmaster@2x.png);
+		background-image: url(../image/sp_bg_brewmaster@2x.png);
 	}
 	.links_contents li.about_wj {
-		background-image: url(../../image/sp_bg_about@2x.png);
+		background-image: url(../image/sp_bg_about@2x.png);
 }

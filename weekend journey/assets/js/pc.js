@@ -25,18 +25,18 @@ $(function(){
     var retinaSwitch = window.devicePixelRatio;
     if(retinaSwitch == 1) {
      $(".wj_bg").bgswitcher({
-       images: ["image/bg_main_01.png",
-                "image/bg_main_03.png",
-                "image/bg_main_02.png",
+       images: ["assets/image/bg_main_01.png",
+                "assets/image/bg_main_03.png",
+                "assets/image/bg_main_02.png",
                ],
        interval: 6000,
        duration: 3000
      });
     } else if(retinaSwitch == 2) {
       $(".wj_bg").bgswitcher({
-        images: ["image/bg_main_01@2x.png",
-                 "image/bg_main_03@2x.png",
-                 "image/bg_main_02@2x.png",
+        images: ["assets/image/bg_main_01@2x.png",
+                 "assets/image/bg_main_03@2x.png",
+                 "assets/image/bg_main_02@2x.png",
                 ],
         interval: 6000,
         duration: 3000
