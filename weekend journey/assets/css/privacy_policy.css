@@ -218,14 +218,14 @@ p.copyright {
 		padding: 20px 5%;
 	}
 	.policy_main h1 {
-		font-size: calc(50% + 7.5vw);
+		font-size: calc(8px + 7.5vw);
 		margin-bottom: 5%;
 	}
 		.policy_main h1 span {
 			display: block;
 		}
 		.policy_main p {
-			font-size: calc(50% + 2.2vw);
+			font-size: calc(8px + 2.2vw);
 		}
 	
 	/*-----------------ページ下部リンク-----------------*/
@@ -258,17 +258,17 @@ p.copyright {
 	    height: calc(24vw - 20px);
 	}
 	.links_contents li a .en {
-		font-size: calc(50% + 7.5vw);
+		font-size: calc(8px + 7.5vw);
 	}
 	.links_contents li a .ja {
-		font-size: calc(50% + 2vw);
+		font-size: calc(8px + 2vw);
 	}
 
 	/*-----------------footer-----------------*/
 	footer ul li{
 		display: block;
 		text-align: left;
-		font-size: calc(50% + 2.5vw);
+		font-size: calc(8px + 2.5vw);
 		width: 100%;
 	}
 	footer ul li a{

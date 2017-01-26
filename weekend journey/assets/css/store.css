@@ -380,7 +380,7 @@
 		padding: 20px 5.535714285714286%;
 	}
 	.wrapper .weekend_journy_wrapper h1{
-		font-size: calc(50% + 7.5vw);
+		font-size: calc(8px + 7.5vw);
 	}
 	.wrapper .weekend_journy_wrapper h1 span{
 		font-size: 3.75vw;
@@ -416,7 +416,7 @@
 		padding: 20px 5%;
 	}
 	.order .order_contents h1{
-		font-size: calc(50% + 3.7vw);
+		font-size: calc(8px + 3.7vw);
 		margin-bottom: 5%;
 	}
 	.order .order_contents p {
@@ -470,10 +470,10 @@
 	    height: calc(24vw - 20px);
 	}
 	.links_contents li a .en {
-		font-size: calc(50% + 7.5vw);
+		font-size: calc(8px + 7.5vw);
 	}
 	.links_contents li a .ja {
-		font-size: calc(50% + 2vw);
+		font-size: calc(8px + 2vw);
 	}
 	footer ul{
 		padding: 0 5%;
@@ -481,7 +481,7 @@
 	footer ul li{
 		display: block;
 		text-align: left;
-		font-size: calc(50% + 2.5vw);
+		font-size: calc(8px + 2.5vw);
 		width: 100%;
 	}
 	footer ul li a{

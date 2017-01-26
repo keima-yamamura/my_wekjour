@@ -357,7 +357,7 @@ p.copyright {
 	}
 	.form_main h1 {
 		padding-top: 20px;
-		font-size: calc(50% + 7.5vw);
+		font-size: calc(8px + 7.5vw);
 	}
 	.form_main h1 span {
 		font-size: 0.4em;
@@ -367,21 +367,21 @@ p.copyright {
 	}
 	.form_main .subtitle {
 		margin-top: 8px;
-		font-size: calc(50% + 1.3vw);
+		font-size: calc(8px + 1.3vw);
 	}
 	.form_main .thanks {
 		margin: 20px 0 8px;
-		font-size: calc(50% + 1.3vw);
+		font-size: calc(8px + 1.3vw);
 	}
 	.form_main .form_submit,
 	.form_main .form_submit.col2 {
 		padding: 20px 0;
 	}
 	.form_main .input_wrapper {
-		font-size: calc(50% + 2.2vw);
+		font-size: calc(8px + 2.2vw);
 	}
 	.form_main .form_confirm {
-		font-size: calc(50% + 2.2vw);
+		font-size: calc(8px + 2.2vw);
 	}
 	.form_main .form_submit .submit_normal, 
 	.form_main .form_submit .button_col2 {
@@ -421,17 +421,17 @@ p.copyright {
 	    height: calc(24vw - 20px);
 	}
 	.links_contents li a .en {
-		font-size: calc(50% + 7.5vw);
+		font-size: calc(8px + 7.5vw);
 	}
 	.links_contents li a .ja {
-		font-size: calc(50% + 2vw);
+		font-size: calc(8px + 2vw);
 	}
 
 	/*-----------------footer-----------------*/
 	footer ul li{
 		display: block;
 		text-align: left;
-		font-size: calc(50% + 2.5vw);
+		font-size: calc(8px + 2.5vw);
 		width: 100%;
 	}
 	footer ul li a{
