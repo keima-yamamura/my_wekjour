@@ -253,7 +253,7 @@
 	}
 	.order .order_contents .contact a{
 		display: block;
-		width: 65.292%;
+		width: 60.42%;
 		max-width: 401px;
 		margin: 0 auto;
 		border: 2px solid #d3d3d3;
@@ -378,6 +378,7 @@
 		display: none;
 	}
 	.wrapper .weekend_journy_wrapper{
+		width: 93.75%;
 		margin-bottom: 40px;
 		padding: 20px 5.535714285714286%;
 	}
@@ -403,7 +404,7 @@
 		height: 48px;
 	}
 	.wrapper .weekend_journy_wrapper .product_box div .add_cart a{
-		width: 78.87%;
+		width: 72.916%;
 		height: 100%;
 		margin: 0 auto;
 		padding: 0px;
@@ -415,6 +416,7 @@
 		margin-bottom: -65px;
 	}
 	.order .order_contents {
+		width: 93.75%;
 		padding: 20px 5%;
 	}
 	.order .order_contents h1{

@@ -214,6 +214,9 @@ p.copyright {
 	.bg_weekend_journy {
     	background-image: url(../image/sp_bg_main_01.jpg);
 	}
+	.section_wrapper_basic {
+		width: 93.75%;
+	}
 	.policy_main {
 		padding: 20px 5%;
 	}

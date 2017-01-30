@@ -212,7 +212,7 @@ html {
 }
 .webcart_main .item_checkout .btn_submit {
 	display: block;
-	width: 64.26%;
+	width: 59.971%;
 	max-width: 401px;
 	margin: 0 auto;
 	height: 56px;
@@ -259,7 +259,7 @@ html {
 }
 .about_wholesale .btn_link {
 	display: block;
-	width: 64.26%;
+	width: 59.971%;
 	max-width: 401px;
 	margin: 0 auto;
 	height: 56px;
@@ -380,13 +380,13 @@ p.copyright {
 	.bg_weekend_journy {
     	background-image: url(../image/sp_bg_main_01.jpg);
 	}
-	.section_wrapper_basic .webcart_main h1 {
-		padding-top: 20px;
-		font-size: calc(8px + 7.5vw)
+	.section_wrapper_basic {
+		width: 93.75%;
 	}
 	/*----------CART----------*/
 	.webcart_main h1 {
-		font-size: calc(8px + 9vw);
+		padding-top: 20px;
+		font-size: calc(8px + 7.5vw);
 	}
 	.webcart_main h1 span {
 		font-size: 0.4em;

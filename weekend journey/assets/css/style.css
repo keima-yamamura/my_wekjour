@@ -194,11 +194,11 @@ html{
 	margin-bottom: 40px;
 }
 .product .section_wrapper ul li{
-	overflow: hidden;
+	display: table;
 }
 .product .section_wrapper ul li p{
-	line-height: 40px;
-	float: left;
+	display: table-cell;
+	vertical-align: top;
 }
 .product .section_wrapper ul li p:first-child{
 	width: 4%;
@@ -791,4 +791,3 @@ p.copyright {
 	background-image: url(../image/sp_bg_about@2x.png);
 	}
 }	
-
