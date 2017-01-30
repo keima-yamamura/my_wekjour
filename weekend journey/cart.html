@@ -103,7 +103,7 @@
 <ul class="links_contents">
   <li class="product"><a href="index.html#product">
     <p class="en">PRODUCT</p>
-    <p class="ja">(製品概要)</p>
+    <p class="ja">（製品概要）</p>
   </a></li>
   <li class="brewmaster"><a href="index.html#brewmaster">
     <p class="en">BREWMASTER</p>
@@ -127,5 +127,15 @@
 </footer>
 <p class="copyright">© copyright 2016 Weekend-J Inc. All Rights Reserved.</p>
 </div><!--wrapper-->
+
+<script>
+  $(function(){
+      if(window.devicePixelRatio > 1){
+          $(".2x").each(function() {
+              $(this).attr("src", $(this).attr("src").replace(/(\.)(png)/, "@2x$1$2"));
+          });
+      }
+  });
+</script>
 </body>
 </html>
