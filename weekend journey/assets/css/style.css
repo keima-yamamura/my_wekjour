@@ -17,13 +17,6 @@ html{
 }
 body {
 	min-width: 680px;
-	background-image: url(../image/bg_main_01.jpg)\9;
-	background-repeat: no-repeat;
-	-webkit-background-size: 100%;
-	background-size: 100%;
-}
-.wrapper { 
-	position: relative;
 }
 .section_wrapper ul li span{
 	font-family: bickham-script-pro-3 , sans-serif;
@@ -409,7 +402,6 @@ p.copyright {
 	}
 	body{
 		min-width: 320px;
-		background: none;
 	}
 	.hum_menu{
 		position: absolute;
@@ -776,9 +768,6 @@ p.copyright {
 /*------------pc---retina設定-----------------*/
 @media(-webkit-min-device-pixel-ratio: 2) and (min-width: 641px),
 (min-resolution: 2dppx) and (min-width: 641px) {
-	body{
-	background-image: url(../image/bg_main_01@2x.jpg)\9;
-	}
 	.product .section_hd{
 	background-image: url(../image/bg_product@2x.png);
 	}
