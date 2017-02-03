@@ -6,19 +6,17 @@
 .brewmaster h1,
 .sp
 {
+	/*@extend %titlelogo_font;*/
 	font-family: din-condensed, sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 60px;
 	text-shadow: 0px 0px 20px #000;
 }
-html{
-	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
-}
-body {
+body.toppage {
 	min-width: 680px;
 }
-.section_wrapper ul li span{
+.toppage .section_wrapper ul li span{
 	font-family: bickham-script-pro-3 , sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -27,30 +25,15 @@ body {
 .hum_menu{
 	display: none;
 }
-.hum_menu{
+.toppage .hum_menu{
 	position: absolute;
 	left: 50px;
 	top: 50px;
 }
-.hum_menu a{
-	background-color: transparent;
-	display: block;
+.toppage .hum_menu a{
 	width: 48px;
-	height: 30px;
-	padding-top: 5px;
-	box-sizing: border-box;
 }
-.hum_menu a span{
-	display: block;
-	width: 30px;
-	height: 3px;
-	background: #fff;
-	border-radius: 10px;
-	margin: 6px auto;
-}
-.hum_menu a span:first-child{
-	margin-top: 0px;
-}
+
 .weekend_journey{
 	-webkit-background-size:cover;
 	background-size: cover;
@@ -166,7 +149,7 @@ body {
 	width: 86.6%;
 	margin-bottom: 5px;
 }
-.section_wrapper{
+.toppage .section_wrapper{
 	width: 64.0625%;
 	margin: 0 auto;
 }
@@ -333,40 +316,7 @@ body {
 	line-height: 32px;
 	margin-bottom: 40px;
 }
-footer {
-	width: 100%;
-	text-align: center;
-	background: #31312d;
-	line-height: 60px;
-}
-footer ul {
-	margin: 0 auto;
-}
-footer ul li {
-	display: inline;
-	width: 200px;
-	color: #fff;
-}
-footer ul li a {
-	text-decoration: none;
-	color: #fff;
-}
-footer ul li a:after {
-	content: "|";
-	padding: 15px;
-	color: #696660;
-}
-footer ul li:last-child a:after {
-	content: none;
-}
-p.copyright {
-	margin: 0 auto;
-	height: 126px;
-	line-height: 126px;
-	background: #282824;
-	text-align: center;
-	color: #696660;
-}
+
 @media(max-width: 1112px){
 	.weekend_journey_contents h1{
 		line-height: 30px;
@@ -388,45 +338,23 @@ p.copyright {
 /*----------------sp-----------------------*/
 
 @media(max-width: 640px){
+	body.toppage {
+		min-width: 320px;
+	}
 	.weekend_journey .weekend_journey_wrapper h1,
 	.about_wj .section_hd h1,
 	.product h1,
 	.brewmaster h1,
 	.sp
 	{
-		font-family: din-condensed, sans-serif;
-		font-style: normal;
-		font-weight: 300;
 		font-size: calc(8px + 9vw);
-		text-shadow: 0px 0px 20px #000;
 	}
-	body{
-		min-width: 320px;
-	}
-	.hum_menu{
+	.toppage .hum_menu{
 		position: absolute;
 		left: 20px;
 		top: 20px;
 	}
-	.hum_menu a{
-		background-color: transparent;
-		display: block;
-		width: 30px;
-		height: 30px;
-		padding-top: 5px;
-		box-sizing: border-box;
-	}
-	.hum_menu a span{
-		display: block;
-		width: 30px;
-		height: 3px;
-		background: #fff;
-		border-radius: 10px;
-		margin: 6px auto;
-	}
-	.hum_menu a span:first-child{
-		margin-top: 0px;
-	}
+
 	.weekend_journey{
 		background-image: url(../image/sp_bg_main_01.jpg);
 		-webkit-background-size: cover;
@@ -536,7 +464,7 @@ p.copyright {
 	.weekend_journey .weekend_journey_wrapper dl{
 		display: none;
 	}
-	.section_wrapper{
+	.toppage .section_wrapper{
 		padding: 0 5%;
 		width: auto;
 	}
@@ -737,31 +665,6 @@ p.copyright {
 		font-size: calc(8px + 2.5vw);
 		margin-bottom: 40px;
 		line-height: 1.25em;
-	}
-}
-/*-----------------footer-----------------*/
-@media(max-width: 750px){
-	footer ul li{
-		display: block;
-		text-align: left;
-		font-size: calc(8px + 2.5vw);
-		width: 100%;
-	}
-	footer ul li a{
-		padding: 0 5%;
-		display: block;
-	}
-	footer ul li a:hover {
-		background: #666;
-		transition: 0.3s;
-	}
-	footer ul li a:after{
-		content: none;
-	}
-	p.copyright{
-		line-height: 64px;
-		font-size: 8px;
-		height: auto;
 	}
 }
 

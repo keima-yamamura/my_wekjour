@@ -1,141 +1,5 @@
 @charset "UTF-8";
 
-/*----------------------------------------
-              共通設定
-----------------------------------------*/
-
-/*--------------フォント---------------*/
-html {
-	font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
-}
-.page_header h1,
-.form_main h1,
-.links_contents li .en {
-	font-family: din-condensed, sans-serif;
-	font-style: normal;
-	font-weight: 300;
-	text-shadow: 0px 0px 20px #000;
-}
-
-/*--------------背景---------------*/
-.wrapper { background: #2a261d; }
-.bg_weekend_journy {
-	position: relative;
-	padding-bottom: 40px;
-	background-image: url(../image/bg_main_01_on.png) , url(../image/bg_main_01.jpg);
-	background-repeat: no-repeat;
-	-webkit-background-size: 100%;
-	background-size: 100%;
-}
-  .bg_weekend_journy:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 40px;
-    position: absolute;
-    bottom: 0;
-    background: -moz-linear-gradient(top,  rgba(42,38,29,0.01) 0%, rgba(42,38,29,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(42,38,29,0.01) 0%,rgba(42,38,29,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(42,38,29,0.01) 0%,rgba(42,38,29,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032a261d', endColorstr='#2a261d',GradientType=0 ); /* IE6-9 */
-  }
-
-/*--------------ヘッダー---------------*/
-.page_header {
-	background: rgba(0,0,0,0.4);
-	font-size: 100%;
-	height: 100px
-}
-.page_header .inner {
-	position: relative;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-.page_header .hum_menu {
-	position: absolute;
-	left: 20px;
-	top: 35px;
-}
-.hum_menu a {
-	background-color: transparent;
-	display: block;
-	width: 30px;
-	height: 30px;
-	padding-top: 5px;
-	box-sizing: border-box;
-}
-.hum_menu a span {
-	display: block;
-	width: 30px;
-	height: 3px;
-	background: #fff;
-	border-radius: 10px;
-	margin: 6px auto;
-}
-.hum_menu a span:first-child {
-	margin-top: 0px;
-}
-.page_header .inner h1{
-	text-align: center;
-  color: #fff;
-  padding-top: 6px;
-}
-.page_header .inner h1 img {
-	width: 120px;
-  padding-top: 10px;
-}
-.page_header .inner .cart_preview {
-	position: absolute;
-	top: 19px;
-	right: 0;
-	display: block;
-	overflow: hidden;
-	padding-right: 3.6%;
-}
-.page_header .inner .cart_preview .btn_submit {
-	display: block;
-	float: left;
-	margin-right: 14px;
-	padding: 4px 16px 2px;
-	border: solid 2px #fff;
-	color: #fff;
-	font-size: 24px;
-	text-decoration: none;
-}
-.page_header .inner .cart_preview .count_items {
-	display: block;
-	box-sizing: border-box;
-	float: left;
-	width: 42px;
-	height: 34px;
-	padding-left: 17px;
-	background: url(../../inquiry/image/preview_cart.png) no-repeat left 9px;
-	font-family: "Helvetica", sans-serif;
-	font-size: 24px;
-	color: #fff;
-}
-
-/*--------------メインエリア---------------*/
-.section_wrapper_basic {
-	position: relative;
-	z-index: 10;
-	width: 87.5%;
-	max-width: 1120px;
-	margin: 0 auto;
-}
-.form_main {
-	margin: 40px auto 0;
-	padding: 0 5%;
-	background: rgba(0,0,0,0.6);
-	color: #fff;
-}
-.form_main h1 {
-	padding-top: 40px;
-	font-size: 60px;
-}
-.form_main h1 span {
-	font-size: 24px;
-}
 .form_main .description {
 	margin-top: 8px;
 }
@@ -186,39 +50,47 @@ html {
 	font-size: 20px;
 }
 .form_main .form_submit {
-	padding: 40px 0;
+	padding-top: 40px;
 }
 .form_main .form_submit.col2 {
 	overflow: hidden;
-	padding: 40px 9.9%;
+	padding: 40px 9.9% 0;
 }
 .form_main .form_submit .submit_normal {
+	/*@include btn_single (btn_master+add)*/
 	display: block;
-	width: 59.972%;
-	max-width: 401px;
-	margin: 0 auto;
-	line-height: 56px;
-	height: 56px;
-	font-size: 1.2em;
-	box-sizing: border-box;
-	border: solid 2px #d3d3d3;
 	background-color: rgba(0,0,0,0.2);
+	border: solid 2px #d3d3d3;
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 59.971%;
+	max-width: 401px;
+	margin: 0 auto;
+	height: 56px;
+	line-height: 56px;
+	/*add style*/
+	font-size: 1.2em;
 }
 .form_main .form_submit .button_col2 {
+	/*@include btn_master*/
 	display: block;
+	background-color: rgba(0,0,0,0.2);
+	border: solid 2px #d3d3d3;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	/*add style*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 47%;
 	line-height: 56px;
 	height: 56px;
 	font-size: 1.2em;
-	box-sizing: border-box;
-	border: solid 2px #d3d3d3;
-	background-color: rgba(0,0,0,0.2);
-	color: #fff;
-	text-align: center;
-	text-decoration: none;
 }
 .form_main .form_submit .button_col2:first-child {
 	float: left;
@@ -253,112 +125,10 @@ html {
 	-webkit-touch-callout: none;
 }
 
-/*-----------------ページ下部リンク-----------------*/
-.links_contents {
-	overflow: hidden;
-	width: 96.25%;
-	max-width: 1232px;
-	margin: 0 auto 72px;
-}
-.links_contents li {
-	width: 49.2%;
-	margin-bottom: 2%;
-	-webkit-background-size: cover;
-	background-size: cover;
-	text-align: center;
-}
-.links_contents li:nth-child(odd) {
-	float: left;
-}
-.links_contents li:nth-child(even) {
-	float: right;
-}
-.links_contents li.product {
-	background-image: url(../image/bg_product.png);
-}
-.links_contents li.brewmaster {
-	background-image: url(../image/bg_brewmaster.png);
-}
-.links_contents li.about_wj {
-	background-image: url(../image/bg_about.png);
-	background-position: 0 80%;
-}
-.links_contents li a {
-	display: block;
-	color: #fff;
-	text-decoration: none;
-}
-.links_contents li.product a,
-.links_contents li.brewmaster a {
-    padding: 32px 0;
-}
-.links_contents li a .en {
-	font-size: 60px;
-}
-.links_contents li a .ja {
-	font-size: 24px;
-}
-.links_contents li.about_wj a img {
-	height: 146px;
-}
-
-/*-----------------footer-----------------*/
-footer {
-	width: 100%;
-	text-align: center;
-	background: #31312d;
-	line-height: 60px;
-}
-footer ul {
-	margin: 0 auto;
-}
-footer ul li {
-	display: inline;
-	width: 200px;
-	color: #fff;
-}
-footer ul li a {
-	text-decoration: none;
-	color: #fff;
-}
-footer ul li a:after {
-	content: "|";
-	padding: 15px;
-	color: #696660;
-}
-footer ul li:last-child a:after {
-	content: none;
-}
-p.copyright {
-	margin: 0 auto;
-	height: 126px;
-	line-height: 126px;
-	background: #282824;
-	text-align: center;
-	color: #696660;
-}
-
 /*----------------------------------------
              SP専用 640pxまで
 ----------------------------------------*/
 @media(max-width: 640px){
-	body {
-		min-width: 320px;
-	}
-	.bg_weekend_journy {
-    	background-image: url(../image/sp_bg_main_01.jpg);
-	}
-	.section_wrapper_basic {
-		width: 93.75%;
-	}
-	/*----------FORM----------*/
-	.form_main h1 {
-		padding-top: 20px;
-		font-size: calc(8px + 7.5vw);
-	}
-	.form_main h1 span {
-		font-size: 0.4em;
-	}
 	.form_main .description {
 		margin-top: 8px;
 	}
@@ -372,7 +142,7 @@ p.copyright {
 	}
 	.form_main .form_submit,
 	.form_main .form_submit.col2 {
-		padding: 20px 0;
+		padding-top: 20px;
 	}
 	.form_main .input_wrapper {
 		font-size: calc(8px + 2.2vw);
@@ -387,103 +157,4 @@ p.copyright {
 		border-width: 1px;
 		font-size: 100%;
 	}
-	
-	/*-----------------ページ下部リンク-----------------*/
-	.links_contents { 
-		width: 93.75%;
-		margin: 0 auto 6.25vw;
-	}
-	.links_contents li {
-		float: none;
-		width: 100%;
-		margin-bottom: 6%;
-	}
-	.links_contents li.product {
-		background-image: url(../image/sp_bg_product.png);
-	}
-	.links_contents li.brewmaster {
-		background-image: url(../image/sp_bg_brewmaster.png);
-	}
-	.links_contents li.about_wj {
-		background-image: url(../image/sp_bg_about.png);
-	}
-	.links_contents li.product a,
-	.links_contents li.brewmaster a {
-		padding: 6.808vw 0;
-	}
-	.links_contents li.about_wj a {
-		padding: 15px 0;
-	}
-	.links_contents li.about_wj a img {
-	    height: calc(24vw - 20px);
-	}
-	.links_contents li a .en {
-		font-size: calc(8px + 7.5vw);
-	}
-	.links_contents li a .ja {
-		font-size: calc(8px + 2vw);
-	}
-}
-
-/*-----------------footer-----------------*/
-@media(max-width: 750px){
-	footer ul li{
-		display: block;
-		text-align: left;
-		font-size: calc(8px + 2.5vw);
-		width: 100%;
-	}
-	footer ul li a{
-		padding: 0 5%;
-		display: block;
-	}
-	footer ul li a:hover {
-		background: #666;
-		transition: 0.3s;
-	}
-	footer ul li a:after{
-		content: none;
-	}
-	p.copyright{
-		line-height: 64px;
-		font-size: 8px;
-		height: auto;
-	}
-}
-
-/*----------------------------------------
-             retina設定
-----------------------------------------*/
-/*PC*/
-@media
-(-webkit-min-device-pixel-ratio: 2) and (min-width: 641px),
-(            min-resolution: 2dppx) and (min-width: 641px) {
-	.bg_weekend_journy {
-		background-image: url(../image/bg_main_01_on.png) , url(../image/bg_main_01@2x.jpg);
-	} 
-	.links_contents li.product {
-		background-image: url(../image/bg_product@2x.png);
-	}
-	.links_contents li.brewmaster {
-		background-image: url(../image/bg_brewmaster@2x.png);
-	}
-	.links_contents li.about_wj {
-		background-image: url(../image/bg_about@2x.png);
-	}
-}
-/*SP*/
-@media
-(-webkit-min-device-pixel-ratio: 2) and (max-width: 640px),
-(            min-resolution: 2dppx) and (max-width: 640px) {
-	.bg_weekend_journy {
-		background-image: url(../image/sp_bg_main_01@2x.jpg);
-	} 
-	.links_contents li.product {
-		background-image: url(../image/sp_bg_product@2x.png);
-	}
-	.links_contents li.brewmaster {
-		background-image: url(../image/sp_bg_brewmaster@2x.png);
-	}
-	.links_contents li.about_wj {
-		background-image: url(../image/sp_bg_about@2x.png);
 }

@@ -1,180 +1,33 @@
 @charset "UTF-8";
-/*-----------フォント設定------------------*/
-	.weekend_journy .weekend_journy_wrapper h1,
-	.about_wj .section_hd h1,
-	.product h1,
-	.brewmaster h1,
-	.wrapper header h1,
-	.links_contents li .en,
-	.btn_submit
-	{
-		font-family: din-condensed, sans-serif;
-		font-style: normal;
-		font-weight: 300;
-		font-size: 60px;
-		color: #fff;
-		text-decoration: none;
-		text-shadow: 0px 0px 20px #000;
-	}
-	html{
-		font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
-	}
-	.section_wrapper ul li span{
-		font-family: bickham-script-pro-3 , sans-serif;
-		font-style: normal;
-		font-weight: 400;
-	}
 
 /*-------------pc--------------------*/
-
-	.wrapper{
-		background: #2a261d;
-	}
-	.wrapper .hum_menu{
-			position: absolute;
-			left: 20px;
-			top: 20px;
-			display: none;
-		}
-	.wrapper .hum_menu a{
-		background-color: transparent;
-		display: block;
-		width: 48px;
-		height: 30px;
-		padding-top: 5px;
-		box-sizing: border-box;
-	}
-	.wrapper .hum_menu a span{
-		display: block;
-		width: 30px;
-		height: 3px;
-		background: #fff;
-		border-radius: 10px;
-		margin: 6px auto;
-	}
-	.wrapper .hum_menu a span:first-child{
-		margin-top: 0px;
-	}
-	
-	.page_header {
-		background: rgba(0,0,0,0.4);
-		font-size: 100%;
-		height: 100px;
-	}
-	.page_header .inner {
-		position: relative;
-		max-width: 1200px;
-		margin: 0 auto;
-	}
-	.page_header .inner h1 {
-		text-align: center;
-		color: #fff;
-		font-size: 32px;
-		padding-top: 6px;
-	}
-	.page_header .inner h1 img{
-		width: 120px;
-		padding-top: 10px;
-	}
-	.page_header .inner .cart_preview {
-		position: absolute;
-		top: 35px;
-		right: 0;
-		display: block;
-		overflow: hidden;
-		padding-right: 3.6%;
-	}
-	.page_header .inner .cart_preview .btn_submit {
-		display: block;
-		float: left;
-		margin-right: 12px;
-		padding: 4px 16px 2px;
-		border: solid 2px #fff;
-		color: #fff;
-		font-size: 22px;
-		text-decoration: none;
-	}
-	.page_header .inner .cart_preview .btn_submit:hover {
-		border: solid 2px #fff;
-		background-color: rgba(255,255,255,0.8);
-		color: #000;
-		text-shadow: none;
-		transition: 0.3s;
-	}
-	.page_header .inner .cart_preview .count_items {
-		display: block;
-		box-sizing: border-box;
-		float: left;
-		width: 42px;
-		height: 34px;
-		padding-left: 17px;
-		background: url(../image/preview_cart.png) no-repeat left 7px;
-		font-family: "Helvetica", sans-serif;
-		font-size: 24px;
-		color: #fff;
-	}
-	.weekend_journy_bg{
-		position: relative;
-		padding-bottom: 40px;
-		background-image: url(../image/bg_main_01_on.png) , url(../image/bg_main_01.jpg);
-		background-repeat: no-repeat;
-		-webkit-background-size: 100%;
-		background-size: 100%;
-	}
-	.weekend_journy_bg:before {
-		content: "";
-		display: block;
-		width: 100%;
-		height: 40px;
-		position: absolute;
-		bottom: 0;
-		background: -moz-linear-gradient(top,  rgba(42,38,29,0.01) 0%, rgba(42,38,29,1) 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(top,  rgba(42,38,29,0.01) 0%,rgba(42,38,29,1) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to bottom,  rgba(42,38,29,0.01) 0%,rgba(42,38,29,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#032a261d', endColorstr='#2a261d',GradientType=0 ); /* IE6-9 */
-	}
-	.weekend_journy{
-		padding-top: 40px;
-	}
-	.weekend_journy_wrapper{
-		background: rgba(0,0,0,0.6);
-		max-width: 1120px;
-		width: 87.5%;
-		margin: 0 auto 40px;
-		color: #fff;
-		padding: 40px 5%;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-	.weekend_journy_wrapper h1 span{
+	.store_main h1 span{
 		font-size: 60px;
 	}
-	.weekend_journy_wrapper h1 br{
+	.store_main h1 br{
 		display: none;
 	}
-
-	.weekend_journy_wrapper dl{
+	.store_main dl{
 	  overflow: hidden;
 	  font-size: 16px;
 	  line-height: 24px;
 	  padding-top: 20px;
 	}
-	.weekend_journy_wrapper dt{
+	.store_main dt{
 		float: left;
 		width: 13.4%;
 		margin-bottom: 5px;
 	}
-	.weekend_journy_wrapper dd{
+	.store_main dd{
 		float: left;
 		width: 86.6%;
 		margin-bottom: 5px;
 	}
-	.weekend_journy_wrapper .weekend_journey_contents ul li a{
+	.store_main .weekend_journey_contents ul li a{
 		font-size: calc(30% + 1.2vw);
 	}
-	.weekend_journy_wrapper .product_box{	
-		padding: 0px 8.035714285714286%;
+	.store_main .product_box{	
+		padding: 0px 8.7%;
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -182,21 +35,21 @@
 		display: flex;
 		justify-content: space-between;
 	}
-	.weekend_journy_wrapper .product_box div{
+	.store_main .product_box div{
 		width: 46.25%;
 		text-align: center;
 	}
-	.weekend_journy_wrapper .product_box div img{
+	.store_main .product_box div img{
 		width: 69.7%;
 		margin-bottom: 62px;
 	}
-	.weekend_journy_wrapper .product_box div .text{
+	.store_main .product_box div .text{
 		margin-bottom: 32px;
 	}
-	.weekend_journy_wrapper .product_box div .add_cart{
+	.store_main .product_box div .add_cart{
 		box-sizing: border-box;
 	}
-	.weekend_journy_wrapper .product_box div .add_cart a{
+	.store_main .product_box div .add_cart a{
 		border: 2px solid #d3d3d3;
 		display: block;
 		background: rgba(0,0,0,0.2);;
@@ -208,7 +61,7 @@
 		height: 56px;
 		line-height: 56px;
 	}
-	.weekend_journy_wrapper .product_box div .add_cart a:hover{
+	.store_main .product_box div .add_cart a:hover{
 		background: rgba(255,255,255,0.8);
 		color: #000;
 		border: 2px solid #fff;
@@ -217,194 +70,84 @@
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 	}
-	.order_contents{
-		background: rgba(0,0,0,0.6);
-		max-width: 1120px;
-		width: 87.5%;
-		margin: 0 auto;
-		color: #fff;
-		padding: 50px 5% 50px;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;ß
-	}
-  .order .order_contents h1{
-		font-size: 40px;
-		text-shadow: 0px 0px 20px #000;
-		margin-bottom: 24px;
-	}
-	.order .order_contents p{
+	
+	/*-----------------卸売-----------------*/
+	.about_wholesale .get_text {
+		margin-top: 24px;
 		line-height: 1.5;
 		font-size: 20px;
 	}
-	.order .order_contents .ordered{
-		text-align: center;
-		margin: 30px 0;
-	}	
-	.order .order_contents .ordered img{
+	.about_wholesale img {
+		display: block;
 		width: 40%;
 		max-width: 220px;
+		margin: 30px auto;
 	}
-	.order .order_contents .contact{
-		text-align: center;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-	.order .order_contents .contact a{
+	.about_wholesale .btn_link {
+		/*@include btn_single (btn_master+add)*/
 		display: block;
-		width: 60.42%;
-		max-width: 401px;
-		margin: 0 auto;
-		border: 2px solid #d3d3d3;
-		height: 56px;
-		line-height: 56px;
-		font-size: 16px;
-		background: rgba(0,0,0,0.2);
-		text-decoration: none;
+		background-color: rgba(0,0,0,0.2);
+		border: solid 2px #d3d3d3;
 		color: #fff;
+		text-align: center;
+		text-decoration: none;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
+		width: 59.971%;
+		max-width: 401px;
+		margin: 0 auto;
+		height: 56px;
+		line-height: 56px;
+		/*add style*/
+		font-size: 16px;
 	}
-	.order .order_contents .contact a:hover{
-		background: rgba(255,255,255,0.8);
+	/*"@include btn_master" works*/
+	.about_wholesale .btn_link:hover {
+		background-color: rgba(255,255,255,0.8);
+		border-color: #fff;
 		color: #000;
-		border: 2px solid #fff;
+		text-shadow: none;
 		transition: 0.3s;
-	}
-	.links_contents {
-		overflow: hidden;
-		width: 96.25%;
-		max-width: 1232px;
-		margin: 0 auto 72px;
-	}
-	.links_contents li {
-		width: 49.2%;
-		margin-bottom: 2%;
-		-webkit-background-size: cover;
-		background-size: cover;
-		text-align: center;
-	}
-	.links_contents li:nth-child(odd) {
-		float: left;
-	}
-	.links_contents li:nth-child(even) {
-		float: right;
-	}
-	.links_contents li.product {
-		background-image: url(../image/bg_product.png);
-	}
-	.links_contents li.brewmaster {
-		background-image: url(../image/bg_brewmaster.png);
-	}
-	.links_contents li.about_wj {
-		background-image: url(../image/bg_about.png);
-		background-position: 0 80%;
-	}
-	.links_contents li a {
-		display: block;
-		color: #fff;
-		text-decoration: none;
-	}
-	.links_contents li.product a,
-	.links_contents li.brewmaster a {
-	    padding: 32px 0;
-	}
-	.links_contents li a .en {
-		font-size: 60px;
-	}
-	.links_contents li a .ja {
-		font-size: 24px;
-	}
-	.links_contents li.about_wj a img {
-		height: 146px;
-	}
-	footer {
-		width: 100%;
-		text-align: center;
-		background: #31312d;
-		line-height: 60px;
-	}
-	footer ul {
-		margin: 0 auto;
-	}
-	footer ul li {
-		display: inline;
-		width: 200px;
-		color: #fff;
-	}
-	footer ul li a {
-		text-decoration: none;
-		color: #fff;
-	}
-	footer ul li a:after {
-		content: "|";
-		padding: 15px;
-		color: #696660;
-	}
-	footer ul li:last-child a:after {
-		content: none;
-	}
-	p.copyright {
-		margin: 0 auto;
-		height: 126px;
-		line-height: 126px;
-		background: #282824;
-		text-align: center;
-		color: #696660;
 	}
 
 /*------weekend_journeyの文字数--------*/
 
 @media(max-width: 800px){
-	.weekend_journy_wrapper h1{
+	.store_main h1{
 		text-align: left;
 		font-size: 3.75vw;
 	}
-	.weekend_journy_wrapper h1 br{
+	.store_main h1 br{
 		display: block;
 	}
 }
 
 /*----------------sp-----------------------*/
 @media(max-width: 640px){
-	body{
-		min-width: 320px;
-	}
-	.weekend_journy_bg{
-		background-image: url(../image/sp_bg_main_01.jpg);
-	}
-	.page_header .inner .cart_preview .btn_submit {
-		display: none;
-	}
-	.wrapper .weekend_journy_wrapper{
-		width: 93.75%;
-		margin-bottom: 40px;
-		padding: 20px 5%;
-	}
-	.wrapper .weekend_journy_wrapper h1{
+	.subpage_wrapper .store_main h1{
 		font-size: calc(8px + 7.5vw);
 	}
-	.wrapper .weekend_journy_wrapper h1 span{
+	.subpage_wrapper .store_main h1 span{
 		font-size: 3.75vw;
 	}
-	.wrapper .weekend_journy_wrapper dl{
+	.subpage_wrapper .store_main dl{
 		display: none;
 	}
-	.wrapper .weekend_journy_wrapper .product_box{
+	.subpage_wrapper .store_main .product_box{
 		display: block;
 	}
-	.wrapper .weekend_journy_wrapper .product_box div{
+	.subpage_wrapper .store_main .product_box div{
 		width: 100%;
 	}
-	.wrapper .weekend_journy_wrapper .product_box div .text{
+	.subpage_wrapper .store_main .product_box div .text{
 		margin-bottom: 20px;
 	}
-	.wrapper .weekend_journy_wrapper .product_box div .add_cart{
+	.subpage_wrapper .store_main .product_box div .add_cart{
 		height: 48px;
 	}
-	.wrapper .weekend_journy_wrapper .product_box div .add_cart a{
-		width: 72.916%;
+	.subpage_wrapper .store_main .product_box div .add_cart a{
+		width: 74.08%;
 		height: 100%;
 		margin: 0 auto;
 		padding: 0px;
@@ -412,133 +155,28 @@
 		line-height: 48px;
 		font-size: 100%;
 	}
-	.wrapper .weekend_journy_wrapper .product_box div p:first-of-type{
+	.subpage_wrapper .store_main .product_box div p:first-of-type{
 		margin-bottom: -65px;
 	}
-	.order .order_contents {
-		width: 93.75%;
-		padding: 20px 5%;
-	}
-	.order .order_contents h1{
+	.about_wholesale h1{
 		font-size: calc(8px + 3.7vw);
-		margin-bottom: 5%;
 	}
-	.order .order_contents p {
+	.about_wholesale .get_text {
+		margin-top: 5%;
 		font-size: calc(55% + 2.2vw);
 	}
-	.order .order_contents .ordered{
-    	margin: 20px 0;
+	.about_wholesale img {
+		margin: 20px auto;
+		min-width: 135px;
 	}
-	.order .order_contents .ordered img{
-    	min-width: 135px;
-	}
-	.order .order_contents .contact{
-		width: 100%;
-		font-size:100%;
+	.about_wholesale .btn_link {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 		height: 48px;
-	}
-	.order .order_contents .contact a{
-		display: block;
-		margin: 0 auto;
-		border-width: 1px;
-		height: 100%;
 		line-height: 48px;
-		font-size: 100%;
+		padding: 0;
+		border-width: 1px;
+		font-size: 100%;	
 	}
-	.links_contents { 
-		width: 93.75%;
-		margin: 0 auto 6.25vw;
-	}
-	.links_contents li {
-		float: none;
-		width: 100%;
-		margin-bottom: 6%;
-	}
-	.links_contents li.product {
-		background-image: url(../image/sp_bg_product.png);
-	}
-	.links_contents li.brewmaster {
-		background-image: url(../image/sp_bg_brewmaster.png);
-	}
-	.links_contents li.about_wj {
-		background-image: url(../image/sp_bg_about.png);
-	}
-	.links_contents li.product a,
-	.links_contents li.brewmaster a {
-		padding: 6.808vw 0;
-	}
-	.links_contents li.about_wj a {
-		padding: 15px 0;
-	}
-	.links_contents li.about_wj a img {
-	    height: calc(24vw - 20px);
-	}
-	.links_contents li a .en {
-		font-size: calc(8px + 7.5vw);
-	}
-	.links_contents li a .ja {
-		font-size: calc(8px + 2vw);
-	}
-}
-
-@media(max-width: 750px){
-	footer ul li{
-		display: block;
-		text-align: left;
-		font-size: calc(8px + 2.5vw);
-		width: 100%;
-	}
-	footer ul li a{
-		padding: 0 5%;
-		display: block;
-	}
-	footer ul li a:hover {
-		background: #666;
-		transition: 0.3s;
-	}
-	footer ul li a:after{
-		content: none;
-	}
-	p.copyright{
-		line-height: 64px;
-		font-size: 8px;
-		height: auto;
-	}
-}
-
-/*----------------------------------------
-             retina設定
-----------------------------------------*/
-/*PC*/
-@media
-(-webkit-min-device-pixel-ratio: 2) and (min-width: 641px),
-(            min-resolution: 2dppx) and (min-width: 641px) {
-	.weekend_journy_bg{
-		background-image: url(../image/bg_main_01_on.png) , url(../image/bg_main_01@2x.jpg);
-	} 
-	.links_contents li.product {
-		background-image: url(../image/bg_product@2x.png);
-	}
-	.links_contents li.brewmaster {
-		background-image: url(../image/bg_brewmaster@2x.png);
-	}
-	.links_contents li.about_wj {
-		background-image: url(../image/bg_about@2x.png);
-	}
-}
-/*SP*/
-@media
-(-webkit-min-device-pixel-ratio: 2) and (max-width: 640px),
-(            min-resolution: 2dppx) and (max-width: 640px) {
-	.weekend_journy_bg {
-		background-image: url(../image/sp_bg_main_01@2x.jpg);
-	} 
-	.links_contents li.product {
-		background-image: url(../image/sp_bg_product@2x.png);
-	}
-	.links_contents li.brewmaster {
-		background-image: url(../image/sp_bg_brewmaster@2x.png);
-	}
-	.links_contents li.about_wj {
-		background-image: url(../image/sp_bg_about@2x.png);
 }
